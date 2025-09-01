@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from modules.feature_extractor import SIFT, ORB, BRISK
 
 class MotionEstimator:
     def __init__(self, camera_matrix, method='essential'):
@@ -22,7 +21,7 @@ class MotionEstimator:
     
     def _estimate_with_essential(self, pts1, pts2):
         # Estimate Essential matrix
-        E, mask = cv2.findEssentialMat(
+        E, mask_essential = cv2.findEssentialMat(
             pts1, pts2, self.K, 
             method=cv2.RANSAC, 
             prob=0.999, 
@@ -31,14 +30,30 @@ class MotionEstimator:
         
         if E is None:
             return None, None, None
-            
-        # Recover pose from Essential matrix
-        points, R, t, mask_pose = cv2.recoverPose(E, pts1, pts2, self.K)
         
-        return R, t, mask & mask_pose.ravel().astype(bool)
+        # Convert mask to proper boolean array
+        mask_essential = mask_essential.ravel().astype(bool)
+        
+        # Filter points with essential matrix inliers
+        pts1_filtered = pts1[mask_essential]
+        pts2_filtered = pts2[mask_essential]
+        
+        # Recover pose from Essential matrix
+        points, R, t, mask_pose = cv2.recoverPose(E, pts1_filtered, pts2_filtered, self.K)
+        
+        # Create final mask that maps back to original matches
+        final_mask = np.zeros(len(pts1), dtype=bool)
+        essential_indices = np.where(mask_essential)[0]
+        
+        # mask_pose corresponds to the filtered points
+        mask_pose = mask_pose.ravel().astype(bool)
+        final_indices = essential_indices[mask_pose]
+        final_mask[final_indices] = True
+        
+        return R, t, final_mask
     
     def _estimate_with_fundamental(self, pts1, pts2):
-        # For uncalibrated case (though you have Blender intrinsics)
+        # For uncalibrated case
         F, mask = cv2.findFundamentalMat(
             pts1, pts2, 
             method=cv2.RANSAC,
@@ -46,8 +61,24 @@ class MotionEstimator:
             confidence=0.99
         )
         
+        if F is None:
+            return None, None, None
+        
         # Convert F to E if camera matrix is known
         E = self.K.T @ F @ self.K
-        points, R, t, mask_pose = cv2.recoverPose(E, pts1, pts2, self.K)
+        mask = mask.ravel().astype(bool)
         
-        return R, t, mask & mask_pose.ravel().astype(bool)
+        # Filter points
+        pts1_filtered = pts1[mask]
+        pts2_filtered = pts2[mask]
+        
+        points, R, t, mask_pose = cv2.recoverPose(E, pts1_filtered, pts2_filtered, self.K)
+        
+        # Create final mask
+        final_mask = np.zeros(len(pts1), dtype=bool)
+        fundamental_indices = np.where(mask)[0]
+        mask_pose = mask_pose.ravel().astype(bool)
+        final_indices = fundamental_indices[mask_pose]
+        final_mask[final_indices] = True
+        
+        return R, t, final_mask
