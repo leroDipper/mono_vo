@@ -79,8 +79,8 @@ if __name__ == "__main__":
         print(f"Processing frame {idx}")
 
         # Detect markers for ground truth positioning
-        if idx <= 1 or idx % 2 == 0:
-        #if idx <= 2 or idx % 10 == 0:
+        #if idx <= 1 or idx % 2 == 0:
+        if idx <= 2 or idx % 15g == 0:
             corners, ids, rejected = cv2.aruco.detectMarkers(image, aruco_dict, parameters=parameters)
             if ids is not None and 0 in ids.flatten():
                 id_idx = np.where(ids.flatten() == 0)[0][0]
