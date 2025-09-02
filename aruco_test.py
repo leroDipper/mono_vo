@@ -81,7 +81,7 @@ for filename in sorted(os.listdir(images_path)):
             frame_num = int(filename.split('_')[1].split('.')[0])
             frame_numbers.append(frame_num)
             
-            print(f"Frame {frame_num}: Marker at {tvec}")
+            print(f"Frame {frame_num}: Marker at {camera_pos_marker_frame}")
             
             # Visualize
             cv2.aruco.drawDetectedMarkers(img, corners, ids)

@@ -21,11 +21,12 @@ class MotionEstimator:
     
     def _estimate_with_essential(self, pts1, pts2):
         # Estimate Essential matrix
+        # pts1: points in frame k-1, pts2: points in frame k
         E, mask_essential = cv2.findEssentialMat(
             pts1, pts2, self.K, 
             method=cv2.RANSAC, 
             prob=0.999, 
-            threshold=1.0
+            threshold=0.5  # Tighter threshold for better accuracy
         )
         
         if E is None:
@@ -39,7 +40,15 @@ class MotionEstimator:
         pts2_filtered = pts2[mask_essential]
         
         # Recover pose from Essential matrix
-        points, R, t, mask_pose = cv2.recoverPose(E, pts1_filtered, pts2_filtered, self.K)
+        # This gives transformation from frame k to frame k-1
+        points, R_k_to_k1, t_k_to_k1, mask_pose = cv2.recoverPose(
+            E, pts1_filtered, pts2_filtered, self.K
+        )
+        
+        # Convert to camera motion (frame k-1 to frame k)
+        # This is the transformation we need for VO trajectory accumulation
+        R_motion = R_k_to_k1.T  # Transpose to invert rotation
+        t_motion = -R_motion @ t_k_to_k1.flatten()  # Transform and flatten translation
         
         # Create final mask that maps back to original matches
         final_mask = np.zeros(len(pts1), dtype=bool)
@@ -50,14 +59,19 @@ class MotionEstimator:
         final_indices = essential_indices[mask_pose]
         final_mask[final_indices] = True
         
-        return R, t, final_mask
+        # Debug info
+        print(f"Essential matrix inliers: {np.sum(mask_essential)}, "
+              f"Pose recovery inliers: {points}, "
+              f"Translation direction: {t_motion}")
+        
+        return R_motion, t_motion.reshape(-1, 1), final_mask
     
     def _estimate_with_fundamental(self, pts1, pts2):
         # For uncalibrated case
         F, mask = cv2.findFundamentalMat(
             pts1, pts2, 
             method=cv2.RANSAC,
-            ransacReprojThreshold=3,
+            ransacReprojThreshold=1.0,  # Tighter threshold
             confidence=0.99
         )
         
@@ -72,7 +86,13 @@ class MotionEstimator:
         pts1_filtered = pts1[mask]
         pts2_filtered = pts2[mask]
         
-        points, R, t, mask_pose = cv2.recoverPose(E, pts1_filtered, pts2_filtered, self.K)
+        points, R_k_to_k1, t_k_to_k1, mask_pose = cv2.recoverPose(
+            E, pts1_filtered, pts2_filtered, self.K
+        )
+        
+        # Convert to camera motion (same as essential matrix case)
+        R_motion = R_k_to_k1.T
+        t_motion = -R_motion @ t_k_to_k1.flatten()
         
         # Create final mask
         final_mask = np.zeros(len(pts1), dtype=bool)
@@ -81,4 +101,4 @@ class MotionEstimator:
         final_indices = fundamental_indices[mask_pose]
         final_mask[final_indices] = True
         
-        return R, t, final_mask
+        return R_motion, t_motion.reshape(-1, 1), final_mask
