@@ -1,13 +1,11 @@
 import numpy as np
 import cv2
-from modules.scale_calculation import calculate_scale_from_markers
 from modules.feature_extractor import SIFT, ORB, BRISK
 from modules.frame_loader import FrameLoader
-from modules.triangulation import Triangulator
 import matplotlib.pyplot as plt
 from modules.pose_estimation import MotionEstimator
 from mpl_toolkits.mplot3d import Axes3D
-from tqdm import tqdm
+import pandas as pd
 import json
 
 
@@ -71,7 +69,7 @@ if __name__ == "__main__":
     extractor_SIFT = SIFT(n_features=1500)
     load_frames = FrameLoader(images_path=images, max_images=max_images)
     motion_estimator = MotionEstimator(camera_matrix=K, method='essential')
-    triangulator = Triangulator(camera_matrix=K)
+    #triangulator = Triangulator(camera_matrix=K)
     
     print(f"Processing {max_images} frames...")
     
@@ -79,8 +77,8 @@ if __name__ == "__main__":
         print(f"Processing frame {idx}")
 
         # Detect markers for ground truth positioning
-        #if idx <= 1 or idx % 2 == 0:
-        if idx <= 2 or idx % 15g == 0:
+        if idx <= 1 or idx % 2 == 0:
+        #if idx <= 2 or idx % 15 == 0:
             corners, ids, rejected = cv2.aruco.detectMarkers(image, aruco_dict, parameters=parameters)
             if ids is not None and 0 in ids.flatten():
                 id_idx = np.where(ids.flatten() == 0)[0][0]
@@ -181,10 +179,11 @@ if __name__ == "__main__":
                 
                 if drift > 0.1:  # Only correct significant drift
                     # Blend VO position with marker position
-                    blend_factor = 0.3  # How much to trust marker vs VO
+                    blend_factor = 0.5  # How much to trust marker vs VO
                     corrected_pos = (1 - blend_factor) * current_pos + blend_factor * marker_pos
                     current_pose[:3, 3] = corrected_pos
                     print(f"Frame {idx}: Drift corrected by {drift:.4f}m")
+                    
 
         trajectory.append(current_pose.copy())
 
@@ -198,6 +197,7 @@ if __name__ == "__main__":
     # Simple visualization
     trajectory_array = np.array([pose[:3, 3] for pose in trajectory])
     marker_only_trajectory = np.array(marker_poses)
+    
 
     # Plot comparison
     plt.figure(figsize=(12, 5))
@@ -222,3 +222,99 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.show()
+
+    poses_data = {
+    "x": [p[0] for p in trajectory_array],
+    "y": [p[1] for p in trajectory_array], 
+    "z": [p[2] for p in trajectory_array], 
+    }
+
+    df = pd.DataFrame(poses_data)
+
+    df.to_csv("utils/vo_poses_aruco_every_2nd_frame.csv")
+
+        
+    # ground_truth_poses = ground_truth['poses']
+
+    # left_positions = []
+    # for ground_truth_pose in ground_truth_poses:
+    #     left_trans = ground_truth_pose['left_camera']['translation']
+    #     left_positions.append([left_trans[0], left_trans[1], left_trans[2]])
+
+    # left_positions = np.array(left_positions)
+
+    # position_errors = np.linalg.norm(trajectory_array - left_positions[:len(trajectory_array)], axis=1)
+
+    # ate = np.sqrt(np.mean(position_errors**2))
+
+    # print(f"Absolute Trajectory Error (ATE): {ate:.4f} meters")
+
+    # # Error distribution analysis
+    # plt.figure(figsize=(15, 10))
+
+    # # Error over time
+    # plt.subplot(2, 3, 1)
+    # plt.plot(position_errors, 'b-', linewidth=1)
+    # plt.scatter(marker_indices, position_errors[marker_indices], color='red', s=30, zorder=5)
+    # plt.title('Position Error Over Time')
+    # plt.xlabel('Frame')
+    # plt.ylabel('Error (m)')
+    # plt.grid(True)
+    # plt.legend(['VO Error', 'Marker Frames'])
+
+    # # Error histogram
+    # plt.subplot(2, 3, 2)
+    # plt.hist(position_errors, bins=20, alpha=0.7, color='blue', edgecolor='black')
+    # plt.title('Error Distribution')
+    # plt.xlabel('Error (m)')
+    # plt.ylabel('Frequency')
+    # plt.grid(True, alpha=0.3)
+
+    # # Cumulative error
+    # plt.subplot(2, 3, 3)
+    # plt.plot(np.cumsum(position_errors), 'g-', linewidth=2)
+    # plt.title('Cumulative Error')
+    # plt.xlabel('Frame')
+    # plt.ylabel('Cumulative Error (m)')
+    # plt.grid(True)
+
+    # # Error vs distance from start
+    # distances_from_start = np.linalg.norm(trajectory_array - trajectory_array[0], axis=1)
+    # plt.subplot(2, 3, 4)
+    # plt.scatter(distances_from_start, position_errors, alpha=0.6, s=15)
+    # plt.title('Error vs Distance from Start')
+    # plt.xlabel('Distance from Start (m)')
+    # plt.ylabel('Error (m)')
+    # plt.grid(True)
+
+    # # X,Y error components
+    # plt.subplot(2, 3, 5)
+    # error_components = trajectory_array - left_positions[:len(trajectory_array)]
+    # plt.scatter(error_components[:, 0], error_components[:, 1], alpha=0.6, s=15)
+    # plt.title('X-Y Error Components')
+    # plt.xlabel('X Error (m)')
+    # plt.ylabel('Y Error (m)')
+    # plt.axis('equal')
+    # plt.grid(True)
+
+    # # Error statistics
+    # plt.subplot(2, 3, 6)
+    # stats_text = f"""Error Statistics:
+    # Mean: {np.mean(position_errors):.3f}m
+    # Median: {np.median(position_errors):.3f}m
+    # Std: {np.std(position_errors):.3f}m
+    # Max: {np.max(position_errors):.3f}m
+    # 95th percentile: {np.percentile(position_errors, 95):.3f}m
+
+    # Marker frames: {len(marker_indices)}
+    # Error at markers: {np.mean(position_errors[marker_indices]):.3f}m"""
+
+    # plt.text(0.1, 0.5, stats_text, fontsize=10, verticalalignment='center')
+    # plt.axis('off')
+    # plt.title('Error Statistics')
+
+    # plt.tight_layout()
+    # plt.show()
+
+
+

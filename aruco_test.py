@@ -4,6 +4,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+import pandas as pd
 
 # Load ground truth
 with open("office_dataset_aruco/ground_truth_poses.json", "r") as file:
@@ -140,6 +141,19 @@ if marker_poses:
     print(f"Trajectory center: ({center_x:.3f}, {center_y:.3f})")
     print(f"Mean radius: {np.mean(radii):.3f}m ± {np.std(radii):.3f}m")
     print(f"Distance variation: {np.std(distances):.3f}m")
+
+    poses_data = {
+    "frame": frame_numbers,
+    "x": [p[0] for p in marker_poses],
+    "y": [p[1] for p in marker_poses], 
+    "z": [p[2] for p in marker_poses], 
+    }
+
+    df = pd.DataFrame(poses_data)
+
+    df.to_csv("utils/marker_poses.csv")
+
+    
     
     if np.std(radii) < 0.1:
         print("✓ Circular trajectory detected!")
@@ -147,3 +161,5 @@ if marker_poses:
         print("✗ Trajectory not circular - check marker size or detection")
 else:
     print("No markers detected!")
+
+   
