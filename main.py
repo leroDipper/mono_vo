@@ -3,7 +3,7 @@ from modules.feature_extractor import SIFT, ORB, BRISK
 from modules.frame_loader import FrameLoader
 from modules.triangulation import Triangulator
 import matplotlib.pyplot as plt
-from modules.pose_estimation import MotionEstimator
+from modules.pose_estimation2 import MotionEstimator
 from mpl_toolkits.mplot3d import Axes3D
 from tqdm import tqdm
 import json
@@ -69,9 +69,12 @@ if __name__ == "__main__":
         # Match features between the current and previous frame
         matches = extractor_SIFT.match_features(prev_desc, desc)
 
-        # FIX: matches is a list, not a tuple
         if len(matches) < 50:
             print(f"Frame {idx}: Not enough matches ({len(matches)}), skipping")
+            prev_image = image
+            prev_kp = kp
+            prev_desc = desc
+            trajectory.append(current_pose.copy())  # Repeat last pose
             continue
 
         print(f"Frame {idx}: Found {len(matches)} matches")
@@ -81,6 +84,10 @@ if __name__ == "__main__":
 
         if R is None or t is None:
             print(f"Frame {idx}: Pose estimation failed")
+            prev_image = image
+            prev_kp = kp
+            prev_desc = desc
+            trajectory.append(current_pose.copy())  # Repeat last pose
             continue
 
         # Filter matches with inlier mask
@@ -95,19 +102,56 @@ if __name__ == "__main__":
         O = np.zeros((3, 1))
         points_3d = triangulator.triangulate_points(pts1, pts2, I, O, R, t)
 
-        # Estimate scale
-        scale = triangulator.get_scale(prev_points_3d, points_3d, R, t)
-        t_scaled = t * scale
+        # Check if this is the first triangulation
+        if prev_points_3d is None:
+            print(f"Frame {idx}: First triangulation, storing reference")
+            prev_points_3d = points_3d
+            # Don't update pose on first triangulation
+            trajectory.append(current_pose.copy())
+            prev_image = image
+            prev_kp = kp
+            prev_desc = desc
+            continue
 
-        print(f"Frame {idx}: Scale = {scale:.3f}, Translation = {np.linalg.norm(t_scaled):.3f}")
+        # FIXED: Use unit scale for pure geometric testing
+        scale = 1.0  # No scale estimation - test pure motion geometry
+        t_scaled = t.flatten()  # Use raw translation vector
 
-        # Update pose (camera moves in world)
+        print(f"Frame {idx}: Fixed scale = {scale:.3f}, Translation = {np.linalg.norm(t_scaled):.3f}")
+
+
+        # Just test the basic pose update without coordinate tricks
         T_rel = np.eye(4)
         T_rel[:3, :3] = R
-        T_rel[:3, 3] = t_scaled.ravel()
-        
+        T_rel[:3, 3] = t.flatten()
         current_pose = current_pose @ T_rel
+
+        # # Update pose (camera moves in world)
+        # T_rel = np.eye(4)
+        # T_rel[:3, :3] = R
+        # T_rel[:3, 3] = t_scaled  # Already flattened
+        
+        # #current_pose = current_pose @ T_rel
+        # #current_pose = T_rel @ current_pose
+        # T_rel_inv = np.linalg.inv(T_rel)
+        # current_pose = current_pose @ T_rel_inv
+
         trajectory.append(current_pose.copy())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         # Store for next iteration
         prev_image = image
@@ -120,18 +164,35 @@ if __name__ == "__main__":
     # Simple visualization
     trajectory_array = np.array([pose[:3, 3] for pose in trajectory])
     
-    plt.figure(figsize=(10, 8))
-    plt.plot(trajectory_array[:, 0], trajectory_array[:, 2], 'b-o', label='Estimated Trajectory', markersize=4)
-    plt.xlabel('X (meters)')
-    plt.ylabel('Z (meters)')
-    plt.title('Monocular VO Trajectory (Top View)')
+    # Plot both X-Y and X-Z views to see trajectory shape
+    plt.figure(figsize=(15, 5))
+    
+    plt.subplot(1, 3, 1)
+    plt.plot(trajectory_array[:, 0], trajectory_array[:, 1], 'b-o', label='Estimated Trajectory', markersize=3)
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('VO Trajectory (X-Y View)')
     plt.legend()
     plt.grid(True)
     plt.axis('equal')
+    
+    plt.subplot(1, 3, 2)
+    plt.plot(trajectory_array[:, 0], trajectory_array[:, 2], 'r-o', label='Estimated Trajectory', markersize=3)
+    plt.xlabel('X')
+    plt.ylabel('Z')
+    plt.title('VO Trajectory (X-Z View)')
+    plt.legend()
+    plt.grid(True)
+    plt.axis('equal')
+    
+    plt.subplot(1, 3, 3)
+    plt.plot(trajectory_array[:, 1], trajectory_array[:, 2], 'g-o', label='Estimated Trajectory', markersize=3)
+    plt.xlabel('Y')
+    plt.ylabel('Z')
+    plt.title('VO Trajectory (Y-Z View)')
+    plt.legend()
+    plt.grid(True)
+    plt.axis('equal')
+    
+    plt.tight_layout()
     plt.show()
-
-    # Print trajectory positions
-    print("\nTrajectory positions:")
-    for i, pose in enumerate(trajectory):
-        pos = pose[:3, 3]
-        print(f"Frame {i}: [{pos[0]:6.3f}, {pos[1]:6.3f}, {pos[2]:6.3f}]")

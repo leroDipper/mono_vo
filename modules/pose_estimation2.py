@@ -45,10 +45,9 @@ class MotionEstimator:
             E, pts1_filtered, pts2_filtered, self.K
         )
         
-        # Convert to camera motion (frame k-1 to frame k)
-        # This is the transformation we need for VO trajectory accumulation
-        R_motion = R_k_to_k1.T  # Transpose to invert rotation
-        t_motion = -R_motion @ t_k_to_k1.flatten()  # Transform and flatten translation
+        # FIXED: Convert to camera motion (frame k-1 to frame k)
+        R_motion = R_k_to_k1.T # Transpose to invert rotation
+        t_motion = -R_motion @ t_k_to_k1.flatten()  # Just negate, don't rotate
         
         # Create final mask that maps back to original matches
         final_mask = np.zeros(len(pts1), dtype=bool)
@@ -58,7 +57,6 @@ class MotionEstimator:
         mask_pose = mask_pose.ravel().astype(bool)
         final_indices = essential_indices[mask_pose]
         final_mask[final_indices] = True
-        
         
         return R_motion, t_motion.reshape(-1, 1), final_mask
     
@@ -86,9 +84,9 @@ class MotionEstimator:
             E, pts1_filtered, pts2_filtered, self.K
         )
         
-        # Convert to camera motion (same as essential matrix case)
+        # FIXED: Convert to camera motion (same as essential matrix case)
         R_motion = R_k_to_k1.T
-        t_motion = -R_motion @ t_k_to_k1.flatten()
+        t_motion = -t_k_to_k1.flatten()  # Just negate, don't rotate
         
         # Create final mask
         final_mask = np.zeros(len(pts1), dtype=bool)
