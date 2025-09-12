@@ -223,15 +223,7 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.show()
 
-    poses_data = {
-    "x": [p[0] for p in trajectory_array],
-    "y": [p[1] for p in trajectory_array], 
-    "z": [p[2] for p in trajectory_array], 
-    }
-
-    df = pd.DataFrame(poses_data)
-
-    df.to_csv("utils/vo_poses_aruco_every_2nd_frame.csv")
+    
 
         
     # ground_truth_poses = ground_truth['poses']

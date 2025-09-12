@@ -3,7 +3,7 @@ from modules.feature_extractor import SIFT, ORB, BRISK
 from modules.frame_loader import FrameLoader
 from modules.triangulation import Triangulator
 import matplotlib.pyplot as plt
-from modules.pose_estimation2 import MotionEstimator
+from modules.pose_estimation import MotionEstimator
 from mpl_toolkits.mplot3d import Axes3D
 from tqdm import tqdm
 import json
@@ -125,6 +125,8 @@ if __name__ == "__main__":
         T_rel[:3, :3] = R
         T_rel[:3, 3] = t.flatten()
         current_pose = current_pose @ T_rel
+
+        #current_pose = T_rel @ current_pose
 
         # # Update pose (camera moves in world)
         # T_rel = np.eye(4)
