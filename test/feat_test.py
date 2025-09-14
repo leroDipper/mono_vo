@@ -6,7 +6,7 @@ import pandas as pd
 from modules.feature_extractor import SIFT, ORB, BRISK  # replace with your file/module name
 
 # === CONFIG ===
-image_folder = "/media/leroy/DRIVE/masters/test_images_mh/images/data"  # path to folder of images
+image_folder = "/media/usb/masfiles/test_images_mh/images"  # path to folder of images
 extractor_type = "SIFT"  # choose from "SIFT", "ORB", "BRISK"
 resize_width = 320    # set to None to skip resizing
 resize_height = 240   # set to None to skip resizing
