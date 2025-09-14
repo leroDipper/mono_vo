@@ -8,14 +8,14 @@ from modules.feature_extractor import SIFT, ORB, BRISK  # replace with your file
 # === CONFIG ===
 image_folder = "/media/usb/masfiles/test_images_mh/images/data"  # path to folder of images
 extractor_type = "SIFT"  # choose from "SIFT", "ORB", "BRISK"
-resize_width = 320    # set to None to skip resizing
-resize_height = 240   # set to None to skip resizing
-log_csv = "feature_benchmark_results_sift.csv"  # CSV file to save results
-max_images = 75
+resize_width = 1280    # set to None to skip resizing
+resize_height = 720   # set to None to skip resizing
+log_csv = "results/feature_benchmark_results_sift_1280x720.csv"  # CSV file to save results
+max_images = 300
 
 # === Initialize extractor ===
 if extractor_type == "SIFT":
-    extractor = SIFT(n_features=500)
+    extractor = SIFT(n_features=1000)
 elif extractor_type == "ORB":
     extractor = ORB(n_features=500)
 elif extractor_type == "BRISK":
