@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "StructureFromMotion_1",
+    "nodeType": "StructureFromMotion",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_incrementalSfM  --input \"/tmp/MeshroomCache/CameraInit/37ad89f05f68de6982ae89a3b52436d9c07f5107/cameraInit.sfm\" --featuresFolders \"/tmp/MeshroomCache/FeatureExtraction/621bcfcce925c7c08726543534321e70aa52b2d9\" --matchesFolders \"/tmp/MeshroomCache/FeatureMatching/99898f55725c11db1bd50217a7cddd9c7d923164\" --describerTypes sift --localizerEstimator acransac --observationConstraint Scale --localizerEstimatorMaxIterations 4096 --localizerEstimatorError 0.0 --lockScenePreviouslyReconstructed False --useLocalBA True --localBAGraphDistance 1 --nbFirstUnstableCameras 30 --maxImagesPerGroup 30 --bundleAdjustmentMaxOutliers 50 --maxNumberOfMatches 0 --minNumberOfMatches 0 --minInputTrackLength 2 --minNumberOfObservationsForTriangulation 2 --minAngleForTriangulation 3.0 --minAngleForLandmark 2.0 --maxReprojectionError 4.0 --minAngleInitialPair 5.0 --maxAngleInitialPair 40.0 --useOnlyMatchesFromInputFolder False --useRigConstraint True --rigMinNbCamerasForCalibration 20 --lockAllIntrinsics False --minNbCamerasToRefinePrincipalPoint 3 --filterTrackForks False --computeStructureColor True --useAutoTransform True --initialPairA \"\" --initialPairB \"\" --interFileExtension .abc --logIntermediateSteps False --verboseLevel info --output \"/tmp/MeshroomCache/StructureFromMotion/439ab5f87bb5fafdd6032976040954e1c81f2def/sfm.abc\" --outputViewsAndPoses \"/tmp/MeshroomCache/StructureFromMotion/439ab5f87bb5fafdd6032976040954e1c81f2def/cameras.sfm\" --extraInfoFolder \"/tmp/MeshroomCache/StructureFromMotion/439ab5f87bb5fafdd6032976040954e1c81f2def\"",
+    "env": null,
+    "startDateTime": "2025-09-17 18:11:19.181831",
+    "endDateTime": "2025-09-17 18:12:38.765001",
+    "elapsedTime": 79.58321762084961,
+    "hostname": "leroy-Dell-Pro-Tower-Plus-QBT1250",
+    "sessionUid": "63dc40ca-93de-11f0-94bb-79f0cbf4b849",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:01:19.583218"
+}

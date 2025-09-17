@@ -1,0 +1,1786 @@
+{
+    "fileVersion": 2.0,
+    "computer": {
+        "nbCores": 0,
+        "cpuFreq": 6540.0,
+        "ramTotal": 30.801982879638672,
+        "ramAvailable": 0,
+        "vramAvailable": 0,
+        "swapAvailable": 0,
+        "gpuMemoryTotal": 0,
+        "gpuName": "",
+        "curves": {
+            "cpuUsage.0": [
+                77.0,
+                65.4,
+                63.2,
+                65.3,
+                66.1
+            ],
+            "cpuUsage.1": [
+                93.9,
+                86.1,
+                83.5,
+                85.6,
+                86.1
+            ],
+            "cpuUsage.2": [
+                75.9,
+                66.0,
+                64.2,
+                64.3,
+                67.8
+            ],
+            "cpuUsage.3": [
+                92.0,
+                85.9,
+                85.2,
+                87.7,
+                87.1
+            ],
+            "cpuUsage.4": [
+                76.8,
+                67.2,
+                65.9,
+                66.6,
+                67.0
+            ],
+            "cpuUsage.5": [
+                77.0,
+                66.4,
+                65.5,
+                66.2,
+                68.3
+            ],
+            "cpuUsage.6": [
+                75.2,
+                66.6,
+                64.5,
+                65.8,
+                67.1
+            ],
+            "cpuUsage.7": [
+                76.8,
+                64.5,
+                63.4,
+                64.4,
+                66.6
+            ],
+            "cpuUsage.8": [
+                61.6,
+                48.7,
+                46.9,
+                48.2,
+                51.4
+            ],
+            "cpuUsage.9": [
+                62.5,
+                44.3,
+                43.1,
+                46.5,
+                48.7
+            ],
+            "cpuUsage.10": [
+                60.2,
+                41.5,
+                37.8,
+                39.9,
+                44.0
+            ],
+            "cpuUsage.11": [
+                56.6,
+                38.8,
+                32.4,
+                36.9,
+                40.1
+            ],
+            "cpuUsage.12": [
+                58.4,
+                30.3,
+                26.2,
+                32.6,
+                35.6
+            ],
+            "cpuUsage.13": [
+                55.8,
+                27.1,
+                21.8,
+                27.9,
+                28.3
+            ],
+            "cpuUsage.14": [
+                52.6,
+                21.9,
+                14.5,
+                23.2,
+                23.9
+            ],
+            "cpuUsage.15": [
+                52.2,
+                21.7,
+                14.9,
+                19.8,
+                19.4
+            ],
+            "cpuUsage.16": [
+                47.8,
+                18.3,
+                11.3,
+                14.1,
+                13.3
+            ],
+            "cpuUsage.17": [
+                43.9,
+                17.6,
+                10.3,
+                13.8,
+                11.8
+            ],
+            "cpuUsage.18": [
+                36.3,
+                16.5,
+                8.6,
+                10.1,
+                9.9
+            ],
+            "cpuUsage.19": [
+                27.9,
+                14.9,
+                5.8,
+                8.7,
+                9.7
+            ],
+            "ramUsage": [
+                38.6,
+                37.8,
+                37.5,
+                37.6,
+                37.6
+            ],
+            "swapUsage": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "vramUsage": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "ioCounters.read_count": [
+                352873,
+                352873,
+                352873,
+                352873,
+                352873
+            ],
+            "ioCounters.write_count": [
+                9276104,
+                9276206,
+                9276283,
+                9276365,
+                9276430
+            ],
+            "ioCounters.read_bytes": [
+                21586780160,
+                21586780160,
+                21586780160,
+                21586780160,
+                21586780160
+            ],
+            "ioCounters.write_bytes": [
+                169225417728,
+                169227600896,
+                169229313024,
+                169229894656,
+                169230337024
+            ],
+            "ioCounters.read_time": [
+                69308,
+                69308,
+                69308,
+                69308,
+                69308
+            ],
+            "ioCounters.write_time": [
+                46092919,
+                46093297,
+                46093440,
+                46094235,
+                46094380
+            ],
+            "ioCounters.read_merged_count": [
+                116478,
+                116478,
+                116478,
+                116478,
+                116478
+            ],
+            "ioCounters.write_merged_count": [
+                3722127,
+                3722177,
+                3722223,
+                3722251,
+                3722275
+            ],
+            "ioCounters.busy_time": [
+                16804228,
+                16804303,
+                16804347,
+                16804505,
+                16804564
+            ]
+        },
+        "nvidia_smi": "nvidia-smi",
+        "_isInit": true
+    },
+    "process": {
+        "duration": 0,
+        "curves": {
+            "memory_info.rss": [
+                597463040,
+                144195584,
+                148328448,
+                167473152,
+                176910336
+            ],
+            "memory_info.vms": [
+                10223747072,
+                4059410432,
+                4063723520,
+                4082851840,
+                4091879424
+            ],
+            "memory_info.shared": [
+                216682496,
+                50626560,
+                50626560,
+                50626560,
+                50626560
+            ],
+            "memory_info.text": [
+                4096,
+                98304,
+                98304,
+                98304,
+                98304
+            ],
+            "memory_info.lib": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "memory_info.data": [
+                1374666752,
+                473128960,
+                477442048,
+                496578560,
+                505606144
+            ],
+            "memory_info.dirty": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "memory_percent": [
+                1.806477260975992,
+                0.4359868748184884,
+                0.4484829194921578,
+                0.5063684624106221,
+                0.5349025426168996
+            ],
+            "cpu_percent": [
+                0.0,
+                0.0,
+                233.4,
+                305.3,
+                330.6
+            ],
+            "status": [
+                "sleeping",
+                "running",
+                "running",
+                "running",
+                "running"
+            ],
+            "threads.0.id": [
+                578875,
+                590059,
+                590059,
+                590059,
+                590059
+            ],
+            "threads.0.user_time": [
+                3.59,
+                2.6,
+                3.98,
+                6.83,
+                9.27
+            ],
+            "threads.0.system_time": [
+                0.67,
+                0.6,
+                1.23,
+                1.88,
+                2.55
+            ],
+            "threads.1.id": [
+                578877,
+                590061,
+                590061,
+                590061,
+                590061
+            ],
+            "threads.1.user_time": [
+                0.0,
+                0.96,
+                1.05,
+                1.56,
+                1.88
+            ],
+            "threads.1.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.2.id": [
+                578878,
+                590062,
+                590062,
+                590062,
+                590062
+            ],
+            "threads.2.user_time": [
+                0.0,
+                0.94,
+                1.02,
+                1.47,
+                1.8
+            ],
+            "threads.2.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.3.id": [
+                578879,
+                590080,
+                590080,
+                590080,
+                590080
+            ],
+            "threads.3.user_time": [
+                0.0,
+                1.1,
+                1.18,
+                1.61,
+                1.92
+            ],
+            "threads.3.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.4.id": [
+                578880,
+                590081,
+                590081,
+                590081,
+                590081
+            ],
+            "threads.4.user_time": [
+                0.04,
+                1.05,
+                1.13,
+                1.57,
+                1.87
+            ],
+            "threads.4.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.5.id": [
+                578881,
+                590082,
+                590082,
+                590082,
+                590082
+            ],
+            "threads.5.user_time": [
+                0.0,
+                0.89,
+                0.98,
+                1.4,
+                1.75
+            ],
+            "threads.5.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.6.id": [
+                578882,
+                590083,
+                590083,
+                590083,
+                590083
+            ],
+            "threads.6.user_time": [
+                0.0,
+                0.95,
+                1.08,
+                1.49,
+                1.77
+            ],
+            "threads.6.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.7.id": [
+                578883,
+                590084,
+                590084,
+                590084,
+                590084
+            ],
+            "threads.7.user_time": [
+                0.08,
+                1.07,
+                1.17,
+                1.59,
+                1.88
+            ],
+            "threads.7.system_time": [
+                0.24,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.8.id": [
+                578884,
+                590085,
+                590085,
+                590085,
+                590085
+            ],
+            "threads.8.user_time": [
+                0.0,
+                1.07,
+                1.17,
+                1.57,
+                1.85
+            ],
+            "threads.8.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.9.id": [
+                578885,
+                590086,
+                590086,
+                590086,
+                590086
+            ],
+            "threads.9.user_time": [
+                0.0,
+                1.09,
+                1.19,
+                1.57,
+                1.83
+            ],
+            "threads.9.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.10.id": [
+                578886,
+                590087,
+                590087,
+                590087,
+                590087
+            ],
+            "threads.10.user_time": [
+                0.0,
+                0.76,
+                0.86,
+                1.25,
+                1.55
+            ],
+            "threads.10.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.11.id": [
+                578889,
+                590088,
+                590088,
+                590088,
+                590088
+            ],
+            "threads.11.user_time": [
+                0.05,
+                1.06,
+                1.14,
+                1.52,
+                1.78
+            ],
+            "threads.11.system_time": [
+                0.01,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.12.id": [
+                578890,
+                590089,
+                590089,
+                590089,
+                590089
+            ],
+            "threads.12.user_time": [
+                0.0,
+                1.11,
+                1.2,
+                1.59,
+                1.85
+            ],
+            "threads.12.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.13.id": [
+                578891,
+                590090,
+                590090,
+                590090,
+                590090
+            ],
+            "threads.13.user_time": [
+                0.0,
+                1.0,
+                1.08,
+                1.45,
+                1.73
+            ],
+            "threads.13.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.14.id": [
+                578892,
+                590091,
+                590091,
+                590091,
+                590091
+            ],
+            "threads.14.user_time": [
+                0.0,
+                1.07,
+                1.16,
+                1.51,
+                1.8
+            ],
+            "threads.14.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.15.id": [
+                578893,
+                590092,
+                590092,
+                590092,
+                590092
+            ],
+            "threads.15.user_time": [
+                0.0,
+                1.04,
+                1.13,
+                1.51,
+                1.78
+            ],
+            "threads.15.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.16.id": [
+                578894,
+                590093,
+                590093,
+                590093,
+                590093
+            ],
+            "threads.16.user_time": [
+                0.04,
+                1.05,
+                1.16,
+                1.55,
+                1.84
+            ],
+            "threads.16.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.17.id": [
+                578895,
+                590094,
+                590094,
+                590094,
+                590094
+            ],
+            "threads.17.user_time": [
+                0.0,
+                0.96,
+                1.07,
+                1.41,
+                1.62
+            ],
+            "threads.17.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.18.id": [
+                578896,
+                590095,
+                590095,
+                590095,
+                590095
+            ],
+            "threads.18.user_time": [
+                0.0,
+                0.91,
+                1.03,
+                1.42,
+                1.64
+            ],
+            "threads.18.system_time": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.19.id": [
+                578897,
+                590096,
+                590096,
+                590096,
+                590096
+            ],
+            "threads.19.user_time": [
+                0.0,
+                0.89,
+                0.99,
+                1.31,
+                1.56
+            ],
+            "threads.19.system_time": [
+                0.01,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "threads.20.id": [
+                578898,
+                590402,
+                590518,
+                590899,
+                591166
+            ],
+            "threads.20.user_time": [
+                0.04,
+                0.09,
+                0.08,
+                0.01,
+                0.02
+            ],
+            "threads.20.system_time": [
+                0.0,
+                0.06,
+                0.04,
+                0.01,
+                0.01
+            ],
+            "threads.21.id": [
+                578899,
+                590403,
+                590519,
+                590900,
+                591167
+            ],
+            "threads.21.user_time": [
+                0.0,
+                0.1,
+                0.08,
+                0.01,
+                0.02
+            ],
+            "threads.21.system_time": [
+                0.0,
+                0.06,
+                0.04,
+                0.01,
+                0.01
+            ],
+            "threads.22.id": [
+                578900,
+                590404,
+                590520,
+                590901,
+                591168
+            ],
+            "threads.22.user_time": [
+                0.0,
+                0.12,
+                0.08,
+                0.01,
+                0.01
+            ],
+            "threads.22.system_time": [
+                0.0,
+                0.07,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.23.id": [
+                578901,
+                590405,
+                590521,
+                590902,
+                591169
+            ],
+            "threads.23.user_time": [
+                37.6,
+                0.08,
+                0.09,
+                0.02,
+                0.01
+            ],
+            "threads.23.system_time": [
+                0.42,
+                0.07,
+                0.04,
+                0.01,
+                0.01
+            ],
+            "threads.24.id": [
+                578902,
+                590406,
+                590522,
+                590903,
+                591170
+            ],
+            "threads.24.user_time": [
+                36.42,
+                0.1,
+                0.1,
+                0.02,
+                0.02
+            ],
+            "threads.24.system_time": [
+                0.36,
+                0.06,
+                0.05,
+                0.01,
+                0.01
+            ],
+            "threads.25.id": [
+                578903,
+                590407,
+                590523,
+                590904,
+                591171
+            ],
+            "threads.25.user_time": [
+                34.55,
+                0.1,
+                0.09,
+                0.01,
+                0.02
+            ],
+            "threads.25.system_time": [
+                0.4,
+                0.06,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.26.id": [
+                578904,
+                590408,
+                590524,
+                590905,
+                591172
+            ],
+            "threads.26.user_time": [
+                32.59,
+                0.08,
+                0.09,
+                0.02,
+                0.01
+            ],
+            "threads.26.system_time": [
+                0.39,
+                0.06,
+                0.04,
+                0.0,
+                0.0
+            ],
+            "threads.27.id": [
+                578905,
+                590409,
+                590525,
+                590906,
+                591173
+            ],
+            "threads.27.user_time": [
+                31.47,
+                0.11,
+                0.09,
+                0.02,
+                0.02
+            ],
+            "threads.27.system_time": [
+                0.38,
+                0.06,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.28.id": [
+                578906,
+                590410,
+                590526,
+                590907,
+                591174
+            ],
+            "threads.28.user_time": [
+                30.02,
+                0.12,
+                0.08,
+                0.01,
+                0.02
+            ],
+            "threads.28.system_time": [
+                0.37,
+                0.05,
+                0.05,
+                0.01,
+                0.01
+            ],
+            "threads.29.id": [
+                578907,
+                590411,
+                590527,
+                590908,
+                591175
+            ],
+            "threads.29.user_time": [
+                27.6,
+                0.1,
+                0.09,
+                0.01,
+                0.03
+            ],
+            "threads.29.system_time": [
+                0.38,
+                0.06,
+                0.04,
+                0.01,
+                0.01
+            ],
+            "threads.30.id": [
+                578908,
+                590412,
+                590528,
+                590909,
+                591176
+            ],
+            "threads.30.user_time": [
+                25.51,
+                0.1,
+                0.08,
+                0.02,
+                0.01
+            ],
+            "threads.30.system_time": [
+                0.38,
+                0.06,
+                0.06,
+                0.01,
+                0.01
+            ],
+            "threads.31.id": [
+                578909,
+                590413,
+                590529,
+                590910,
+                591177
+            ],
+            "threads.31.user_time": [
+                24.32,
+                0.1,
+                0.06,
+                0.02,
+                0.01
+            ],
+            "threads.31.system_time": [
+                0.41,
+                0.06,
+                0.05,
+                0.0,
+                0.0
+            ],
+            "threads.32.id": [
+                578910,
+                590414,
+                590530,
+                590911,
+                591178
+            ],
+            "threads.32.user_time": [
+                23.24,
+                0.09,
+                0.07,
+                0.02,
+                0.01
+            ],
+            "threads.32.system_time": [
+                0.38,
+                0.06,
+                0.05,
+                0.01,
+                0.0
+            ],
+            "threads.33.id": [
+                578911,
+                590415,
+                590531,
+                590912,
+                591179
+            ],
+            "threads.33.user_time": [
+                21.31,
+                0.11,
+                0.07,
+                0.01,
+                0.02
+            ],
+            "threads.33.system_time": [
+                0.37,
+                0.06,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.34.id": [
+                578912,
+                590416,
+                590532,
+                590913,
+                591180
+            ],
+            "threads.34.user_time": [
+                20.19,
+                0.1,
+                0.08,
+                0.01,
+                0.02
+            ],
+            "threads.34.system_time": [
+                0.37,
+                0.05,
+                0.05,
+                0.01,
+                0.0
+            ],
+            "threads.35.id": [
+                578913,
+                590417,
+                590533,
+                590914,
+                591181
+            ],
+            "threads.35.user_time": [
+                19.18,
+                0.1,
+                0.09,
+                0.01,
+                0.03
+            ],
+            "threads.35.system_time": [
+                0.38,
+                0.06,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.36.id": [
+                578914,
+                590418,
+                590534,
+                590915,
+                591182
+            ],
+            "threads.36.user_time": [
+                18.09,
+                0.11,
+                0.07,
+                0.0,
+                0.01
+            ],
+            "threads.36.system_time": [
+                0.38,
+                0.06,
+                0.05,
+                0.01,
+                0.0
+            ],
+            "threads.37.id": [
+                578915,
+                590419,
+                590535,
+                590916,
+                591183
+            ],
+            "threads.37.user_time": [
+                17.27,
+                0.1,
+                0.1,
+                0.01,
+                0.01
+            ],
+            "threads.37.system_time": [
+                0.36,
+                0.06,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.38.id": [
+                578916,
+                590420,
+                590536,
+                590917,
+                591184
+            ],
+            "threads.38.user_time": [
+                17.12,
+                0.12,
+                0.07,
+                0.0,
+                0.02
+            ],
+            "threads.38.system_time": [
+                0.39,
+                0.05,
+                0.04,
+                0.01,
+                0.0
+            ],
+            "threads.39.id": [
+                578917
+            ],
+            "threads.39.user_time": [
+                16.36
+            ],
+            "threads.39.system_time": [
+                0.38
+            ],
+            "threads.40.id": [
+                578918
+            ],
+            "threads.40.user_time": [
+                15.67
+            ],
+            "threads.40.system_time": [
+                0.39
+            ],
+            "threads.41.id": [
+                578919
+            ],
+            "threads.41.user_time": [
+                15.96
+            ],
+            "threads.41.system_time": [
+                0.39
+            ],
+            "threads.42.id": [
+                578920
+            ],
+            "threads.42.user_time": [
+                16.87
+            ],
+            "threads.42.system_time": [
+                0.39
+            ],
+            "threads.43.id": [
+                578921
+            ],
+            "threads.43.user_time": [
+                0.0
+            ],
+            "threads.43.system_time": [
+                0.0
+            ],
+            "threads.44.id": [
+                578922
+            ],
+            "threads.44.user_time": [
+                0.0
+            ],
+            "threads.44.system_time": [
+                0.0
+            ],
+            "threads.45.id": [
+                578923
+            ],
+            "threads.45.user_time": [
+                0.0
+            ],
+            "threads.45.system_time": [
+                0.0
+            ],
+            "threads.46.id": [
+                578924
+            ],
+            "threads.46.user_time": [
+                0.0
+            ],
+            "threads.46.system_time": [
+                0.0
+            ],
+            "threads.47.id": [
+                578925
+            ],
+            "threads.47.user_time": [
+                0.0
+            ],
+            "threads.47.system_time": [
+                0.0
+            ],
+            "threads.48.id": [
+                578926
+            ],
+            "threads.48.user_time": [
+                0.0
+            ],
+            "threads.48.system_time": [
+                0.0
+            ],
+            "threads.49.id": [
+                578927
+            ],
+            "threads.49.user_time": [
+                0.0
+            ],
+            "threads.49.system_time": [
+                0.0
+            ],
+            "threads.50.id": [
+                578928
+            ],
+            "threads.50.user_time": [
+                0.0
+            ],
+            "threads.50.system_time": [
+                0.0
+            ],
+            "threads.51.id": [
+                578929
+            ],
+            "threads.51.user_time": [
+                0.0
+            ],
+            "threads.51.system_time": [
+                0.0
+            ],
+            "threads.52.id": [
+                578930
+            ],
+            "threads.52.user_time": [
+                0.0
+            ],
+            "threads.52.system_time": [
+                0.0
+            ],
+            "threads.53.id": [
+                578931
+            ],
+            "threads.53.user_time": [
+                0.0
+            ],
+            "threads.53.system_time": [
+                0.0
+            ],
+            "threads.54.id": [
+                578932
+            ],
+            "threads.54.user_time": [
+                0.0
+            ],
+            "threads.54.system_time": [
+                0.0
+            ],
+            "threads.55.id": [
+                578933
+            ],
+            "threads.55.user_time": [
+                0.0
+            ],
+            "threads.55.system_time": [
+                0.0
+            ],
+            "threads.56.id": [
+                578934
+            ],
+            "threads.56.user_time": [
+                0.0
+            ],
+            "threads.56.system_time": [
+                0.0
+            ],
+            "threads.57.id": [
+                578935
+            ],
+            "threads.57.user_time": [
+                0.0
+            ],
+            "threads.57.system_time": [
+                0.0
+            ],
+            "threads.58.id": [
+                578936
+            ],
+            "threads.58.user_time": [
+                0.0
+            ],
+            "threads.58.system_time": [
+                0.0
+            ],
+            "threads.59.id": [
+                578937
+            ],
+            "threads.59.user_time": [
+                0.0
+            ],
+            "threads.59.system_time": [
+                0.0
+            ],
+            "threads.60.id": [
+                578938
+            ],
+            "threads.60.user_time": [
+                0.0
+            ],
+            "threads.60.system_time": [
+                0.0
+            ],
+            "threads.61.id": [
+                578939
+            ],
+            "threads.61.user_time": [
+                0.0
+            ],
+            "threads.61.system_time": [
+                0.0
+            ],
+            "threads.62.id": [
+                578940
+            ],
+            "threads.62.user_time": [
+                0.0
+            ],
+            "threads.62.system_time": [
+                0.0
+            ],
+            "threads.63.id": [
+                578941
+            ],
+            "threads.63.user_time": [
+                0.0
+            ],
+            "threads.63.system_time": [
+                0.0
+            ],
+            "threads.64.id": [
+                578944
+            ],
+            "threads.64.user_time": [
+                23.16
+            ],
+            "threads.64.system_time": [
+                1.59
+            ],
+            "threads.65.id": [
+                578945
+            ],
+            "threads.65.user_time": [
+                0.0
+            ],
+            "threads.65.system_time": [
+                0.0
+            ],
+            "threads.66.id": [
+                578946
+            ],
+            "threads.66.user_time": [
+                0.0
+            ],
+            "threads.66.system_time": [
+                0.12
+            ],
+            "threads.67.id": [
+                578947
+            ],
+            "threads.67.user_time": [
+                0.0
+            ],
+            "threads.67.system_time": [
+                0.12
+            ],
+            "threads.68.id": [
+                578948
+            ],
+            "threads.68.user_time": [
+                0.0
+            ],
+            "threads.68.system_time": [
+                0.13
+            ],
+            "threads.69.id": [
+                578949
+            ],
+            "threads.69.user_time": [
+                0.0
+            ],
+            "threads.69.system_time": [
+                0.13
+            ],
+            "threads.70.id": [
+                578950
+            ],
+            "threads.70.user_time": [
+                0.0
+            ],
+            "threads.70.system_time": [
+                0.13
+            ],
+            "threads.71.id": [
+                578951
+            ],
+            "threads.71.user_time": [
+                0.0
+            ],
+            "threads.71.system_time": [
+                0.13
+            ],
+            "threads.72.id": [
+                578952
+            ],
+            "threads.72.user_time": [
+                0.0
+            ],
+            "threads.72.system_time": [
+                0.12
+            ],
+            "threads.73.id": [
+                578953
+            ],
+            "threads.73.user_time": [
+                0.0
+            ],
+            "threads.73.system_time": [
+                0.18
+            ],
+            "threads.74.id": [
+                578954
+            ],
+            "threads.74.user_time": [
+                0.0
+            ],
+            "threads.74.system_time": [
+                0.13
+            ],
+            "threads.75.id": [
+                578955
+            ],
+            "threads.75.user_time": [
+                0.0
+            ],
+            "threads.75.system_time": [
+                0.13
+            ],
+            "threads.76.id": [
+                578956
+            ],
+            "threads.76.user_time": [
+                0.0
+            ],
+            "threads.76.system_time": [
+                0.13
+            ],
+            "threads.77.id": [
+                578957
+            ],
+            "threads.77.user_time": [
+                0.0
+            ],
+            "threads.77.system_time": [
+                0.13
+            ],
+            "threads.78.id": [
+                578958
+            ],
+            "threads.78.user_time": [
+                0.0
+            ],
+            "threads.78.system_time": [
+                0.14
+            ],
+            "threads.79.id": [
+                578959
+            ],
+            "threads.79.user_time": [
+                0.0
+            ],
+            "threads.79.system_time": [
+                0.12
+            ],
+            "threads.80.id": [
+                578960
+            ],
+            "threads.80.user_time": [
+                0.0
+            ],
+            "threads.80.system_time": [
+                0.13
+            ],
+            "threads.81.id": [
+                578961
+            ],
+            "threads.81.user_time": [
+                0.0
+            ],
+            "threads.81.system_time": [
+                0.14
+            ],
+            "threads.82.id": [
+                578962
+            ],
+            "threads.82.user_time": [
+                0.0
+            ],
+            "threads.82.system_time": [
+                0.14
+            ],
+            "threads.83.id": [
+                578963
+            ],
+            "threads.83.user_time": [
+                0.0
+            ],
+            "threads.83.system_time": [
+                0.13
+            ],
+            "threads.84.id": [
+                578964
+            ],
+            "threads.84.user_time": [
+                0.0
+            ],
+            "threads.84.system_time": [
+                0.14
+            ],
+            "threads.85.id": [
+                578965
+            ],
+            "threads.85.user_time": [
+                0.0
+            ],
+            "threads.85.system_time": [
+                0.13
+            ],
+            "threads.86.id": [
+                578988
+            ],
+            "threads.86.user_time": [
+                0.01
+            ],
+            "threads.86.system_time": [
+                0.0
+            ],
+            "threads.87.id": [
+                578989
+            ],
+            "threads.87.user_time": [
+                0.0
+            ],
+            "threads.87.system_time": [
+                0.0
+            ],
+            "threads.88.id": [
+                578990
+            ],
+            "threads.88.user_time": [
+                0.0
+            ],
+            "threads.88.system_time": [
+                0.0
+            ],
+            "threads.89.id": [
+                578991
+            ],
+            "threads.89.user_time": [
+                0.0
+            ],
+            "threads.89.system_time": [
+                0.0
+            ],
+            "threads.90.id": [
+                578992
+            ],
+            "threads.90.user_time": [
+                0.0
+            ],
+            "threads.90.system_time": [
+                0.0
+            ],
+            "threads.91.id": [
+                578993
+            ],
+            "threads.91.user_time": [
+                0.0
+            ],
+            "threads.91.system_time": [
+                0.0
+            ],
+            "threads.92.id": [
+                578994
+            ],
+            "threads.92.user_time": [
+                0.0
+            ],
+            "threads.92.system_time": [
+                0.0
+            ],
+            "threads.93.id": [
+                578995
+            ],
+            "threads.93.user_time": [
+                0.0
+            ],
+            "threads.93.system_time": [
+                0.0
+            ],
+            "threads.94.id": [
+                578996
+            ],
+            "threads.94.user_time": [
+                0.0
+            ],
+            "threads.94.system_time": [
+                0.0
+            ],
+            "threads.95.id": [
+                578997
+            ],
+            "threads.95.user_time": [
+                0.0
+            ],
+            "threads.95.system_time": [
+                0.0
+            ],
+            "threads.96.id": [
+                578998
+            ],
+            "threads.96.user_time": [
+                0.0
+            ],
+            "threads.96.system_time": [
+                0.0
+            ],
+            "threads.97.id": [
+                578999
+            ],
+            "threads.97.user_time": [
+                0.0
+            ],
+            "threads.97.system_time": [
+                0.0
+            ],
+            "threads.98.id": [
+                579000
+            ],
+            "threads.98.user_time": [
+                0.0
+            ],
+            "threads.98.system_time": [
+                0.0
+            ],
+            "threads.99.id": [
+                579001
+            ],
+            "threads.99.user_time": [
+                0.0
+            ],
+            "threads.99.system_time": [
+                0.0
+            ],
+            "threads.100.id": [
+                579002
+            ],
+            "threads.100.user_time": [
+                0.0
+            ],
+            "threads.100.system_time": [
+                0.0
+            ],
+            "threads.101.id": [
+                579003
+            ],
+            "threads.101.user_time": [
+                0.0
+            ],
+            "threads.101.system_time": [
+                0.0
+            ],
+            "threads.102.id": [
+                579004
+            ],
+            "threads.102.user_time": [
+                0.0
+            ],
+            "threads.102.system_time": [
+                0.0
+            ],
+            "threads.103.id": [
+                579005
+            ],
+            "threads.103.user_time": [
+                0.0
+            ],
+            "threads.103.system_time": [
+                0.0
+            ],
+            "threads.104.id": [
+                579006
+            ],
+            "threads.104.user_time": [
+                0.0
+            ],
+            "threads.104.system_time": [
+                0.0
+            ],
+            "threads.105.id": [
+                579007
+            ],
+            "threads.105.user_time": [
+                0.0
+            ],
+            "threads.105.system_time": [
+                0.0
+            ],
+            "threads.106.id": [
+                579036
+            ],
+            "threads.106.user_time": [
+                0.01
+            ],
+            "threads.106.system_time": [
+                0.05
+            ],
+            "threads.107.id": [
+                590058
+            ],
+            "threads.107.user_time": [
+                0.0
+            ],
+            "threads.107.system_time": [
+                0.01
+            ],
+            "num_ctx_switches.voluntary": [
+                32571,
+                87813,
+                190929,
+                286042,
+                397868
+            ],
+            "num_ctx_switches.involuntary": [
+                11228,
+                73903,
+                140628,
+                188855,
+                231871
+            ],
+            "num_threads": [
+                108,
+                39,
+                39,
+                39,
+                39
+            ]
+        },
+        "openFiles": {}
+    },
+    "times": [
+        1758122418.0574155,
+        1758122428.0882962,
+        1758122438.1164613,
+        1758122448.1418865,
+        1758122458.164981
+    ],
+    "interval": 10
+}

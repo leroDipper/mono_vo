@@ -1,0 +1,360 @@
+[2025-09-17 17:29:56.574969] [0x000072bd22f21000] [trace]   Embedded OCIO configuration file: '/home/leroy/Meshroom-2023.3.0/aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * bundleAdjustmentMaxOutliers = 50
+ * computeStructureColor = 1
+ * describerTypes = "sift"
+ * extraInfoFolder = "/tmp/MeshroomCache/StructureFromMotion/c825a3d5517c9b518c5a2c4fef5e9785b79924ca"
+ * featuresFolders =  = [/tmp/MeshroomCache/FeatureExtraction/36926fd650cac2e145990a0516ca3d9ad0fc95fb]
+ * filterTrackForks = 0
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "/tmp/MeshroomCache/CameraInit/c01afcb9c1ac8844a24ca8664c62386b5f58f979/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator =  Unknown Type "N11aliceVision16robustEstimation16ERobustEstimatorE"
+ * localizerEstimatorError = 0
+ * localizerEstimatorMaxIterations = 4096
+ * lockAllIntrinsics = 0
+ * lockScenePreviouslyReconstructed = 0
+ * logIntermediateSteps = 0
+ * matchesFolders =  = [/tmp/MeshroomCache/FeatureMatching/31bda580af911b21fe733fb579d2b876cc0e8f2b]
+ * maxAngleInitialPair = 40
+ * maxCoresAvailable =  Unknown Type "j" (default)
+ * maxImagesPerGroup = 30
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNbCamerasToRefinePrincipalPoint = 3
+ * minNumberOfMatches = 0
+ * minNumberOfObservationsForTriangulation = 2
+ * nbFirstUnstableCameras = 30
+ * observationConstraint =  Unknown Type "N11aliceVision3sfm18EFeatureConstraintE"
+ * output = "/tmp/MeshroomCache/StructureFromMotion/c825a3d5517c9b518c5a2c4fef5e9785b79924ca/sfm.abc"
+ * outputViewsAndPoses = "/tmp/MeshroomCache/StructureFromMotion/c825a3d5517c9b518c5a2c4fef5e9785b79924ca/cameras.sfm"
+ * randomSeed = 5489 (default)
+ * rigMinNbCamerasForCalibration = 20
+ * useAutoTransform = 1
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useRigConstraint = 1
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 19455 Mo
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+[17:29:56.578285][error] cudaGetDeviceCount failed: CUDA driver version is insufficient for CUDA runtime version
+[17:29:56.578322][info] Can't find CUDA-Enabled GPU.
+***************************************************
+[17:29:56.744777][info] Fuse matches into tracks: 
+	- # tracks: 18941
+	- # images in tracks: 28
+[17:29:56.745568][info] TrackLength, Occurrence
+[17:29:56.745601][info] 	2	9442
+[17:29:56.745609][info] 	3	3332
+[17:29:56.745612][info] 	4	1655
+[17:29:56.745615][info] 	5	1004
+[17:29:56.745617][info] 	6	740
+[17:29:56.745619][info] 	7	547
+[17:29:56.745621][info] 	8	381
+[17:29:56.745623][info] 	9	314
+[17:29:56.745626][info] 	10	268
+[17:29:56.745629][info] 	11	229
+[17:29:56.745631][info] 	12	190
+[17:29:56.745633][info] 	13	133
+[17:29:56.745636][info] 	14	88
+[17:29:56.745638][info] 	15	120
+[17:29:56.745641][info] 	16	77
+[17:29:56.745643][info] 	17	78
+[17:29:56.745645][info] 	18	52
+[17:29:56.745648][info] 	19	50
+[17:29:56.745650][info] 	20	45
+[17:29:56.745653][info] 	21	24
+[17:29:56.745655][info] 	22	37
+[17:29:56.745657][info] 	23	29
+[17:29:56.745660][info] 	24	20
+[17:29:56.745662][info] 	25	15
+[17:29:56.745664][info] 	26	22
+[17:29:56.745667][info] 	27	25
+[17:29:56.745669][info] 	28	24
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+****[17:29:56.765797][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 12
+*[17:29:56.782006][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+*[17:29:56.786877][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+************[17:29:56.951634][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+*********************************
+[17:29:57.587232][info] Initial pair is:
+	- [A] view id: 743620604, filepath: /home/leroy/office_dataset_aruco/left/frame_0021.png
+	- [B] view id: 1321651417, filepath: /home/leroy/office_dataset_aruco/left/frame_0010.png
+[17:29:57.587767][info] 567 matches in the image pair for the initial pose estimation.
+[17:29:57.723314][info] Bundle adjustment start.
+[17:29:57.723382][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 10656 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:29:57.755741][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0315039 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  74
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 148
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.640687
+	- final   RMSE: 0.496384
+[17:29:57.761537][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[17:29:57.761552][info] Bundle adjustment iteration: 0 took 38 msec.
+[17:29:57.761558][info] Bundle adjustment with 1 iterations took 38 msec.
+[17:29:57.761657][info] Initial pair is: 743620604, 1321651417
+[17:29:57.761667][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 28
+	- # landmarks in input: 37
+	- # cameras already calibrated: 2
+[17:29:57.761671][info] Incremental Reconstruction start iteration 0:
+	- # number of resection groups: 1
+	- # number of poses: 2
+	- # number of landmarks: 37
+[17:29:57.767580][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 26
+[17:29:57.771285][info] [3/28] Robust Resection of view: 980938774
+[17:29:57.773016][info] Resection of view 980938774 failed.
+[17:29:57.783035][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 25
+[17:29:57.786061][info] [3/28] Robust Resection of view: 885049285
+[17:29:57.787204][info] Resection of view 885049285 failed.
+[17:29:57.797044][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 24
+[17:29:57.802155][info] [3/28] Robust Resection of view: 1890186707
+[17:29:57.803830][info] Resection of view 1890186707 failed.
+[17:29:57.813044][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 23
+[17:29:57.816929][info] [3/28] Robust Resection of view: 1762235166
+[17:29:57.818473][info] Resection of view 1762235166 failed.
+[17:29:57.828040][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 22
+[17:29:57.832053][info] [3/28] Robust Resection of view: 1100953126
+[17:29:57.833280][info] Resection of view 1100953126 failed.
+[17:29:57.843048][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 21
+[17:29:57.847038][info] [3/28] Robust Resection of view: 593086164
+[17:29:57.848263][info] Resection of view 593086164 failed.
+[17:29:57.855947][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 20
+[17:29:57.859857][info] [3/28] Robust Resection of view: 968024911
+[17:29:57.861031][info] Resection of view 968024911 failed.
+[17:29:57.870480][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 19
+[17:29:57.874041][info] [3/28] Robust Resection of view: 1902805005
+[17:29:57.875115][info] Resection of view 1902805005 failed.
+[17:29:57.883039][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 18
+[17:29:57.886948][info] [3/28] Robust Resection of view: 1984110656
+[17:29:57.887800][info] Resection of view 1984110656 failed.
+[17:29:57.897969][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 17
+[17:29:57.901049][info] [3/28] Robust Resection of view: 1359714848
+[17:29:57.901952][info] Resection of view 1359714848 failed.
+[17:29:57.911919][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 16
+[17:29:57.915839][info] [3/28] Robust Resection of view: 1521466623
+[17:29:57.917129][info] Resection of view 1521466623 failed.
+[17:29:57.926034][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 15
+[17:29:57.929837][info] [3/28] Robust Resection of view: 734010976
+[17:29:57.933022][info] Resection of view 734010976 failed.
+[17:29:57.940820][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 14
+[17:29:57.944047][info] [3/28] Robust Resection of view: 982301782
+[17:29:57.945632][info] Resection of view 982301782 failed.
+[17:29:57.954848][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 13
+[17:29:57.958045][info] [3/28] Robust Resection of view: 2071607410
+[17:29:57.959201][info] Resection of view 2071607410 failed.
+[17:29:57.963187][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 12
+[17:29:57.963205][info] [3/28] Robust Resection of view: 441206332
+[17:29:57.964303][info] Resection of view 441206332 failed.
+[17:29:57.964437][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 11
+[17:29:57.964451][info] [3/28] Robust Resection of view: 1529395885
+[17:29:57.965530][info] Resection of view 1529395885 failed.
+[17:29:57.965552][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 10
+[17:29:57.965565][info] [3/28] Robust Resection of view: 1333294495
+[17:29:57.966564][info] Resection of view 1333294495 failed.
+[17:29:57.968296][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 9
+[17:29:57.968313][info] [3/28] Robust Resection of view: 644363836
+[17:29:57.969435][info] Resection of view 644363836 failed.
+[17:29:57.969458][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 8
+[17:29:57.969469][info] [3/28] Robust Resection of view: 551617519
+[17:29:57.970319][info] Resection of view 551617519 failed.
+[17:29:57.970339][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 7
+[17:29:57.970351][info] [3/28] Robust Resection of view: 1234638732
+[17:29:57.971267][info] Resection of view 1234638732 failed.
+[17:29:57.971287][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 6
+[17:29:57.971297][info] [3/28] Robust Resection of view: 92408672
+[17:29:57.972093][info] Resection of view 92408672 failed.
+[17:29:57.973111][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 5
+[17:29:57.973122][info] [3/28] Robust Resection of view: 581550557
+[17:29:57.973896][info] Resection of view 581550557 failed.
+[17:29:57.973916][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 4
+[17:29:57.973927][info] [3/28] Robust Resection of view: 2077387696
+[17:29:57.974866][info] Resection of view 2077387696 failed.
+[17:29:57.974883][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 3
+[17:29:57.974892][info] [3/28] Robust Resection of view: 407285790
+[17:29:57.975704][info] Resection of view 407285790 failed.
+[17:29:57.975722][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 2
+[17:29:57.975731][info] [3/28] Robust Resection of view: 1637390768
+[17:29:57.976436][info] Resection of view 1637390768 failed.
+[17:29:57.976450][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 1
+[17:29:57.976460][info] [3/28] Robust Resection of view: 1706079343
+[17:29:57.977167][info] Resection of view 1706079343 failed.
+[17:29:57.977173][info] Incremental Reconstruction completed with 1 iterations:
+	- # number of resection groups: 1
+	- # number of poses: 2
+	- # number of landmarks: 37
+[17:29:57.977199][info] Structure from Motion statistics:
+	- # input images: 28
+	- # cameras calibrated: 2
+	- # poses: 2
+	- # landmarks: 37
+	- elapsed time: 0.215
+	- residual RMSE: 0.985044
+[17:29:57.977208][info]  - # sift: 37
+[17:29:57.977221][info] Histogram of residuals:
+
+0	|	19
+0.5	|	16
+1	|	18
+1.5	|	10
+2	|	8
+2.5	|	1
+3	|	2
+3.5	|	0
+4
+[17:29:57.977243][info] # landmarks: 37
+[17:29:57.977246][info] # overall observations: 74
+[17:29:57.977248][info] Landmarks observations length min: 2, mean: 2, median: 2, max: 2
+[17:29:57.977251][info] Histogram of observations length:
+
+2	|	37
+3
+[17:29:57.977258][info] Landmarks per view min: 0, mean: 0, median: 0, max: 0
+[17:29:57.977261][info] Histogram of nb landmarks per view:
+
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+1
+[17:29:57.977673][info] X axis rotation:
+   0.999992  0.00409812 3.27321e-05
+-0.00409812    0.999864   0.0159731
+3.27321e-05  -0.0159731    0.999872
+[17:29:57.977705][info] Initial point cloud center:   0.427512 0.00510254    0.25887
+[17:29:57.977711][info] Initial point cloud scale: 0.493956
+[17:29:57.977731][info] No GPS information available to use it.
+[17:29:57.977740][warning] Ground detection failed as there is no valid point
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[17:29:58.042999][info] Structure from motion took (s): 1.432000
+[17:29:58.043051][info] Generating HTML report...
+[17:29:58.043388][info] Export SfMData to disk: /tmp/MeshroomCache/StructureFromMotion/c825a3d5517c9b518c5a2c4fef5e9785b79924ca/sfm.abc
+[17:29:58.049674][info] Structure from Motion results:
+	- # input images: 28
+	- # cameras calibrated: 2
+	- # poses: 2
+	- # landmarks: 37

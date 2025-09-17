@@ -1,0 +1,3443 @@
+[2025-09-17 17:15:21.547119] [0x000075bbda632000] [trace]   Embedded OCIO configuration file: '/home/leroy/Meshroom-2023.3.0/aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * bundleAdjustmentMaxOutliers = 50
+ * computeStructureColor = 1
+ * describerTypes = "dspsift"
+ * extraInfoFolder = "/tmp/MeshroomCache/StructureFromMotion/cb55ce6cb88e88e379132340aef0b4345811e431"
+ * featuresFolders =  = [/tmp/MeshroomCache/FeatureExtraction/3e88bfba3be7680329c11b3660613b7fc370dc8c]
+ * filterTrackForks = 0
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "/tmp/MeshroomCache/CameraInit/ae569c3913b3b0a57c35a4d024961bf70d639410/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator =  Unknown Type "N11aliceVision16robustEstimation16ERobustEstimatorE"
+ * localizerEstimatorError = 0
+ * localizerEstimatorMaxIterations = 4096
+ * lockAllIntrinsics = 0
+ * lockScenePreviouslyReconstructed = 0
+ * logIntermediateSteps = 0
+ * matchesFolders =  = [/tmp/MeshroomCache/FeatureMatching/e10766fa52212dfba3cb40a2fc2f68d156ff096e]
+ * maxAngleInitialPair = 40
+ * maxCoresAvailable =  Unknown Type "j" (default)
+ * maxImagesPerGroup = 30
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNbCamerasToRefinePrincipalPoint = 3
+ * minNumberOfMatches = 0
+ * minNumberOfObservationsForTriangulation = 2
+ * nbFirstUnstableCameras = 30
+ * observationConstraint =  Unknown Type "N11aliceVision3sfm18EFeatureConstraintE"
+ * output = "/tmp/MeshroomCache/StructureFromMotion/cb55ce6cb88e88e379132340aef0b4345811e431/sfm.abc"
+ * outputViewsAndPoses = "/tmp/MeshroomCache/StructureFromMotion/cb55ce6cb88e88e379132340aef0b4345811e431/cameras.sfm"
+ * randomSeed = 5489 (default)
+ * rigMinNbCamerasForCalibration = 20
+ * useAutoTransform = 1
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useRigConstraint = 1
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 19807 Mo
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[17:15:23.718504][info] Fuse matches into tracks: 
+	- # tracks: 57922
+	- # images in tracks: 121
+[17:15:23.721216][info] TrackLength, Occurrence
+[17:15:23.721251][info] 	2	29043
+[17:15:23.721258][info] 	3	8706
+[17:15:23.721261][info] 	4	4074
+[17:15:23.721264][info] 	5	2517
+[17:15:23.721266][info] 	6	1622
+[17:15:23.721268][info] 	7	1111
+[17:15:23.721270][info] 	8	892
+[17:15:23.721273][info] 	9	682
+[17:15:23.721275][info] 	10	524
+[17:15:23.721278][info] 	11	483
+[17:15:23.721280][info] 	12	402
+[17:15:23.721282][info] 	13	331
+[17:15:23.721284][info] 	14	305
+[17:15:23.721286][info] 	15	252
+[17:15:23.721288][info] 	16	245
+[17:15:23.721290][info] 	17	235
+[17:15:23.721292][info] 	18	190
+[17:15:23.721294][info] 	19	184
+[17:15:23.721297][info] 	20	135
+[17:15:23.721299][info] 	21	141
+[17:15:23.721301][info] 	22	150
+[17:15:23.721303][info] 	23	132
+[17:15:23.721305][info] 	24	126
+[17:15:23.721307][info] 	25	119
+[17:15:23.721310][info] 	26	95
+[17:15:23.721312][info] 	27	97
+[17:15:23.721314][info] 	28	87
+[17:15:23.721316][info] 	29	93
+[17:15:23.721318][info] 	30	82
+[17:15:23.721321][info] 	31	67
+[17:15:23.721323][info] 	32	74
+[17:15:23.721326][info] 	33	80
+[17:15:23.721328][info] 	34	77
+[17:15:23.721330][info] 	35	74
+[17:15:23.721332][info] 	36	53
+[17:15:23.721335][info] 	37	66
+[17:15:23.721337][info] 	38	61
+[17:15:23.721339][info] 	39	69
+[17:15:23.721341][info] 	40	69
+[17:15:23.721343][info] 	41	63
+[17:15:23.721345][info] 	42	83
+[17:15:23.721347][info] 	43	66
+[17:15:23.721350][info] 	44	66
+[17:15:23.721352][info] 	45	62
+[17:15:23.721354][info] 	46	66
+[17:15:23.721356][info] 	47	63
+[17:15:23.721358][info] 	48	97
+[17:15:23.721361][info] 	49	73
+[17:15:23.721363][info] 	50	82
+[17:15:23.721365][info] 	51	76
+[17:15:23.721367][info] 	52	72
+[17:15:23.721380][info] 	53	93
+[17:15:23.721383][info] 	54	135
+[17:15:23.721385][info] 	55	110
+[17:15:23.721387][info] 	56	193
+[17:15:23.721389][info] 	57	274
+[17:15:23.721392][info] 	58	553
+[17:15:23.721394][info] 	59	1156
+[17:15:23.721396][info] 	60	482
+[17:15:23.721399][info] 	61	12
+[17:15:23.721401][info] 	62	16
+[17:15:23.721403][info] 	63	15
+[17:15:23.721405][info] 	64	14
+[17:15:23.721407][info] 	65	16
+[17:15:23.721410][info] 	66	13
+[17:15:23.721412][info] 	67	13
+[17:15:23.721414][info] 	68	4
+[17:15:23.721416][info] 	69	10
+[17:15:23.721418][info] 	70	8
+[17:15:23.721420][info] 	71	8
+[17:15:23.721423][info] 	72	6
+[17:15:23.721425][info] 	73	4
+[17:15:23.721427][info] 	74	8
+[17:15:23.721429][info] 	75	4
+[17:15:23.721431][info] 	76	7
+[17:15:23.721434][info] 	77	7
+[17:15:23.721436][info] 	78	6
+[17:15:23.721438][info] 	79	6
+[17:15:23.721440][info] 	80	5
+[17:15:23.721442][info] 	81	3
+[17:15:23.721444][info] 	82	4
+[17:15:23.721447][info] 	83	6
+[17:15:23.721449][info] 	84	5
+[17:15:23.721452][info] 	85	4
+[17:15:23.721454][info] 	86	2
+[17:15:23.721456][info] 	87	2
+[17:15:23.721458][info] 	88	5
+[17:15:23.721460][info] 	89	3
+[17:15:23.721463][info] 	90	5
+[17:15:23.721465][info] 	91	1
+[17:15:23.721467][info] 	92	5
+[17:15:23.721469][info] 	93	3
+[17:15:23.721471][info] 	94	3
+[17:15:23.721473][info] 	95	3
+[17:15:23.721476][info] 	96	2
+[17:15:23.721478][info] 	97	4
+[17:15:23.721480][info] 	98	3
+[17:15:23.721482][info] 	99	5
+[17:15:23.721484][info] 	100	2
+[17:15:23.721487][info] 	101	4
+[17:15:23.721489][info] 	102	1
+[17:15:23.721491][info] 	103	2
+[17:15:23.721494][info] 	104	1
+[17:15:23.721496][info] 	105	2
+[17:15:23.721498][info] 	106	3
+[17:15:23.721500][info] 	108	2
+[17:15:23.721502][info] 	109	5
+[17:15:23.721505][info] 	110	2
+[17:15:23.721507][info] 	111	2
+[17:15:23.721509][info] 	112	1
+[17:15:23.721511][info] 	113	3
+[17:15:23.721513][info] 	114	4
+[17:15:23.721516][info] 	115	3
+[17:15:23.721518][info] 	116	4
+[17:15:23.721520][info] 	117	4
+[17:15:23.721522][info] 	118	2
+[17:15:23.721524][info] 	119	3
+[17:15:23.721527][info] 	120	5
+[17:15:23.721529][info] 	121	7
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+*[17:15:23.833213][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:23.973228][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[17:15:24.058862][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+[17:15:24.121709][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:24.250055][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[17:15:24.352453][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+**[17:15:26.238346][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:26.814109][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+[17:15:26.933833][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+*[17:15:27.471124][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 13
+[17:15:27.576079][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[17:15:27.641518][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:27.691608][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:27.712249][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:27.716593][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:27.728422][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:27.760083][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:27.765554][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:27.807728][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:27.871158][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 14
+[17:15:27.903022][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[17:15:27.915543][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[17:15:28.081491][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[17:15:28.100197][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 10
+[17:15:28.104488][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:28.244951][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+*[17:15:28.400980][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:28.406078][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:28.408737][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:28.413313][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:28.438799][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:28.463303][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:28.470616][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:28.487012][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+[17:15:28.487220][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:28.496851][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:28.502456][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+*[17:15:28.513058][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:28.517728][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+*[17:15:29.673290][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+*[17:15:31.032234][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+*[17:15:31.599577][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+*[17:15:32.110759][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:32.617254][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:33.191952][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+*[17:15:33.558425][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[17:15:33.594528][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:33.705039][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+*[17:15:34.559558][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:34.567951][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:35.062630][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+*[17:15:35.134443][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+[17:15:35.158897][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[17:15:35.176121][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:35.226244][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[17:15:35.276167][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:35.312924][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+*[17:15:35.356928][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:35.433083][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:35.494975][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:35.516791][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[17:15:35.520370][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+*[17:15:35.619508][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:35.624743][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[17:15:36.293069][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:36.478170][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[17:15:36.832901][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[17:15:36.864200][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[17:15:36.901901][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[17:15:36.906004][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[17:15:37.134397][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:37.354572][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:37.434295][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[17:15:37.484661][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:37.549793][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:37.590896][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:37.689622][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:37.810819][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[17:15:37.814330][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 9
+[17:15:37.842214][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:37.857709][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:37.896806][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:37.908464][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[17:15:38.390521][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[17:15:38.424914][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[17:15:38.520219][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:38.702844][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+[17:15:38.839143][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 13
+[17:15:39.052628][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:39.145751][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+**[17:15:40.413760][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[17:15:40.654191][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:40.819738][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:40.909023][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+*[17:15:40.925226][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[17:15:41.240438][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 13
+[17:15:41.262558][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[17:15:41.507293][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[17:15:41.683021][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[17:15:42.276256][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+[17:15:42.348081][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:42.398313][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:42.465779][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+*[17:15:42.851406][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:43.014317][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:43.300818][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 13
+[17:15:43.564596][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[17:15:43.676988][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+**[17:15:44.363223][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:44.539920][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[17:15:44.754565][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:44.957082][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+*[17:15:45.344424][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[17:15:45.734968][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+*[17:15:45.846272][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:45.969613][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:46.323091][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[17:15:47.574316][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+***[17:15:49.476307][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:49.759589][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[17:15:49.815255][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+*[17:15:50.250724][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 14
+[17:15:50.265053][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[17:15:50.333949][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+*[17:15:50.566079][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+[17:15:50.650694][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[17:15:50.792293][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 9
+[17:15:51.003088][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 9
+[17:15:51.107690][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+*[17:15:51.484914][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+[17:15:51.526347][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:51.537221][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[17:15:51.541898][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+[17:15:51.570707][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[17:15:51.733007][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+*[17:15:52.134393][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[17:15:52.179523][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[17:15:52.325737][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[17:15:53.312727][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:53.470465][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:53.524691][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[17:15:53.703991][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:54.149025][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[17:15:54.169484][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:54.171248][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:54.171962][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[17:15:54.619843][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+**[17:15:55.758816][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[17:15:55.765533][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[17:15:55.919958][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[17:15:56.175903][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[17:15:56.495271][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[17:15:56.513036][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[17:15:56.522718][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[17:15:56.541945][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:56.624731][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[17:15:56.659294][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:56.704075][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+*[17:15:57.011886][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:57.016179][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[17:15:57.383845][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 9
+*[17:15:57.816795][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:57.894873][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[17:15:57.959997][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*
+[17:15:57.999244][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[17:15:58.220469][info] Initial pair is:
+	- [A] view id: 293807204, filepath: /home/leroy/office_dataset_aruco/left/frame_0114.png
+	- [B] view id: 1333294495, filepath: /home/leroy/office_dataset_aruco/left/frame_0007.png
+[17:15:58.221113][info] 683 matches in the image pair for the initial pose estimation.
+[17:15:58.377032][info] Bundle adjustment start.
+[17:15:58.377175][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 69984 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:58.470218][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0916219 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  486
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 972
+	- # successful iterations: 8
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.43045
+	- final   RMSE: 0.321767
+[17:15:58.480838][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[17:15:58.480882][info] Bundle adjustment iteration: 0 took 103 msec.
+[17:15:58.480889][info] Bundle adjustment with 1 iterations took 103 msec.
+[17:15:58.481073][info] Initial pair is: 293807204, 1333294495
+[17:15:58.481101][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 121
+	- # landmarks in input: 243
+	- # cameras already calibrated: 2
+[17:15:58.481105][info] Incremental Reconstruction start iteration 0:
+	- # number of resection groups: 1
+	- # number of poses: 2
+	- # number of landmarks: 243
+[17:15:58.490040][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 119
+[17:15:58.491208][info] [3/121] Robust Resection of view: 980938774
+[17:15:58.541432][info] Bundle adjustment start.
+[17:15:58.541545][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 139392 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:58.630825][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0830569 s
+	- poses:
+	    - # refined:  3
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  968
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 1936
+	- # successful iterations: 7
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.594228
+	- final   RMSE: 0.49743
+[17:15:58.639046][info] Remove outliers: 
+	- # outliers residual error: 11
+	- # outliers angular error: 1
+[17:15:58.639098][info] Bundle adjustment iteration: 0 took 97 msec.
+[17:15:58.639101][info] Bundle adjustment with 1 iterations took 97 msec.
+[17:15:58.646987][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 118
+[17:15:58.647133][info] [4/121] Robust Resection of view: 1234638732
+[17:15:58.697474][info] Bundle adjustment start.
+[17:15:58.697632][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 209808 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:58.774808][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.07513 s
+	- poses:
+	    - # refined:  4
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  1457
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 2914
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.701328
+	- final   RMSE: 0.528035
+[17:15:58.781761][info] Remove outliers: 
+	- # outliers residual error: 13
+	- # outliers angular error: 3
+[17:15:58.781845][info] Bundle adjustment iteration: 0 took 84 msec.
+[17:15:58.781862][info] Bundle adjustment with 1 iterations took 84 msec.
+[17:15:58.790069][info] Update Reconstruction:
+	- resection id: 3
+	- # images in the resection group: 1
+	- # images remaining: 117
+[17:15:58.792228][info] [5/121] Robust Resection of view: 644363836
+[17:15:58.852641][info] Bundle adjustment start.
+[17:15:58.852784][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 280368 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:58.917695][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.062782 s
+	- poses:
+	    - # refined:  5
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  1947
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 3894
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.691566
+	- final   RMSE: 0.562603
+[17:15:58.922041][info] Remove outliers: 
+	- # outliers residual error: 26
+	- # outliers angular error: 2
+[17:15:58.922112][info] Bundle adjustment iteration: 0 took 69 msec.
+[17:15:58.922116][info] Bundle adjustment with 1 iterations took 69 msec.
+[17:15:58.928526][info] Update Reconstruction:
+	- resection id: 4
+	- # images in the resection group: 1
+	- # images remaining: 116
+[17:15:58.932270][info] [6/121] Robust Resection of view: 201883735
+[17:15:59.044330][info] Bundle adjustment start.
+[17:15:59.044564][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 433152 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.160862][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.110978 s
+	- poses:
+	    - # refined:  6
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  3008
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 6016
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.71255
+	- final   RMSE: 0.594561
+[17:15:59.165648][info] Remove outliers: 
+	- # outliers residual error: 54
+	- # outliers angular error: 3
+[17:15:59.165814][info] Bundle adjustment iteration: 0 took 121 msec.
+[17:15:59.165821][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 423360 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.248619][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.076088 s
+	- poses:
+	    - # refined:  6
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  2940
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 5880
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.493702
+	- final   RMSE: 0.4785
+[17:15:59.254676][info] Remove outliers: 
+	- # outliers residual error: 8
+	- # outliers angular error: 1
+[17:15:59.254755][info] Bundle adjustment iteration: 1 took 88 msec.
+[17:15:59.254760][info] Bundle adjustment with 2 iterations took 210 msec.
+[17:15:59.258911][info] Update Reconstruction:
+	- resection id: 5
+	- # images in the resection group: 1
+	- # images remaining: 115
+[17:15:59.261574][info] [7/121] Robust Resection of view: 1637390768
+[17:15:59.335349][info] Bundle adjustment start.
+[17:15:59.335576][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 577440 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.406698][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0635788 s
+	- poses:
+	    - # refined:  7
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  4010
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 8020
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.657015
+	- final   RMSE: 0.566838
+[17:15:59.415609][info] Remove outliers: 
+	- # outliers residual error: 60
+	- # outliers angular error: 5
+[17:15:59.415735][info] Bundle adjustment iteration: 0 took 80 msec.
+[17:15:59.415739][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 565776 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.517966][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.09707 s
+	- poses:
+	    - # refined:  7
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  3929
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 7858
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.467626
+	- final   RMSE: 0.452835
+[17:15:59.523028][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 2
+[17:15:59.524299][info] Bundle adjustment iteration: 1 took 108 msec.
+[17:15:59.524304][info] Bundle adjustment with 2 iterations took 188 msec.
+[17:15:59.533058][info] Update Reconstruction:
+	- resection id: 6
+	- # images in the resection group: 1
+	- # images remaining: 114
+[17:15:59.533326][info] [8/121] Robust Resection of view: 2077387696
+[17:15:59.611798][info] Bundle adjustment start.
+[17:15:59.612076][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 667872 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.736921][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.11636 s
+	- poses:
+	    - # refined:  8
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  4638
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 9276
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.623068
+	- final   RMSE: 0.537691
+[17:15:59.744053][info] Remove outliers: 
+	- # outliers residual error: 53
+	- # outliers angular error: 2
+[17:15:59.744144][info] Bundle adjustment iteration: 0 took 132 msec.
+[17:15:59.744147][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 658944 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:15:59.824660][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.074461 s
+	- poses:
+	    - # refined:  8
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  4576
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 9152
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.468605
+	- final   RMSE: 0.462031
+[17:15:59.832027][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[17:15:59.832118][info] Bundle adjustment iteration: 1 took 87 msec.
+[17:15:59.832121][info] Bundle adjustment with 2 iterations took 220 msec.
+[17:15:59.838518][info] Update Reconstruction:
+	- resection id: 7
+	- # images in the resection group: 1
+	- # images remaining: 113
+[17:15:59.841350][info] [9/121] Robust Resection of view: 551617519
+[17:15:59.957468][info] Bundle adjustment start.
+[17:15:59.957773][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 760176 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.062805][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0992379 s
+	- poses:
+	    - # refined:  9
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  5279
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 10558
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.62111
+	- final   RMSE: 0.554431
+[17:16:00.074814][info] Remove outliers: 
+	- # outliers residual error: 60
+	- # outliers angular error: 6
+[17:16:00.076234][info] Bundle adjustment iteration: 0 took 118 msec.
+[17:16:00.076251][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 747936 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.155292][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0740371 s
+	- poses:
+	    - # refined:  9
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  5194
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 10388
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.464336
+	- final   RMSE: 0.456692
+[17:16:00.159190][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:16:00.159304][info] Bundle adjustment iteration: 1 took 83 msec.
+[17:16:00.159308][info] Bundle adjustment with 2 iterations took 201 msec.
+[17:16:00.166601][info] Update Reconstruction:
+	- resection id: 8
+	- # images in the resection group: 1
+	- # images remaining: 112
+[17:16:00.169371][info] [10/121] Robust Resection of view: 1560615097
+[17:16:00.268681][info] Bundle adjustment start.
+[17:16:00.269007][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 931104 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.353054][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0775301 s
+	- poses:
+	    - # refined:  10
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  6466
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 12932
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.594214
+	- final   RMSE: 0.533635
+[17:16:00.360030][info] Remove outliers: 
+	- # outliers residual error: 77
+	- # outliers angular error: 3
+[17:16:00.360179][info] Bundle adjustment iteration: 0 took 91 msec.
+[17:16:00.360183][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 918144 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.438449][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.072681 s
+	- poses:
+	    - # refined:  10
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  6376
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 12752
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.452107
+	- final   RMSE: 0.442437
+[17:16:00.445164][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 0
+[17:16:00.445360][info] Bundle adjustment iteration: 1 took 85 msec.
+[17:16:00.445365][info] Bundle adjustment with 2 iterations took 176 msec.
+[17:16:00.453529][info] Update Reconstruction:
+	- resection id: 9
+	- # images in the resection group: 1
+	- # images remaining: 111
+[17:16:00.457534][info] [11/121] Robust Resection of view: 1706079343
+[17:16:00.596513][info] Bundle adjustment start.
+[17:16:00.596862][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1057248 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.707103][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.102693 s
+	- poses:
+	    - # refined:  11
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  7342
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 14684
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.578133
+	- final   RMSE: 0.516024
+[17:16:00.713338][info] Remove outliers: 
+	- # outliers residual error: 74
+	- # outliers angular error: 7
+[17:16:00.715786][info] Bundle adjustment iteration: 0 took 118 msec.
+[17:16:00.715795][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1042704 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:00.811012][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0887058 s
+	- poses:
+	    - # refined:  11
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  7241
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 14482
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.440906
+	- final   RMSE: 0.432034
+[17:16:00.815089][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 3
+[17:16:00.815243][info] Bundle adjustment iteration: 1 took 99 msec.
+[17:16:00.815246][info] Bundle adjustment with 2 iterations took 218 msec.
+[17:16:00.825944][info] Update Reconstruction:
+	- resection id: 10
+	- # images in the resection group: 1
+	- # images remaining: 110
+[17:16:00.829473][info] [12/121] Robust Resection of view: 1764505351
+[17:16:00.988772][info] Bundle adjustment start.
+[17:16:00.989167][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1152720 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.090429][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.095161 s
+	- poses:
+	    - # refined:  12
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  8005
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 16010
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.553453
+	- final   RMSE: 0.474924
+[17:16:01.096078][info] Remove outliers: 
+	- # outliers residual error: 50
+	- # outliers angular error: 20
+[17:16:01.096390][info] Bundle adjustment iteration: 0 took 107 msec.
+[17:16:01.096395][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1138464 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.177709][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0721021 s
+	- poses:
+	    - # refined:  12
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  7906
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 15812
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.416483
+	- final   RMSE: 0.407996
+[17:16:01.184237][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:16:01.184547][info] Bundle adjustment iteration: 1 took 88 msec.
+[17:16:01.184554][info] Bundle adjustment with 2 iterations took 195 msec.
+[17:16:01.188586][info] Update Reconstruction:
+	- resection id: 11
+	- # images in the resection group: 1
+	- # images remaining: 109
+[17:16:01.191499][info] [13/121] Robust Resection of view: 2132626009
+[17:16:01.333452][info] Bundle adjustment start.
+[17:16:01.333850][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1356192 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.430580][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.08743 s
+	- poses:
+	    - # refined:  13
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  9418
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 18836
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.57645
+	- final   RMSE: 0.492475
+[17:16:01.437029][info] Remove outliers: 
+	- # outliers residual error: 67
+	- # outliers angular error: 9
+[17:16:01.437209][info] Bundle adjustment iteration: 0 took 103 msec.
+[17:16:01.437213][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1342656 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.554034][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.108076 s
+	- poses:
+	    - # refined:  13
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  9324
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 18648
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.432891
+	- final   RMSE: 0.424257
+[17:16:01.562045][info] Remove outliers: 
+	- # outliers residual error: 11
+	- # outliers angular error: 1
+[17:16:01.562289][info] Bundle adjustment iteration: 1 took 125 msec.
+[17:16:01.562294][info] Bundle adjustment with 2 iterations took 228 msec.
+[17:16:01.569108][info] Update Reconstruction:
+	- resection id: 12
+	- # images in the resection group: 1
+	- # images remaining: 108
+[17:16:01.572417][info] [14/121] Robust Resection of view: 702688470
+[17:16:01.677650][info] Bundle adjustment start.
+[17:16:01.678029][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1506672 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.787911][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0983751 s
+	- poses:
+	    - # refined:  14
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  10463
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 20926
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.549689
+	- final   RMSE: 0.488458
+[17:16:01.792493][info] Remove outliers: 
+	- # outliers residual error: 70
+	- # outliers angular error: 13
+[17:16:01.792710][info] Bundle adjustment iteration: 0 took 114 msec.
+[17:16:01.792714][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1492272 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:01.906128][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.101843 s
+	- poses:
+	    - # refined:  14
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  10363
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 20726
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.428553
+	- final   RMSE: 0.421299
+[17:16:01.914039][info] Remove outliers: 
+	- # outliers residual error: 8
+	- # outliers angular error: 0
+[17:16:01.915453][info] Bundle adjustment iteration: 1 took 122 msec.
+[17:16:01.915460][info] Bundle adjustment with 2 iterations took 237 msec.
+[17:16:01.919571][info] Update Reconstruction:
+	- resection id: 13
+	- # images in the resection group: 1
+	- # images remaining: 107
+[17:16:01.922481][info] [15/121] Robust Resection of view: 1611320355
+[17:16:02.056883][info] Bundle adjustment start.
+[17:16:02.057337][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1689408 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:02.222012][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.151965 s
+	- poses:
+	    - # refined:  15
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  11732
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 23464
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.556607
+	- final   RMSE: 0.500696
+[17:16:02.228172][info] Remove outliers: 
+	- # outliers residual error: 92
+	- # outliers angular error: 14
+[17:16:02.228511][info] Bundle adjustment iteration: 0 took 171 msec.
+[17:16:02.228516][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1670400 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:02.330029][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0913379 s
+	- poses:
+	    - # refined:  15
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  11600
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 23200
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.438307
+	- final   RMSE: 0.432418
+[17:16:02.337623][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[17:16:02.337906][info] Bundle adjustment iteration: 1 took 109 msec.
+[17:16:02.337911][info] Bundle adjustment with 2 iterations took 280 msec.
+[17:16:02.346196][info] Update Reconstruction:
+	- resection id: 14
+	- # images in the resection group: 1
+	- # images remaining: 106
+[17:16:02.351485][info] [16/121] Robust Resection of view: 123215478
+[17:16:02.486704][info] Bundle adjustment start.
+[17:16:02.487199][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1821744 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:02.574168][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.077637 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  12651
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 25302
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.537191
+	- final   RMSE: 0.49222
+[17:16:02.580062][info] Remove outliers: 
+	- # outliers residual error: 78
+	- # outliers angular error: 12
+[17:16:02.580357][info] Bundle adjustment iteration: 0 took 93 msec.
+[17:16:02.580362][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1806192 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:02.706619][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.112675 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  12543
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 25086
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.44142
+	- final   RMSE: 0.436345
+[17:16:02.713709][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[17:16:02.714038][info] Bundle adjustment iteration: 1 took 133 msec.
+[17:16:02.714043][info] Bundle adjustment with 2 iterations took 227 msec.
+[17:16:02.723178][info] Update Reconstruction:
+	- resection id: 15
+	- # images in the resection group: 1
+	- # images remaining: 105
+[17:16:02.726603][info] [17/121] Robust Resection of view: 1892204299
+[17:16:02.878502][info] Bundle adjustment start.
+[17:16:02.879050][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1982448 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:03.038139][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.144206 s
+	- poses:
+	    - # refined:  17
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  13767
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 27534
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.563736
+	- final   RMSE: 0.507297
+[17:16:03.044100][info] Remove outliers: 
+	- # outliers residual error: 90
+	- # outliers angular error: 13
+[17:16:03.044360][info] Bundle adjustment iteration: 0 took 165 msec.
+[17:16:03.044364][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1964880 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:03.180380][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.125683 s
+	- poses:
+	    - # refined:  17
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  13645
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 27290
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.453481
+	- final   RMSE: 0.446475
+[17:16:03.186061][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 1
+[17:16:03.186350][info] Bundle adjustment iteration: 1 took 141 msec.
+[17:16:03.186354][info] Bundle adjustment with 2 iterations took 307 msec.
+[17:16:03.189362][info] Update Reconstruction:
+	- resection id: 16
+	- # images in the resection group: 1
+	- # images remaining: 104
+[17:16:03.191159][info] [18/121] Robust Resection of view: 924855226
+[17:16:03.327038][info] Bundle adjustment start.
+[17:16:03.327584][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2131056 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:03.507295][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.166781 s
+	- poses:
+	    - # refined:  18
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14799
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 29598
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.551065
+	- final   RMSE: 0.506039
+[17:16:03.512084][info] Remove outliers: 
+	- # outliers residual error: 98
+	- # outliers angular error: 16
+[17:16:03.512890][info] Bundle adjustment iteration: 0 took 185 msec.
+[17:16:03.512901][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2111328 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:03.679033][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.151852 s
+	- poses:
+	    - # refined:  18
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14662
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 29324
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.456321
+	- final   RMSE: 0.449966
+[17:16:03.685174][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 2
+[17:16:03.685961][info] Bundle adjustment iteration: 1 took 173 msec.
+[17:16:03.685969][info] Bundle adjustment with 2 iterations took 358 msec.
+[17:16:03.689630][info] Update Reconstruction:
+	- resection id: 17
+	- # images in the resection group: 1
+	- # images remaining: 103
+[17:16:03.690263][info] [19/121] Robust Resection of view: 1359714848
+[17:16:03.847282][info] Bundle adjustment start.
+[17:16:03.847877][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2280528 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:03.982196][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.120995 s
+	- poses:
+	    - # refined:  19
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15837
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31674
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.544307
+	- final   RMSE: 0.5045
+[17:16:03.990031][info] Remove outliers: 
+	- # outliers residual error: 80
+	- # outliers angular error: 11
+[17:16:03.990369][info] Bundle adjustment iteration: 0 took 142 msec.
+[17:16:03.990373][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2264544 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:04.127765][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.123358 s
+	- poses:
+	    - # refined:  19
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15726
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31452
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.466038
+	- final   RMSE: 0.461356
+[17:16:04.133499][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 0
+[17:16:04.133888][info] Bundle adjustment iteration: 1 took 143 msec.
+[17:16:04.133902][info] Bundle adjustment with 2 iterations took 286 msec.
+[17:16:04.140544][info] Update Reconstruction:
+	- resection id: 18
+	- # images in the resection group: 1
+	- # images remaining: 102
+[17:16:04.144630][info] [20/121] Robust Resection of view: 1902805005
+[17:16:04.294797][info] Bundle adjustment start.
+[17:16:04.295396][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2431440 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:04.456725][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.146211 s
+	- poses:
+	    - # refined:  20
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  16885
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 33770
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.558097
+	- final   RMSE: 0.51808
+[17:16:04.462071][info] Remove outliers: 
+	- # outliers residual error: 93
+	- # outliers angular error: 10
+[17:16:04.462396][info] Bundle adjustment iteration: 0 took 166 msec.
+[17:16:04.462400][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2414448 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:04.626361][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.148451 s
+	- poses:
+	    - # refined:  20
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  16767
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 33534
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.474212
+	- final   RMSE: 0.470425
+[17:16:04.633101][info] Remove outliers: 
+	- # outliers residual error: 6
+	- # outliers angular error: 0
+[17:16:04.633606][info] Bundle adjustment iteration: 1 took 171 msec.
+[17:16:04.633611][info] Bundle adjustment with 2 iterations took 338 msec.
+[17:16:04.640678][info] Update Reconstruction:
+	- resection id: 19
+	- # images in the resection group: 1
+	- # images remaining: 101
+[17:16:04.644749][info] [21/121] Robust Resection of view: 885049285
+[17:16:04.811711][info] Bundle adjustment start.
+[17:16:04.812296][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2581056 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:04.946514][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.114434 s
+	- poses:
+	    - # refined:  21
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17924
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 35848
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.567687
+	- final   RMSE: 0.524615
+[17:16:04.952051][info] Remove outliers: 
+	- # outliers residual error: 112
+	- # outliers angular error: 18
+[17:16:04.952571][info] Bundle adjustment iteration: 0 took 140 msec.
+[17:16:04.952576][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2559024 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:05.112854][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.143565 s
+	- poses:
+	    - # refined:  21
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17771
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 35542
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.476575
+	- final   RMSE: 0.472809
+[17:16:05.118568][info] Remove outliers: 
+	- # outliers residual error: 5
+	- # outliers angular error: 2
+[17:16:05.119609][info] Bundle adjustment iteration: 1 took 167 msec.
+[17:16:05.119620][info] Bundle adjustment with 2 iterations took 307 msec.
+[17:16:05.126612][info] Update Reconstruction:
+	- resection id: 20
+	- # images in the resection group: 1
+	- # images remaining: 100
+[17:16:05.130762][info] [22/121] Robust Resection of view: 1321651417
+[17:16:05.289246][info] Bundle adjustment start.
+[17:16:05.289898][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2725920 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:05.437686][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.129237 s
+	- poses:
+	    - # refined:  22
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18930
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 37860
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.566828
+	- final   RMSE: 0.531111
+[17:16:05.448039][info] Remove outliers: 
+	- # outliers residual error: 121
+	- # outliers angular error: 21
+[17:16:05.448624][info] Bundle adjustment iteration: 0 took 158 msec.
+[17:16:05.448629][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2700576 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:05.603484][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.138659 s
+	- poses:
+	    - # refined:  22
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18754
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 37508
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.481296
+	- final   RMSE: 0.477624
+[17:16:05.609757][info] Remove outliers: 
+	- # outliers residual error: 12
+	- # outliers angular error: 4
+[17:16:05.610163][info] Bundle adjustment iteration: 1 took 161 msec.
+[17:16:05.610168][info] Bundle adjustment with 2 iterations took 320 msec.
+[17:16:05.618163][info] Update Reconstruction:
+	- resection id: 21
+	- # images in the resection group: 1
+	- # images remaining: 99
+[17:16:05.623043][info] [23/121] Robust Resection of view: 1762235166
+[17:16:05.792921][info] Bundle adjustment start.
+[17:16:05.796592][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2864304 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:05.974686][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.152325 s
+	- poses:
+	    - # refined:  23
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19891
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 39782
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.542034
+	- final   RMSE: 0.511311
+[17:16:05.982049][info] Remove outliers: 
+	- # outliers residual error: 84
+	- # outliers angular error: 7
+[17:16:05.982744][info] Bundle adjustment iteration: 0 took 186 msec.
+[17:16:05.982750][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2848752 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:06.170320][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.162076 s
+	- poses:
+	    - # refined:  23
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19783
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 39566
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.480745
+	- final   RMSE: 0.477303
+[17:16:06.175913][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 3
+[17:16:06.176588][info] Bundle adjustment iteration: 1 took 193 msec.
+[17:16:06.176593][info] Bundle adjustment with 2 iterations took 383 msec.
+[17:16:06.183568][info] Update Reconstruction:
+	- resection id: 22
+	- # images in the resection group: 1
+	- # images remaining: 98
+[17:16:06.189501][info] [24/121] Robust Resection of view: 593086164
+[17:16:06.334947][info] Bundle adjustment start.
+[17:16:06.335647][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2995200 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:06.514254][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.161361 s
+	- poses:
+	    - # refined:  24
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  20800
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 41600
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.551334
+	- final   RMSE: 0.521647
+[17:16:06.521032][info] Remove outliers: 
+	- # outliers residual error: 94
+	- # outliers angular error: 18
+[17:16:06.521457][info] Bundle adjustment iteration: 0 took 185 msec.
+[17:16:06.521462][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2975616 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:06.685592][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.143796 s
+	- poses:
+	    - # refined:  24
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  20664
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 41328
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.486657
+	- final   RMSE: 0.483687
+[17:16:06.694029][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 0
+[17:16:06.694532][info] Bundle adjustment iteration: 1 took 173 msec.
+[17:16:06.694539][info] Bundle adjustment with 2 iterations took 359 msec.
+[17:16:06.699527][info] Update Reconstruction:
+	- resection id: 23
+	- # images in the resection group: 1
+	- # images remaining: 97
+[17:16:06.701595][info] [25/121] Robust Resection of view: 1874069148
+[17:16:06.864931][info] Bundle adjustment start.
+[17:16:06.865640][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3141360 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:07.010644][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.122841 s
+	- poses:
+	    - # refined:  25
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21815
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 43630
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.570564
+	- final   RMSE: 0.536567
+[17:16:07.021093][info] Remove outliers: 
+	- # outliers residual error: 118
+	- # outliers angular error: 14
+[17:16:07.021584][info] Bundle adjustment iteration: 0 took 155 msec.
+[17:16:07.021590][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3119760 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:07.212596][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.168438 s
+	- poses:
+	    - # refined:  25
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21665
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 43330
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.497432
+	- final   RMSE: 0.493181
+[17:16:07.221036][info] Remove outliers: 
+	- # outliers residual error: 14
+	- # outliers angular error: 4
+[17:16:07.221612][info] Bundle adjustment iteration: 1 took 200 msec.
+[17:16:07.221617][info] Bundle adjustment with 2 iterations took 356 msec.
+[17:16:07.230481][info] Update Reconstruction:
+	- resection id: 24
+	- # images in the resection group: 1
+	- # images remaining: 96
+[17:16:07.230956][info] [26/121] Robust Resection of view: 1873566683
+[17:16:07.375641][info] Bundle adjustment start.
+[17:16:07.376191][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3137904 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:07.549026][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.152866 s
+	- poses:
+	    - # refined:  26
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21791
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 43582
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.528288
+	- final   RMSE: 0.51791
+[17:16:07.556739][info] Remove outliers: 
+	- # outliers residual error: 77
+	- # outliers angular error: 21
+[17:16:07.558058][info] Bundle adjustment iteration: 0 took 181 msec.
+[17:16:07.558067][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3113712 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:07.736655][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.155628 s
+	- poses:
+	    - # refined:  25
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21623
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 43246
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.490203
+	- final   RMSE: 0.488224
+[17:16:07.744814][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 5
+[17:16:07.745253][info] Bundle adjustment iteration: 1 took 187 msec.
+[17:16:07.745257][info] Bundle adjustment with 2 iterations took 369 msec.
+[17:16:07.756189][info] Update Reconstruction:
+	- resection id: 25
+	- # images in the resection group: 1
+	- # images remaining: 95
+[17:16:07.757705][info] [26/121] Robust Resection of view: 536038513
+[17:16:07.910824][info] Bundle adjustment start.
+[17:16:07.911490][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3252240 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:08.107351][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.169748 s
+	- poses:
+	    - # refined:  26
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  22585
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 45170
+	- # successful iterations: 6
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.572165
+	- final   RMSE: 0.54004
+[17:16:08.113964][info] Remove outliers: 
+	- # outliers residual error: 135
+	- # outliers angular error: 15
+[17:16:08.114442][info] Bundle adjustment iteration: 0 took 202 msec.
+[17:16:08.114446][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3227040 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:08.275737][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.138483 s
+	- poses:
+	    - # refined:  26
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  22410
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 44820
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.500742
+	- final   RMSE: 0.496828
+[17:16:08.283032][info] Remove outliers: 
+	- # outliers residual error: 11
+	- # outliers angular error: 0
+[17:16:08.283518][info] Bundle adjustment iteration: 1 took 169 msec.
+[17:16:08.283523][info] Bundle adjustment with 2 iterations took 372 msec.
+[17:16:08.291057][info] Update Reconstruction:
+	- resection id: 26
+	- # images in the resection group: 1
+	- # images remaining: 94
+[17:16:08.294685][info] [27/121] Robust Resection of view: 821651159
+[17:16:08.432036][info] Bundle adjustment start.
+[17:16:08.432656][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3341232 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:08.596761][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.142336 s
+	- poses:
+	    - # refined:  27
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23203
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 46406
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.566257
+	- final   RMSE: 0.538096
+[17:16:08.603950][info] Remove outliers: 
+	- # outliers residual error: 127
+	- # outliers angular error: 11
+[17:16:08.604472][info] Bundle adjustment iteration: 0 took 171 msec.
+[17:16:08.604477][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3317616 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:08.781587][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.150712 s
+	- poses:
+	    - # refined:  27
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23039
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 46078
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.50097
+	- final   RMSE: 0.497157
+[17:16:08.793071][info] Remove outliers: 
+	- # outliers residual error: 8
+	- # outliers angular error: 3
+[17:16:08.793669][info] Bundle adjustment iteration: 1 took 189 msec.
+[17:16:08.793674][info] Bundle adjustment with 2 iterations took 361 msec.
+[17:16:08.798920][info] Update Reconstruction:
+	- resection id: 27
+	- # images in the resection group: 1
+	- # images remaining: 93
+[17:16:08.800493][info] [28/121] Robust Resection of view: 1984110656
+[17:16:08.918725][info] Bundle adjustment start.
+[17:16:08.919421][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3393072 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:09.078267][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.137704 s
+	- poses:
+	    - # refined:  28
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23563
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 47126
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.538372
+	- final   RMSE: 0.521475
+[17:16:09.088050][info] Remove outliers: 
+	- # outliers residual error: 71
+	- # outliers angular error: 17
+[17:16:09.088729][info] Bundle adjustment iteration: 0 took 169 msec.
+[17:16:09.088734][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3375072 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:09.224684][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.108364 s
+	- poses:
+	    - # refined:  28
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23438
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 46876
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.500189
+	- final   RMSE: 0.498623
+[17:16:09.233062][info] Remove outliers: 
+	- # outliers residual error: 3
+	- # outliers angular error: 2
+[17:16:09.233628][info] Bundle adjustment iteration: 1 took 144 msec.
+[17:16:09.233633][info] Bundle adjustment with 2 iterations took 314 msec.
+[17:16:09.239921][info] Update Reconstruction:
+	- resection id: 28
+	- # images in the resection group: 1
+	- # images remaining: 92
+[17:16:09.242586][info] [29/121] Robust Resection of view: 441206332
+[17:16:09.384057][info] Bundle adjustment start.
+[17:16:09.384744][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3491568 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:09.579203][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.16792 s
+	- poses:
+	    - # refined:  29
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  24247
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 48494
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.550716
+	- final   RMSE: 0.532056
+[17:16:09.585412][info] Remove outliers: 
+	- # outliers residual error: 98
+	- # outliers angular error: 11
+[17:16:09.586020][info] Bundle adjustment iteration: 0 took 201 msec.
+[17:16:09.586028][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3473280 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:09.767851][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.160558 s
+	- poses:
+	    - # refined:  29
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  24120
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 48240
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.504874
+	- final   RMSE: 0.503243
+[17:16:09.774065][info] Remove outliers: 
+	- # outliers residual error: 4
+	- # outliers angular error: 1
+[17:16:09.774680][info] Bundle adjustment iteration: 1 took 188 msec.
+[17:16:09.774685][info] Bundle adjustment with 2 iterations took 390 msec.
+[17:16:09.785250][info] Update Reconstruction:
+	- resection id: 29
+	- # images in the resection group: 1
+	- # images remaining: 91
+[17:16:09.786093][info] [30/121] Robust Resection of view: 1890186707
+[17:16:09.916883][info] Update Reconstruction:
+	- resection id: 29
+	- # images in the resection group: 30
+	- # images remaining: 90
+[17:16:09.920763][info] [31/121] Robust Resection of view: 1521466623
+[17:16:09.920767][info] [31/121] Robust Resection of view: 1475717019
+[17:16:09.920854][info] [31/121] Robust Resection of view: 1107718596
+[17:16:09.920907][info] [31/121] Robust Resection of view: 1538771919
+[17:16:09.920771][info] [31/121] Robust Resection of view: 691425136
+[17:16:09.921019][info] [31/121] Robust Resection of view: 135351169
+[17:16:09.921036][info] [31/121] Robust Resection of view: 1094765462
+[17:16:09.920775][info] [31/121] Robust Resection of view: 1026342842
+[17:16:09.920765][info] [31/121] Robust Resection of view: 1471139319
+[17:16:09.920762][info] [31/121] Robust Resection of view: 1577133575
+[17:16:09.920762][info] [31/121] Robust Resection of view: 134834552
+[17:16:09.921901][info] [31/121] Robust Resection of view: 968024911
+[17:16:09.920777][info] [31/121] Robust Resection of view: 1686752172
+[17:16:09.922173][info] [31/121] Robust Resection of view: 581550557
+[17:16:09.922179][info] [31/121] Robust Resection of view: 407285790
+[17:16:09.922208][info] [31/121] Robust Resection of view: 743620604
+[17:16:09.922236][info] [31/121] Robust Resection of view: 1415303165
+[17:16:09.923454][info] [31/121] Robust Resection of view: 1100953126
+[17:16:09.924241][info] [31/121] Robust Resection of view: 1001479923
+[17:16:09.924753][info] Resection of view 407285790 failed.
+[17:16:09.924869][info] Resection of view 581550557 failed.
+[17:16:09.925074][info] [31/121] Robust Resection of view: 818387885
+[17:16:09.926882][info] Resection of view 1001479923 failed.
+[17:16:09.929100][info] Resection of view 134834552 failed.
+[17:16:09.929178][info] Resection of view 1577133575 failed.
+[17:16:09.982636][info] [32/121] Robust Resection of view: 854605543
+[17:16:09.985699][info] [33/121] Robust Resection of view: 497253516
+[17:16:09.987956][info] [34/121] Robust Resection of view: 1235440217
+[17:16:09.995011][info] [35/121] Robust Resection of view: 921111724
+[17:16:09.997717][info] Resection of view 1235440217 failed.
+[17:16:10.006352][info] [36/121] Robust Resection of view: 982301782
+[17:16:10.015855][info] [38/121] Robust Resection of view: 1193213158
+[17:16:10.032279][info] [39/121] Robust Resection of view: 734010976
+[17:16:10.062914][info] [44/121] Robust Resection of view: 1854944978
+[17:16:10.065661][info] [45/121] Robust Resection of view: 1468758867
+[17:16:10.088426][info] [50/121] Robust Resection of view: 2071607410
+[17:16:10.096568][info] Resection of view 2071607410 failed.
+[17:16:10.719471][info] Bundle adjustment start.
+[17:16:10.727603][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 4458672 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[17:16:11.993101][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.2335 s
+	- poses:
+	    - # refined:  53
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  30963
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 61926
+	- # successful iterations: 32
+	- # unsuccessful iterations: 19
+	- initial RMSE: 1.6026
+	- final   RMSE: 1.10337
+[17:16:12.005076][info] Remove outliers: 
+	- # outliers residual error: 1044
+	- # outliers angular error: 72
+[17:16:12.007409][info] Bundle adjustment iteration: 0 took 1279 msec.
+[17:16:12.007416][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 4253760 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:12.833290][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.793795 s
+	- poses:
+	    - # refined:  49
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  29540
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 59080
+	- # successful iterations: 23
+	- # unsuccessful iterations: 5
+	- initial RMSE: 0.555957
+	- final   RMSE: 0.533583
+[17:16:12.848068][info] Remove outliers: 
+	- # outliers residual error: 58
+	- # outliers angular error: 21
+[17:16:12.849240][info] Bundle adjustment iteration: 1 took 841 msec.
+[17:16:12.849246][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 4237488 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[17:16:13.339774][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.462475 s
+	- poses:
+	    - # refined:  49
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  29427
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 58854
+	- # successful iterations: 14
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.523408
+	- final   RMSE: 0.519929
+[17:16:13.348059][info] Remove outliers: 
+	- # outliers residual error: 16
+	- # outliers angular error: 5
+[17:16:13.350249][info] Bundle adjustment iteration: 2 took 501 msec.
+[17:16:13.350257][info] Bundle adjustment with 3 iterations took 2630 msec.
+[17:16:13.369158][info] Update Reconstruction:
+	- resection id: 30
+	- # images in the resection group: 30
+	- # images remaining: 60
+[17:16:13.369642][info] [49/121] Robust Resection of view: 117293799
+[17:16:13.369670][info] [49/121] Robust Resection of view: 1529395885
+[17:16:13.369725][info] [49/121] Robust Resection of view: 1434572590
+[17:16:13.369741][info] [49/121] Robust Resection of view: 1172574591
+[17:16:13.369747][info] [49/121] Robust Resection of view: 180318746
+[17:16:13.369755][info] [49/121] Robust Resection of view: 29239695
+[17:16:13.369761][info] [49/121] Robust Resection of view: 660184821
+[17:16:13.369763][info] [49/121] Robust Resection of view: 540954467
+[17:16:13.369763][info] [49/121] Robust Resection of view: 784385111
+[17:16:13.369928][info] [49/121] Robust Resection of view: 298216865
+[17:16:13.369932][info] [49/121] Robust Resection of view: 857558232
+[17:16:13.369952][info] [49/121] Robust Resection of view: 792619510
+[17:16:13.369973][info] [49/121] Robust Resection of view: 300929576
+[17:16:13.370021][info] [49/121] Robust Resection of view: 311886120
+[17:16:13.370163][info] [49/121] Robust Resection of view: 146190649
+[17:16:13.370188][info] [49/121] Robust Resection of view: 1757332998
+[17:16:13.369750][info] [49/121] Robust Resection of view: 2136248430
+[17:16:13.369746][info] [49/121] Robust Resection of view: 1974783501
+[17:16:13.370896][info] [49/121] Robust Resection of view: 37638227
+[17:16:13.372344][info] [49/121] Robust Resection of view: 689131578
+[17:16:13.374994][info] Resection of view 117293799 failed.
+[17:16:13.380877][info] Resection of view 1529395885 failed.
+[17:16:13.381782][info] [49/121] Robust Resection of view: 137516027
+[17:16:13.384875][info] Resection of view 689131578 failed.
+[17:16:13.389518][info] [49/121] Robust Resection of view: 940462438
+[17:16:13.422233][info] [50/121] Robust Resection of view: 814006776
+[17:16:13.442264][info] [52/121] Robust Resection of view: 1419197189
+[17:16:13.465655][info] [56/121] Robust Resection of view: 647151971
+[17:16:13.466491][info] [56/121] Robust Resection of view: 961955224
+[17:16:13.470999][info] [58/121] Robust Resection of view: 24110342
+[17:16:13.473646][info] [59/121] Robust Resection of view: 1449829882
+[17:16:13.488002][info] [63/121] Robust Resection of view: 635017622
+[17:16:13.509521][info] [67/121] Robust Resection of view: 1577131749
+[17:16:14.309790][info] Bundle adjustment start.
+[17:16:14.329331][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 15913296 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[17:16:16.286891][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.85266 s
+	- poses:
+	    - # refined:  75
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  110509
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 221018
+	- # successful iterations: 23
+	- # unsuccessful iterations: 4
+	- initial RMSE: 1.01498
+	- final   RMSE: 0.485491
+[17:16:16.298760][info] Remove outliers: 
+	- # outliers residual error: 1068
+	- # outliers angular error: 472
+[17:16:16.305663][info] Bundle adjustment iteration: 0 took 1976 msec.
+[17:16:16.305687][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 14814720 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[17:16:19.237600][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 2.83855 s
+	- poses:
+	    - # refined:  73
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  102880
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 205760
+	- # successful iterations: 36
+	- # unsuccessful iterations: 15
+	- initial RMSE: 0.36127
+	- final   RMSE: 0.316376
+[17:16:19.254773][info] Remove outliers: 
+	- # outliers residual error: 87
+	- # outliers angular error: 241
+[17:16:19.257039][info] Bundle adjustment iteration: 1 took 2951 msec.
+[17:16:19.257052][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 14125392 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[17:16:21.317965][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.96918 s
+	- poses:
+	    - # refined:  73
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  98093
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 196186
+	- # successful iterations: 28
+	- # unsuccessful iterations: 4
+	- initial RMSE: 0.311464
+	- final   RMSE: 0.300804
+[17:16:21.332311][info] Remove outliers: 
+	- # outliers residual error: 27
+	- # outliers angular error: 6
+[17:16:21.335879][info] Bundle adjustment iteration: 2 took 2078 msec.
+[17:16:21.335912][info] Bundle adjustment with 3 iterations took 7026 msec.
+[17:16:21.415215][info] Update Reconstruction:
+	- resection id: 31
+	- # images in the resection group: 30
+	- # images remaining: 30
+[17:16:21.419427][info] [74/121] Robust Resection of view: 92408672
+[17:16:21.419434][info] [74/121] Robust Resection of view: 2145322453
+[17:16:21.419470][info] [74/121] Robust Resection of view: 2133613474
+[17:16:21.419472][info] [74/121] Robust Resection of view: 353540953
+[17:16:21.419469][info] [74/121] Robust Resection of view: 102203726
+[17:16:21.419454][info] [74/121] Robust Resection of view: 420610010
+[17:16:21.419709][info] [74/121] Robust Resection of view: 956907076
+[17:16:21.419840][info] [74/121] Robust Resection of view: 585996099
+[17:16:21.419841][info] [74/121] Robust Resection of view: 936359225
+[17:16:21.419882][info] [74/121] Robust Resection of view: 447249642
+[17:16:21.419904][info] [74/121] Robust Resection of view: 1227058409
+[17:16:21.419935][info] [74/121] Robust Resection of view: 1926402863
+[17:16:21.419944][info] [74/121] Robust Resection of view: 1568933792
+[17:16:21.419952][info] [74/121] Robust Resection of view: 713618978
+[17:16:21.419961][info] [74/121] Robust Resection of view: 1130832282
+[17:16:21.419969][info] [74/121] Robust Resection of view: 808808188
+[17:16:21.419980][info] [74/121] Robust Resection of view: 1203940946
+[17:16:21.421073][info] [74/121] Robust Resection of view: 1396338507
+[17:16:21.423037][info] [74/121] Robust Resection of view: 1136337697
+[17:16:21.423889][info] [74/121] Robust Resection of view: 19682727
+[17:16:21.492583][info] [78/121] Robust Resection of view: 333753752
+[17:16:21.625221][info] [82/121] Robust Resection of view: 1948286188
+[17:16:21.633580][info] [83/121] Robust Resection of view: 801213057
+[17:16:21.701529][info] [85/121] Robust Resection of view: 1412184090
+[17:16:21.721185][info] [89/121] Robust Resection of view: 1633222816
+[17:16:21.722950][info] [89/121] Robust Resection of view: 40381463
+[17:16:21.758501][info] [92/121] Robust Resection of view: 874772749
+[17:16:21.762927][info] [93/121] Robust Resection of view: 861506519
+[17:16:21.776630][info] [95/121] Robust Resection of view: 1419688536
+[17:16:21.792188][info] [96/121] Robust Resection of view: 2128919186
+[17:16:23.244274][info] Bundle adjustment start.
+[17:16:23.273579][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 22418736 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [378,378] 69876
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 1.8075e+07
+    Nonzeros in L:       71631
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.3
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 1.8075e+07
+        nnz(L):     71631
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69876. Allocating 840028
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69876. Allocating 840028
+[17:16:25.943187][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 33 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 40 cameras
+	- adjustment duration: 2.5373 s
+	- poses:
+	    - # refined:  63
+	    - # constant: 40
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  163141
+	    - # constant: 0
+	    - # ignored:  3162
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 326282
+	- # successful iterations: 19
+	- # unsuccessful iterations: 6
+	- initial RMSE: 0.452602
+	- final   RMSE: 0.265428
+[17:16:25.960068][info] Remove outliers: 
+	- # outliers residual error: 750
+	- # outliers angular error: 57
+[17:16:25.965386][info] Bundle adjustment iteration: 0 took 2691 msec.
+[17:16:25.965417][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 22300512 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [378,378] 69732
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 1.7867e+07
+    Nonzeros in L:       71343
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.3
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 1.7867e+07
+        nnz(L):     71343
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 378 # of columns: 378 num_nonzeros: 69732. Allocating 838300
+compressed_row_sparse_matrix.cc:174 # of rows: 378 # of columns: 378 max_num_nonzeros: 69732. Allocating 838300
+[17:16:28.462064][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 33 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 40 cameras
+	- adjustment duration: 2.36071 s
+	- poses:
+	    - # refined:  63
+	    - # constant: 40
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  162234
+	    - # constant: 0
+	    - # ignored:  3067
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 324468
+	- # successful iterations: 16
+	- # unsuccessful iterations: 6
+	- initial RMSE: 0.203132
+	- final   RMSE: 0.197425
+[17:16:28.477763][info] Remove outliers: 
+	- # outliers residual error: 34
+	- # outliers angular error: 12
+[17:16:28.480583][info] Bundle adjustment iteration: 1 took 2515 msec.
+[17:16:28.480597][info] Bundle adjustment with 2 iterations took 5236 msec.
+[17:16:28.540615][info] Incremental Reconstruction start iteration 1:
+	- # number of resection groups: 32
+	- # number of poses: 103
+	- # number of landmarks: 8986
+[17:16:28.552634][info] Update Reconstruction:
+	- resection id: 32
+	- # images in the resection group: 18
+	- # images remaining: 18
+[17:16:28.555475][info] [104/121] Robust Resection of view: 581550557
+[17:16:28.555482][info] [104/121] Robust Resection of view: 134834552
+[17:16:28.555484][info] [104/121] Robust Resection of view: 407285790
+[17:16:28.555566][info] [104/121] Robust Resection of view: 117293799
+[17:16:28.555498][info] [104/121] Robust Resection of view: 1577133575
+[17:16:28.555902][info] [104/121] Robust Resection of view: 1521466623
+[17:16:28.555568][info] [104/121] Robust Resection of view: 689131578
+[17:16:28.556098][info] [104/121] Robust Resection of view: 1475717019
+[17:16:28.556103][info] [104/121] Robust Resection of view: 1471139319
+[17:16:28.556118][info] [104/121] Robust Resection of view: 1001479923
+[17:16:28.556135][info] [104/121] Robust Resection of view: 1235440217
+[17:16:28.556163][info] [104/121] Robust Resection of view: 1193213158
+[17:16:28.556180][info] [104/121] Robust Resection of view: 1538771919
+[17:16:28.556183][info] [104/121] Robust Resection of view: 1873566683
+[17:16:28.556168][info] [104/121] Robust Resection of view: 1415303165
+[17:16:28.556190][info] [104/121] Robust Resection of view: 1529395885
+[17:16:28.555503][info] [104/121] Robust Resection of view: 2071607410
+[17:16:28.556139][info] [104/121] Robust Resection of view: 921111724
+[17:16:28.568346][info] Resection of view 1529395885 failed.
+[17:16:30.510843][info] Bundle adjustment start.
+[17:16:30.538259][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 24507888 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [480,480] 113508
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 3.6778e+07
+    Nonzeros in L:       1.1522e+05
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.5
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 3.6778e+07
+        nnz(L):     1.1522e+05
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113508. Allocating 1364020
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113508. Allocating 1364020
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+[17:16:36.102441][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 63 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 40 cameras
+	- adjustment duration: 5.42202 s
+	- poses:
+	    - # refined:  80
+	    - # constant: 40
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  177723
+	    - # constant: 0
+	    - # ignored:  3109
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 355446
+	- # successful iterations: 29
+	- # unsuccessful iterations: 22
+	- initial RMSE: 0.479068
+	- final   RMSE: 0.30918
+[17:16:36.119455][info] Remove outliers: 
+	- # outliers residual error: 906
+	- # outliers angular error: 128
+[17:16:36.123418][info] Bundle adjustment iteration: 0 took 5585 msec.
+[17:16:36.123447][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 24176112 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [480,480] 113112
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 3.6745e+07
+    Nonzeros in L:       1.1519e+05
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.5
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 3.6745e+07
+        nnz(L):     1.1519e+05
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+[17:16:41.207066][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 63 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 40 cameras
+	- adjustment duration: 4.94119 s
+	- poses:
+	    - # refined:  80
+	    - # constant: 40
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  175307
+	    - # constant: 0
+	    - # ignored:  3008
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 350614
+	- # successful iterations: 28
+	- # unsuccessful iterations: 20
+	- initial RMSE: 0.201983
+	- final   RMSE: 0.191777
+[17:16:41.225514][info] Remove outliers: 
+	- # outliers residual error: 41
+	- # outliers angular error: 10
+[17:16:41.228870][info] Bundle adjustment iteration: 1 took 5105 msec.
+[17:16:41.228882][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 24133056 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [480,480] 113112
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 3.6911e+07
+    Nonzeros in L:       1.1537e+05
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.5
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 3.6911e+07
+        nnz(L):     1.1537e+05
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 480 # of columns: 480 num_nonzeros: 113112. Allocating 1359268
+compressed_row_sparse_matrix.cc:174 # of rows: 480 # of columns: 480 max_num_nonzeros: 113112. Allocating 1359268
+[17:16:43.010898][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 63 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 40 cameras
+	- adjustment duration: 1.63906 s
+	- poses:
+	    - # refined:  80
+	    - # constant: 40
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  174998
+	    - # constant: 0
+	    - # ignored:  3008
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 349996
+	- # successful iterations: 11
+	- # unsuccessful iterations: 2
+	- initial RMSE: 0.188181
+	- final   RMSE: 0.187371
+[17:16:43.028414][info] Remove outliers: 
+	- # outliers residual error: 7
+	- # outliers angular error: 1
+[17:16:43.032426][info] Bundle adjustment iteration: 2 took 1803 msec.
+[17:16:43.032468][info] Bundle adjustment with 3 iterations took 12521 msec.
+[17:16:43.065296][info] Incremental Reconstruction start iteration 2:
+	- # number of resection groups: 33
+	- # number of poses: 120
+	- # number of landmarks: 8765
+[17:16:43.072061][info] Update Reconstruction:
+	- resection id: 33
+	- # images in the resection group: 1
+	- # images remaining: 1
+[17:16:43.077279][info] [121/121] Robust Resection of view: 1529395885
+[17:16:43.695108][info] Bundle adjustment start.
+[17:16:43.703160][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 10764816 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [96,96] 4896
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 2.9954e+05
+    Nonzeros in L:       4656
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.0
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 2.9954e+05
+        nnz(L):     4656
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: CHOLMOD warning: Matrix not positive definite.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+[17:16:44.729804][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 15 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 105 cameras
+	- adjustment duration: 0.912614 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 66
+	    - # ignored:  39
+	- landmarks:
+	    - # refined:  156099
+	    - # constant: 0
+	    - # ignored:  5306
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 312198
+	- # successful iterations: 18
+	- # unsuccessful iterations: 4
+	- initial RMSE: 0.137913
+	- final   RMSE: 0.12417
+[17:16:44.748610][info] Remove outliers: 
+	- # outliers residual error: 266
+	- # outliers angular error: 11
+[17:16:44.752611][info] Bundle adjustment iteration: 0 took 1049 msec.
+[17:16:44.752625][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 10752096 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+block_random_access_sparse_matrix.cc:64 Matrix Size [96,96] 4896
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+
+CHOLMOD version 4.0.3, Jan 17, 2023: Symbolic Analysis: status: OK
+  Architecture: Linux
+    sizeof(int):      4
+    sizeof(int64_t):  8
+    sizeof(void *):   8
+    sizeof(double):   8
+    sizeof(Int):      4 (CHOLMOD's basic integer)
+    sizeof(SUITESPARSE_BLAS_INT): 4 (integer used in the BLAS)
+  Results from most recent analysis:
+    Cholesky flop count: 2.9954e+05
+    Nonzeros in L:       4656
+  memory blocks in use:          11
+  memory in use (MB):           0.0
+  peak memory usage (MB):       0.0
+  maxrank:    update/downdate rank:   8
+  supernodal control: 1 40 (supernodal if flops/lnz >= 40)
+  nmethods:   number of ordering methods to try: 1
+    method 0: natural
+        flop count: 2.9954e+05
+        nnz(L):     4656
+  OK
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:217 # of rows: 96 # of columns: 96 num_nonzeros: 4896. Allocating 59140
+compressed_row_sparse_matrix.cc:174 # of rows: 96 # of columns: 96 max_num_nonzeros: 4896. Allocating 59140
+[17:16:45.503628][info] Bundle Adjustment Statistics:
+	- local strategy enabled: yes
+	- graph-distances distribution:
+	    - not connected: 0 cameras
+	    - D = 0: 15 cameras
+	    - D = 1: 0 cameras
+	    - D > 1: 105 cameras
+	- adjustment duration: 0.62253 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 66
+	    - # ignored:  39
+	- landmarks:
+	    - # refined:  155954
+	    - # constant: 0
+	    - # ignored:  5226
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 311908
+	- # successful iterations: 12
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.109814
+	- final   RMSE: 0.108094
+[17:16:45.524710][info] Remove outliers: 
+	- # outliers residual error: 2
+	- # outliers angular error: 3
+[17:16:45.529951][info] Bundle adjustment iteration: 1 took 777 msec.
+[17:16:45.530012][info] Bundle adjustment with 2 iterations took 1834 msec.
+[17:16:45.531789][info] Incremental Reconstruction start iteration 3:
+	- # number of resection groups: 34
+	- # number of poses: 121
+	- # number of landmarks: 8773
+[17:16:45.531825][info] Incremental Reconstruction completed with 4 iterations:
+	- # number of resection groups: 34
+	- # number of poses: 121
+	- # number of landmarks: 8773
+[17:16:45.544480][info] Structure from Motion statistics:
+	- # input images: 121
+	- # cameras calibrated: 121
+	- # poses: 121
+	- # landmarks: 8773
+	- elapsed time: 47.05
+	- residual RMSE: 0.538873
+[17:16:45.546882][info]  - # dspsift: 8773
+[17:16:45.567475][info] Histogram of residuals:
+
+0	|	1.7e+05
+0.5	|	9.2e+03
+1	|	5.2e+03
+1.5	|	3.2e+03
+2	|	2.1e+03
+2.5	|	1.4e+03
+3	|	9.2e+02
+3.5	|	5.9e+02
+4	|	3.9e+02
+4.5	|	2.6e+02
+5	|	2.3e+02
+5.5	|	1.6e+02
+6	|	85
+6.5	|	75
+7	|	60
+7.5	|	36
+8	|	12
+8.5	|	18
+9	|	8
+9.5	|	4
+10	|	2
+10	|	7
+11	|	1
+12	|	1
+12	|	2
+12	|	0
+13	|	1
+14	|	0
+14	|	1
+14	|	0
+15	|	0
+16	|	0
+16	|	1
+16	|	0
+17	|	0
+18	|	0
+18	|	0
+18	|	0
+19	|	0
+20	|	1
+20	|	1
+20	|	1
+21	|	0
+22	|	0
+22	|	0
+22	|	0
+23	|	0
+24	|	0
+24	|	0
+24	|	0
+25	|	0
+26	|	0
+26	|	0
+26	|	1
+27	|	0
+28	|	0
+28	|	0
+28	|	0
+29	|	0
+30	|	0
+30	|	0
+30	|	0
+31	|	1
+32	|	0
+32	|	0
+32	|	0
+33	|	1
+34	|	0
+34	|	0
+34	|	0
+35	|	0
+36	|	0
+36	|	1
+36	|	0
+37
+[17:16:45.568553][info] # landmarks: 8773
+[17:16:45.568564][info] # overall observations: 190045
+[17:16:45.568566][info] Landmarks observations length min: 2, mean: 21.6625, median: 10, max: 57
+[17:16:45.568571][info] Histogram of observations length:
+
+2	|	2071
+3	|	720
+4	|	431
+5	|	372
+6	|	231
+7	|	169
+8	|	185
+9	|	146
+10	|	113
+11	|	116
+12	|	99
+13	|	93
+14	|	86
+15	|	68
+16	|	62
+17	|	73
+18	|	56
+19	|	43
+20	|	44
+21	|	42
+22	|	33
+23	|	51
+24	|	48
+25	|	42
+26	|	30
+27	|	32
+28	|	34
+29	|	32
+30	|	25
+31	|	31
+32	|	39
+33	|	41
+34	|	38
+35	|	38
+36	|	43
+37	|	49
+38	|	50
+39	|	59
+40	|	68
+41	|	107
+42	|	114
+43	|	176
+44	|	177
+45	|	158
+46	|	169
+47	|	241
+48	|	105
+49	|	113
+50	|	126
+51	|	130
+52	|	148
+53	|	144
+54	|	250
+55	|	309
+56	|	235
+57	|	68
+58
+[17:16:45.569021][info] Landmarks per view min: 0, mean: 0, median: 0, max: 0
+[17:16:45.569028][info] Histogram of nb landmarks per view:
+
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+1
+[17:16:45.570523][info] X axis rotation:
+   0.995153   0.0983178 -0.00218521
+ -0.0983178    0.994168  -0.0443223
+-0.00218521   0.0443223    0.999015
+[17:16:45.570575][info] Initial point cloud center: 0.158631 0.111448 -1.48017
+[17:16:45.570579][info] Initial point cloud scale: 1.62177
+[17:16:45.570718][info] No GPS information available to use it.
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[17:16:46.073281][info] Structure from motion took (s): 84.325000
+[17:16:46.073353][info] Generating HTML report...
+[17:16:46.107080][info] Export SfMData to disk: /tmp/MeshroomCache/StructureFromMotion/cb55ce6cb88e88e379132340aef0b4345811e431/sfm.abc
+[17:16:46.144938][info] Structure from Motion results:
+	- # input images: 121
+	- # cameras calibrated: 121
+	- # poses: 121
+	- # landmarks: 8773

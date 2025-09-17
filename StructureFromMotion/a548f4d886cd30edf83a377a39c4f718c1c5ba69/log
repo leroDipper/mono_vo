@@ -1,0 +1,1982 @@
+[2025-09-17 19:29:44.728707] [0x00007acb0eae5000] [trace]   Embedded OCIO configuration file: '/home/leroy/Meshroom-2023.3.0/aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * bundleAdjustmentMaxOutliers = 50
+ * computeStructureColor = 1
+ * describerTypes = "sift"
+ * extraInfoFolder = "/tmp/MeshroomCache/StructureFromMotion/a548f4d886cd30edf83a377a39c4f718c1c5ba69"
+ * featuresFolders =  = [/tmp/MeshroomCache/FeatureExtraction/f4ca6107c3ef8c411ad0e00e51c987dc962b21bd]
+ * filterTrackForks = 0
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "/tmp/MeshroomCache/CameraInit/8b243bebbbc4ddd0cf5e441fc477f5f956d748b5/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator =  Unknown Type "N11aliceVision16robustEstimation16ERobustEstimatorE"
+ * localizerEstimatorError = 0
+ * localizerEstimatorMaxIterations = 4096
+ * lockAllIntrinsics = 0
+ * lockScenePreviouslyReconstructed = 0
+ * logIntermediateSteps = 0
+ * matchesFolders =  = [/tmp/MeshroomCache/FeatureMatching/4452dce06c5a1ab3624072ff6217fd91b3424b93]
+ * maxAngleInitialPair = 40
+ * maxCoresAvailable =  Unknown Type "j" (default)
+ * maxImagesPerGroup = 30
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNbCamerasToRefinePrincipalPoint = 3
+ * minNumberOfMatches = 0
+ * minNumberOfObservationsForTriangulation = 2
+ * nbFirstUnstableCameras = 30
+ * observationConstraint =  Unknown Type "N11aliceVision3sfm18EFeatureConstraintE"
+ * output = "/tmp/MeshroomCache/StructureFromMotion/a548f4d886cd30edf83a377a39c4f718c1c5ba69/sfm.abc"
+ * outputViewsAndPoses = "/tmp/MeshroomCache/StructureFromMotion/a548f4d886cd30edf83a377a39c4f718c1c5ba69/cameras.sfm"
+ * randomSeed = 5489 (default)
+ * rigMinNbCamerasForCalibration = 20
+ * useAutoTransform = 1
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useRigConstraint = 1
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 18565 Mo
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+[19:29:44.733151][error] cudaGetDeviceCount failed: CUDA driver version is insufficient for CUDA runtime version
+[19:29:44.733189][info] Can't find CUDA-Enabled GPU.
+***************************************************
+[19:29:46.751465][info] Fuse matches into tracks: 
+	- # tracks: 48470
+	- # images in tracks: 121
+[19:29:46.753652][info] TrackLength, Occurrence
+[19:29:46.753694][info] 	2	24342
+[19:29:46.753702][info] 	3	7160
+[19:29:46.753705][info] 	4	3419
+[19:29:46.753707][info] 	5	2109
+[19:29:46.753710][info] 	6	1390
+[19:29:46.753712][info] 	7	1052
+[19:29:46.753714][info] 	8	745
+[19:29:46.753716][info] 	9	608
+[19:29:46.753718][info] 	10	486
+[19:29:46.753721][info] 	11	372
+[19:29:46.753723][info] 	12	363
+[19:29:46.753725][info] 	13	304
+[19:29:46.753727][info] 	14	232
+[19:29:46.753729][info] 	15	251
+[19:29:46.753731][info] 	16	225
+[19:29:46.753733][info] 	17	164
+[19:29:46.753735][info] 	18	173
+[19:29:46.753737][info] 	19	126
+[19:29:46.753739][info] 	20	134
+[19:29:46.753741][info] 	21	127
+[19:29:46.753743][info] 	22	115
+[19:29:46.753746][info] 	23	123
+[19:29:46.753748][info] 	24	105
+[19:29:46.753750][info] 	25	78
+[19:29:46.753753][info] 	26	97
+[19:29:46.753755][info] 	27	69
+[19:29:46.753757][info] 	28	59
+[19:29:46.753760][info] 	29	59
+[19:29:46.753762][info] 	30	51
+[19:29:46.753764][info] 	31	54
+[19:29:46.753766][info] 	32	54
+[19:29:46.753768][info] 	33	47
+[19:29:46.753770][info] 	34	51
+[19:29:46.753773][info] 	35	41
+[19:29:46.753775][info] 	36	41
+[19:29:46.753777][info] 	37	36
+[19:29:46.753779][info] 	38	55
+[19:29:46.753782][info] 	39	46
+[19:29:46.753784][info] 	40	51
+[19:29:46.753786][info] 	41	42
+[19:29:46.753788][info] 	42	53
+[19:29:46.753790][info] 	43	50
+[19:29:46.753793][info] 	44	59
+[19:29:46.753795][info] 	45	53
+[19:29:46.753797][info] 	46	52
+[19:29:46.753799][info] 	47	63
+[19:29:46.753812][info] 	48	46
+[19:29:46.753814][info] 	49	62
+[19:29:46.753817][info] 	50	74
+[19:29:46.753819][info] 	51	56
+[19:29:46.753821][info] 	52	63
+[19:29:46.753823][info] 	53	62
+[19:29:46.753825][info] 	54	70
+[19:29:46.753828][info] 	55	82
+[19:29:46.753830][info] 	56	106
+[19:29:46.753832][info] 	57	147
+[19:29:46.753834][info] 	58	264
+[19:29:46.753837][info] 	59	770
+[19:29:46.753839][info] 	60	951
+[19:29:46.753841][info] 	61	113
+[19:29:46.753843][info] 	62	34
+[19:29:46.753846][info] 	63	9
+[19:29:46.753848][info] 	64	12
+[19:29:46.753851][info] 	65	7
+[19:29:46.753853][info] 	66	4
+[19:29:46.753855][info] 	67	6
+[19:29:46.753857][info] 	68	6
+[19:29:46.753859][info] 	69	3
+[19:29:46.753862][info] 	70	1
+[19:29:46.753864][info] 	71	8
+[19:29:46.753866][info] 	72	4
+[19:29:46.753868][info] 	73	6
+[19:29:46.753870][info] 	74	6
+[19:29:46.753872][info] 	75	4
+[19:29:46.753875][info] 	76	3
+[19:29:46.753877][info] 	77	4
+[19:29:46.753879][info] 	78	2
+[19:29:46.753881][info] 	79	6
+[19:29:46.753883][info] 	80	5
+[19:29:46.753885][info] 	81	7
+[19:29:46.753887][info] 	82	5
+[19:29:46.753890][info] 	83	5
+[19:29:46.753892][info] 	84	6
+[19:29:46.753894][info] 	85	3
+[19:29:46.753896][info] 	86	1
+[19:29:46.753898][info] 	87	2
+[19:29:46.753900][info] 	88	2
+[19:29:46.753902][info] 	89	3
+[19:29:46.753905][info] 	90	2
+[19:29:46.753907][info] 	91	2
+[19:29:46.753909][info] 	92	1
+[19:29:46.753911][info] 	93	3
+[19:29:46.753913][info] 	94	1
+[19:29:46.753915][info] 	95	7
+[19:29:46.753917][info] 	96	4
+[19:29:46.753919][info] 	97	2
+[19:29:46.753921][info] 	98	2
+[19:29:46.753924][info] 	99	3
+[19:29:46.753926][info] 	100	2
+[19:29:46.753928][info] 	101	2
+[19:29:46.753930][info] 	102	2
+[19:29:46.753932][info] 	103	2
+[19:29:46.753935][info] 	104	2
+[19:29:46.753937][info] 	105	1
+[19:29:46.753939][info] 	107	1
+[19:29:46.753941][info] 	108	3
+[19:29:46.753943][info] 	109	2
+[19:29:46.753945][info] 	110	1
+[19:29:46.753947][info] 	111	1
+[19:29:46.753949][info] 	112	1
+[19:29:46.753952][info] 	114	1
+[19:29:46.753954][info] 	115	3
+[19:29:46.753956][info] 	117	1
+[19:29:46.753958][info] 	118	1
+[19:29:46.753960][info] 	120	1
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+*[19:29:46.941800][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+*[19:29:47.535367][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[19:29:47.745860][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+*[19:29:48.197556][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:29:48.313554][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[19:29:48.479208][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+*[19:29:49.052265][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[19:29:49.233246][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+*[19:29:50.094273][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[19:29:50.136432][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+*[19:29:50.256760][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[19:29:50.294042][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[19:29:50.351702][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+*[19:29:50.399727][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+[19:29:50.570658][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+*[19:29:50.678666][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[19:29:50.796106][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[19:29:50.821130][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:29:51.072594][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[19:29:51.514612][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:29:51.874237][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 13
+[19:29:51.897482][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[19:29:52.044771][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+[19:29:52.066458][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+**[19:29:53.676723][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+*[19:29:53.904155][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:29:53.936796][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+**[19:29:54.976055][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[19:29:55.342025][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[19:29:55.882267][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+*[19:29:56.214258][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[19:29:56.226390][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[19:29:56.341085][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*[19:29:56.414617][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[19:29:56.458033][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:29:56.462539][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+*[19:29:56.600340][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+[19:29:56.603238][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:29:56.615976][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[19:29:56.627280][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:29:56.649551][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[19:29:56.997186][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:29:57.087128][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:29:57.359430][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:29:57.365895][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[19:29:57.497150][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[19:29:57.630478][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+**[19:29:58.476881][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+*[19:29:58.934588][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[19:29:58.935871][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:29:58.963836][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[19:29:58.999354][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+[19:29:59.002871][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[19:29:59.065566][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+*[19:29:59.597832][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:29:59.981701][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+*[19:30:00.531304][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:00.845749][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[19:30:00.871388][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[19:30:01.403914][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 14
+*[19:30:01.614707][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[19:30:01.653031][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+*[19:30:02.110120][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[19:30:02.140798][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+[19:30:02.201447][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[19:30:02.219695][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+*[19:30:02.281364][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+[19:30:02.633794][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:02.885624][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 12
+*[19:30:03.206015][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+*[19:30:03.880883][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+[19:30:04.336702][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[19:30:04.661471][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 21
+[19:30:04.664150][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 30
+*[19:30:04.930679][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[19:30:05.299881][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+*[19:30:05.852862][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:30:05.870283][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[19:30:06.312239][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[19:30:06.352063][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[19:30:06.381508][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+*[19:30:06.424917][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:30:06.441209][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 18
+[19:30:06.756034][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 19
+*[19:30:07.712682][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+*[19:30:07.919845][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+*[19:30:08.411767][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[19:30:08.440697][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[19:30:08.471919][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+[19:30:08.481900][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[19:30:08.484934][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:08.516795][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:30:08.562063][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+*[19:30:08.824735][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[19:30:08.832677][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:08.962847][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+[19:30:09.161828][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+*[19:30:09.518838][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 31
+[19:30:09.523805][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:09.538909][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:09.562061][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:09.635862][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 34
+[19:30:09.679889][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 17
+[19:30:09.733042][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 27
+*[19:30:10.360467][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[19:30:10.385749][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+[19:30:10.417708][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+*[19:30:10.553480][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[19:30:10.625187][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+*[19:30:11.302378][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[19:30:11.464920][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:11.469252][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 25
+[19:30:11.539349][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 14
+[19:30:11.627433][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 12
+[19:30:11.643907][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 11
+*[19:30:11.716831][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 26
+[19:30:11.717070][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[19:30:11.743414][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 28
+[19:30:11.776145][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:11.915590][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:30:11.927586][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 23
+[19:30:12.130170][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+**[19:30:13.128848][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:13.150544][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 16
+[19:30:13.164160][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 29
+[19:30:13.171632][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 22
+[19:30:13.301959][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 15
+*[19:30:13.605449][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 20
+[19:30:13.705015][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 32
+**[19:30:14.558101][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 24
+[19:30:14.641523][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 12
+[19:30:14.704930][info] robustRelativePose: no sufficient coverage (the model does not support enough samples): 33
+*
+[19:30:15.016716][info] Initial pair is:
+	- [A] view id: 734010976, filepath: /home/leroy/office_dataset_aruco/left/frame_0022.png
+	- [B] view id: 956907076, filepath: /home/leroy/office_dataset_aruco/left/frame_0041.png
+[19:30:15.017121][info] 269 matches in the image pair for the initial pose estimation.
+[19:30:15.084127][info] Bundle adjustment start.
+[19:30:15.087000][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 7200 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[19:30:15.142467][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0462871 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  50
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 100
+	- # successful iterations: 4
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.772067
+	- final   RMSE: 0.577031
+[19:30:15.146884][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[19:30:15.146929][info] Bundle adjustment iteration: 0 took 59 msec.
+[19:30:15.146936][info] Bundle adjustment with 1 iterations took 62 msec.
+[19:30:15.147889][info] Initial pair is:
+	- [A] view id: 201883735, filepath: /home/leroy/office_dataset_aruco/left/frame_0120.png
+	- [B] view id: 982301782, filepath: /home/leroy/office_dataset_aruco/left/frame_0020.png
+[19:30:15.148302][info] 347 matches in the image pair for the initial pose estimation.
+[19:30:15.235810][info] Bundle adjustment start.
+[19:30:15.235898][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 5472 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[19:30:15.263109][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0258141 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  38
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 76
+	- # successful iterations: 3
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.679721
+	- final   RMSE: 0.354275
+[19:30:15.267039][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[19:30:15.267079][info] Bundle adjustment iteration: 0 took 31 msec.
+[19:30:15.267083][info] Bundle adjustment with 1 iterations took 31 msec.
+[19:30:15.267145][info] Initial pair is:
+	- [A] view id: 92408672, filepath: /home/leroy/office_dataset_aruco/left/frame_0028.png
+	- [B] view id: 980938774, filepath: /home/leroy/office_dataset_aruco/left/frame_0012.png
+[19:30:15.267601][info] 421 matches in the image pair for the initial pose estimation.
+[19:30:15.373029][info] Bundle adjustment start.
+[19:30:15.373091][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 6048 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[19:30:15.412441][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.0369749 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  42
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 84
+	- # successful iterations: 7
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.618141
+	- final   RMSE: 0.55729
+[19:30:15.416075][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[19:30:15.416110][info] Bundle adjustment iteration: 0 took 43 msec.
+[19:30:15.416114][info] Bundle adjustment with 1 iterations took 43 msec.
+[19:30:15.416178][info] Initial pair is:
+	- [A] view id: 1706079343, filepath: /home/leroy/office_dataset_aruco/left/frame_0001.png
+	- [B] view id: 1984110656, filepath: /home/leroy/office_dataset_aruco/left/frame_0019.png
+[19:30:15.416785][info] 405 matches in the image pair for the initial pose estimation.
+[19:30:15.507029][info] Bundle adjustment start.
+[19:30:15.507090][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 11520 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[19:30:15.555382][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.047159 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  80
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 160
+	- # successful iterations: 5
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.817831
+	- final   RMSE: 0.736701
+[19:30:15.562068][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[19:30:15.562108][info] Bundle adjustment iteration: 0 took 55 msec.
+[19:30:15.562112][info] Bundle adjustment with 1 iterations took 55 msec.
+[19:30:15.562209][info] Initial pair is: 1706079343, 1984110656
+[19:30:15.562239][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 121
+	- # landmarks in input: 40
+	- # cameras already calibrated: 2
+[19:30:15.562248][info] Incremental Reconstruction start iteration 0:
+	- # number of resection groups: 1
+	- # number of poses: 2
+	- # number of landmarks: 40
+[19:30:15.569091][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 119
+[19:30:15.571074][info] [3/121] Robust Resection of view: 1762235166
+[19:30:15.575935][info] Resection of view 1762235166 failed.
+[19:30:15.582073][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 118
+[19:30:15.585068][info] [3/121] Robust Resection of view: 968024911
+[19:30:15.586972][info] Resection of view 968024911 failed.
+[19:30:15.596082][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 117
+[19:30:15.599752][info] [3/121] Robust Resection of view: 885049285
+[19:30:15.602301][info] Resection of view 885049285 failed.
+[19:30:15.607388][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 116
+[19:30:15.611027][info] [3/121] Robust Resection of view: 2077387696
+[19:30:15.612881][info] Resection of view 2077387696 failed.
+[19:30:15.621975][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 115
+[19:30:15.624180][info] [3/121] Robust Resection of view: 1902805005
+[19:30:15.626015][info] Resection of view 1902805005 failed.
+[19:30:15.635073][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 114
+[19:30:15.638732][info] [3/121] Robust Resection of view: 551617519
+[19:30:15.640490][info] Resection of view 551617519 failed.
+[19:30:15.647753][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 113
+[19:30:15.651056][info] [3/121] Robust Resection of view: 1890186707
+[19:30:15.652841][info] Resection of view 1890186707 failed.
+[19:30:15.661071][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 112
+[19:30:15.664772][info] [3/121] Robust Resection of view: 593086164
+[19:30:15.666292][info] Resection of view 593086164 failed.
+[19:30:15.675070][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 111
+[19:30:15.678788][info] [3/121] Robust Resection of view: 441206332
+[19:30:15.680499][info] Resection of view 441206332 failed.
+[19:30:15.689525][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 110
+[19:30:15.690423][info] [3/121] Robust Resection of view: 644363836
+[19:30:15.691871][info] Resection of view 644363836 failed.
+[19:30:15.701059][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 109
+[19:30:15.704841][info] [3/121] Robust Resection of view: 1100953126
+[19:30:15.706797][info] Resection of view 1100953126 failed.
+[19:30:15.714556][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 108
+[19:30:15.718060][info] [3/121] Robust Resection of view: 1333294495
+[19:30:15.719817][info] Resection of view 1333294495 failed.
+[19:30:15.727069][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 107
+[19:30:15.730798][info] [3/121] Robust Resection of view: 1359714848
+[19:30:15.732688][info] Resection of view 1359714848 failed.
+[19:30:15.740448][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 106
+[19:30:15.744063][info] [3/121] Robust Resection of view: 1764505351
+[19:30:15.795186][info] Bundle adjustment start.
+[19:30:15.795262][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 46080 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[19:30:16.092148][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.296064 s
+	- poses:
+	    - # refined:  3
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  192
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  1
+	    - # constant: 0
+	    - # ignored:  0
+	- # residual blocks: 384
+	- # successful iterations: 17
+	- # unsuccessful iterations: 0
+	- initial RMSE: 1.45269
+	- final   RMSE: 1.01638
+[19:30:16.101050][info] Remove outliers: 
+	- # outliers residual error: 15
+	- # outliers angular error: 15
+[19:30:16.101075][info] Bundle adjustment iteration: 0 took 305 msec.
+[19:30:16.101079][info] Bundle adjustment with 1 iterations took 305 msec.
+[19:30:16.112046][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 105
+[19:30:16.112131][info] [4/121] Robust Resection of view: 1321651417
+[19:30:16.114200][info] Resection of view 1321651417 failed.
+[19:30:16.125836][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 104
+[19:30:16.128057][info] [4/121] Robust Resection of view: 743620604
+[19:30:16.129151][info] Resection of view 743620604 failed.
+[19:30:16.138096][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 103
+[19:30:16.144037][info] [4/121] Robust Resection of view: 982301782
+[19:30:16.145100][info] Resection of view 982301782 failed.
+[19:30:16.154076][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 102
+[19:30:16.157734][info] [4/121] Robust Resection of view: 1637390768
+[19:30:16.160404][info] Resection of view 1637390768 failed.
+[19:30:16.165079][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 101
+[19:30:16.168716][info] [4/121] Robust Resection of view: 980938774
+[19:30:16.170746][info] Resection of view 980938774 failed.
+[19:30:16.179077][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 100
+[19:30:16.182059][info] [4/121] Robust Resection of view: 1234638732
+[19:30:16.184180][info] Resection of view 1234638732 failed.
+[19:30:16.192814][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 99
+[19:30:16.196057][info] [4/121] Robust Resection of view: 2132626009
+[19:30:16.198323][info] Resection of view 2132626009 failed.
+[19:30:16.206748][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 98
+[19:30:16.210059][info] [4/121] Robust Resection of view: 201883735
+[19:30:16.212300][info] Resection of view 201883735 failed.
+[19:30:16.220710][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 97
+[19:30:16.223934][info] [4/121] Robust Resection of view: 1560615097
+[19:30:16.225949][info] Resection of view 1560615097 failed.
+[19:30:16.234063][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 96
+[19:30:16.237695][info] [4/121] Robust Resection of view: 734010976
+[19:30:16.238503][info] Resection of view 734010976 failed.
+[19:30:16.247719][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 95
+[19:30:16.251053][info] [4/121] Robust Resection of view: 1468758867
+[19:30:16.251887][info] Resection of view 1468758867 failed.
+[19:30:16.260061][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 94
+[19:30:16.263674][info] [4/121] Robust Resection of view: 2071607410
+[19:30:16.264569][info] Resection of view 2071607410 failed.
+[19:30:16.273760][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 93
+[19:30:16.277066][info] [4/121] Robust Resection of view: 702688470
+[19:30:16.279212][info] Resection of view 702688470 failed.
+[19:30:16.287705][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 92
+[19:30:16.291059][info] [4/121] Robust Resection of view: 123215478
+[19:30:16.293154][info] Resection of view 123215478 failed.
+[19:30:16.300699][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 91
+[19:30:16.304059][info] [4/121] Robust Resection of view: 1611320355
+[19:30:16.306132][info] Resection of view 1611320355 failed.
+[19:30:16.314788][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 90
+[19:30:16.318049][info] [4/121] Robust Resection of view: 2133613474
+[19:30:16.318855][info] Resection of view 2133613474 failed.
+[19:30:16.327067][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 89
+[19:30:16.330721][info] [4/121] Robust Resection of view: 407285790
+[19:30:16.331643][info] Resection of view 407285790 failed.
+[19:30:16.340616][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 88
+[19:30:16.344060][info] [4/121] Robust Resection of view: 1001479923
+[19:30:16.345036][info] Resection of view 1001479923 failed.
+[19:30:16.345130][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 87
+[19:30:16.345155][info] [4/121] Robust Resection of view: 1892204299
+[19:30:16.346771][info] Resection of view 1892204299 failed.
+[19:30:16.346839][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 86
+[19:30:16.346856][info] [4/121] Robust Resection of view: 1396338507
+[19:30:16.347856][info] Resection of view 1396338507 failed.
+[19:30:16.354179][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 85
+[19:30:16.354209][info] [4/121] Robust Resection of view: 293807204
+[19:30:16.355976][info] Resection of view 293807204 failed.
+[19:30:16.357525][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 84
+[19:30:16.357677][info] [4/121] Robust Resection of view: 1873566683
+[19:30:16.358508][info] Resection of view 1873566683 failed.
+[19:30:16.358581][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 83
+[19:30:16.358596][info] [4/121] Robust Resection of view: 581550557
+[19:30:16.359472][info] Resection of view 581550557 failed.
+[19:30:16.359530][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 82
+[19:30:16.359548][info] [4/121] Robust Resection of view: 1235440217
+[19:30:16.360201][info] Resection of view 1235440217 failed.
+[19:30:16.361760][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 81
+[19:30:16.361781][info] [4/121] Robust Resection of view: 1529395885
+[19:30:16.362642][info] Resection of view 1529395885 failed.
+[19:30:16.362697][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 80
+[19:30:16.362712][info] [4/121] Robust Resection of view: 1854944978
+[19:30:16.363644][info] Resection of view 1854944978 failed.
+[19:30:16.363703][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 79
+[19:30:16.363717][info] [4/121] Robust Resection of view: 92408672
+[19:30:16.364534][info] Resection of view 92408672 failed.
+[19:30:16.364751][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 78
+[19:30:16.364768][info] [4/121] Robust Resection of view: 874772749
+[19:30:16.365577][info] Resection of view 874772749 failed.
+[19:30:16.365630][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 77
+[19:30:16.365645][info] [4/121] Robust Resection of view: 311886120
+[19:30:16.366530][info] Resection of view 311886120 failed.
+[19:30:16.366581][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 76
+[19:30:16.366593][info] [4/121] Robust Resection of view: 1193213158
+[19:30:16.367291][info] Resection of view 1193213158 failed.
+[19:30:16.367361][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 75
+[19:30:16.367374][info] [4/121] Robust Resection of view: 1026342842
+[19:30:16.368072][info] Resection of view 1026342842 failed.
+[19:30:16.368123][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 74
+[19:30:16.368136][info] [4/121] Robust Resection of view: 921111724
+[19:30:16.368954][info] Resection of view 921111724 failed.
+[19:30:16.369003][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 73
+[19:30:16.369015][info] [4/121] Robust Resection of view: 1577131749
+[19:30:16.369814][info] Resection of view 1577131749 failed.
+[19:30:16.370648][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 72
+[19:30:16.370667][info] [4/121] Robust Resection of view: 540954467
+[19:30:16.371498][info] Resection of view 540954467 failed.
+[19:30:16.371550][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 71
+[19:30:16.371572][info] [4/121] Robust Resection of view: 1415303165
+[19:30:16.372220][info] Resection of view 1415303165 failed.
+[19:30:16.377228][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 70
+[19:30:16.378922][info] [4/121] Robust Resection of view: 635017622
+[19:30:16.379692][info] Resection of view 635017622 failed.
+[19:30:16.379747][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 69
+[19:30:16.379760][info] [4/121] Robust Resection of view: 40381463
+[19:30:16.380524][info] Resection of view 40381463 failed.
+[19:30:16.381167][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 68
+[19:30:16.381187][info] [4/121] Robust Resection of view: 691425136
+[19:30:16.381789][info] Resection of view 691425136 failed.
+[19:30:16.381850][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 67
+[19:30:16.381865][info] [4/121] Robust Resection of view: 1577133575
+[19:30:16.388668][info] Resection of view 1577133575 failed.
+[19:30:16.395211][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 66
+[19:30:16.395885][info] [4/121] Robust Resection of view: 102203726
+[19:30:16.396467][info] Resection of view 102203726 failed.
+[19:30:16.405066][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 65
+[19:30:16.408789][info] [4/121] Robust Resection of view: 117293799
+[19:30:16.413917][info] Resection of view 117293799 failed.
+[19:30:16.421100][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 64
+[19:30:16.421121][info] [4/121] Robust Resection of view: 1686752172
+[19:30:16.421878][info] Resection of view 1686752172 failed.
+[19:30:16.421919][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 63
+[19:30:16.421930][info] [4/121] Robust Resection of view: 1538771919
+[19:30:16.422510][info] Resection of view 1538771919 failed.
+[19:30:16.423666][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 62
+[19:30:16.423678][info] [4/121] Robust Resection of view: 1471139319
+[19:30:16.424339][info] Resection of view 1471139319 failed.
+[19:30:16.424643][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 61
+[19:30:16.424657][info] [4/121] Robust Resection of view: 29239695
+[19:30:16.425207][info] Resection of view 29239695 failed.
+[19:30:16.425255][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 60
+[19:30:16.425267][info] [4/121] Robust Resection of view: 134834552
+[19:30:16.425796][info] Resection of view 134834552 failed.
+[19:30:16.425839][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 59
+[19:30:16.425850][info] [4/121] Robust Resection of view: 821651159
+[19:30:16.426418][info] Resection of view 821651159 failed.
+[19:30:16.426462][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 58
+[19:30:16.426472][info] [4/121] Robust Resection of view: 1521466623
+[19:30:16.431651][info] Resection of view 1521466623 failed.
+[19:30:16.433286][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 57
+[19:30:16.433301][info] [4/121] Robust Resection of view: 180318746
+[19:30:16.433757][info] Resection of view 180318746 failed.
+[19:30:16.433800][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 56
+[19:30:16.433810][info] [4/121] Robust Resection of view: 447249642
+[19:30:16.438498][info] Resection of view 447249642 failed.
+[19:30:16.439952][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 55
+[19:30:16.439997][info] [4/121] Robust Resection of view: 300929576
+[19:30:16.440606][info] Resection of view 300929576 failed.
+[19:30:16.440657][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 54
+[19:30:16.440668][info] [4/121] Robust Resection of view: 1419197189
+[19:30:16.445355][info] Resection of view 1419197189 failed.
+[19:30:16.447367][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 53
+[19:30:16.448833][info] [4/121] Robust Resection of view: 353540953
+[19:30:16.449431][info] Resection of view 353540953 failed.
+[19:30:16.449479][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 52
+[19:30:16.449490][info] [4/121] Robust Resection of view: 1094765462
+[19:30:16.450045][info] Resection of view 1094765462 failed.
+[19:30:16.452643][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 51
+[19:30:16.452655][info] [4/121] Robust Resection of view: 135351169
+[19:30:16.453199][info] Resection of view 135351169 failed.
+[19:30:16.453238][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 50
+[19:30:16.453249][info] [4/121] Robust Resection of view: 137516027
+[19:30:16.453683][info] Resection of view 137516027 failed.
+[19:30:16.453728][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 49
+[19:30:16.453738][info] [4/121] Robust Resection of view: 689131578
+[19:30:16.454183][info] Resection of view 689131578 failed.
+[19:30:16.454329][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 48
+[19:30:16.454339][info] [4/121] Robust Resection of view: 1449829882
+[19:30:16.458633][info] Resection of view 1449829882 failed.
+[19:30:16.460584][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 47
+[19:30:16.460601][info] [4/121] Robust Resection of view: 792619510
+[19:30:16.461287][info] Resection of view 792619510 failed.
+[19:30:16.461325][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 46
+[19:30:16.461336][info] [4/121] Robust Resection of view: 420610010
+[19:30:16.461845][info] Resection of view 420610010 failed.
+[19:30:16.461880][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 45
+[19:30:16.461892][info] [4/121] Robust Resection of view: 814006776
+[19:30:16.462478][info] Resection of view 814006776 failed.
+[19:30:16.462513][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 44
+[19:30:16.462525][info] [4/121] Robust Resection of view: 1974783501
+[19:30:16.463010][info] Resection of view 1974783501 failed.
+[19:30:16.463055][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 43
+[19:30:16.463065][info] [4/121] Robust Resection of view: 1633222816
+[19:30:16.463569][info] Resection of view 1633222816 failed.
+[19:30:16.463603][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 42
+[19:30:16.463612][info] [4/121] Robust Resection of view: 1874069148
+[19:30:16.464111][info] Resection of view 1874069148 failed.
+[19:30:16.464143][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 41
+[19:30:16.464152][info] [4/121] Robust Resection of view: 24110342
+[19:30:16.464612][info] Resection of view 24110342 failed.
+[19:30:16.464644][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 40
+[19:30:16.464652][info] [4/121] Robust Resection of view: 801213057
+[19:30:16.465043][info] Resection of view 801213057 failed.
+[19:30:16.465075][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 39
+[19:30:16.465092][info] [4/121] Robust Resection of view: 1419688536
+[19:30:16.469122][info] Resection of view 1419688536 failed.
+[19:30:16.469161][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 38
+[19:30:16.469171][info] [4/121] Robust Resection of view: 647151971
+[19:30:16.469615][info] Resection of view 647151971 failed.
+[19:30:16.469648][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 37
+[19:30:16.469657][info] [4/121] Robust Resection of view: 1172574591
+[19:30:16.470170][info] Resection of view 1172574591 failed.
+[19:30:16.470199][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 36
+[19:30:16.470208][info] [4/121] Robust Resection of view: 2128919186
+[19:30:16.470616][info] Resection of view 2128919186 failed.
+[19:30:16.470644][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 35
+[19:30:16.470654][info] [4/121] Robust Resection of view: 37638227
+[19:30:16.471205][info] Resection of view 37638227 failed.
+[19:30:16.472387][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 34
+[19:30:16.472603][info] [4/121] Robust Resection of view: 333753752
+[19:30:16.478026][info] Resection of view 333753752 failed.
+[19:30:16.478087][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 33
+[19:30:16.478105][info] [4/121] Robust Resection of view: 924855226
+[19:30:16.479449][info] Resection of view 924855226 failed.
+[19:30:16.479481][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 32
+[19:30:16.479490][info] [4/121] Robust Resection of view: 1926402863
+[19:30:16.479932][info] Resection of view 1926402863 failed.
+[19:30:16.479962][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 31
+[19:30:16.479970][info] [4/121] Robust Resection of view: 956907076
+[19:30:16.483993][info] Resection of view 956907076 failed.
+[19:30:16.487138][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 30
+[19:30:16.487151][info] [4/121] Robust Resection of view: 585996099
+[19:30:16.487608][info] Resection of view 585996099 failed.
+[19:30:16.487638][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 29
+[19:30:16.487649][info] [4/121] Robust Resection of view: 1568933792
+[19:30:16.491917][info] Resection of view 1568933792 failed.
+[19:30:16.492528][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 28
+[19:30:16.492538][info] [4/121] Robust Resection of view: 2145322453
+[19:30:16.496632][info] Resection of view 2145322453 failed.
+[19:30:16.497718][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 27
+[19:30:16.498192][info] [4/121] Robust Resection of view: 818387885
+[19:30:16.499722][info] Resection of view 818387885 failed.
+[19:30:16.502895][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 26
+[19:30:16.502907][info] [4/121] Robust Resection of view: 2136248430
+[19:30:16.503287][info] Resection of view 2136248430 failed.
+[19:30:16.504109][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 25
+[19:30:16.504119][info] [4/121] Robust Resection of view: 854605543
+[19:30:16.507640][info] Resection of view 854605543 failed.
+[19:30:16.507991][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 24
+[19:30:16.508006][info] [4/121] Robust Resection of view: 1412184090
+[19:30:16.508431][info] Resection of view 1412184090 failed.
+[19:30:16.508462][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 23
+[19:30:16.508471][info] [4/121] Robust Resection of view: 1475717019
+[19:30:16.508865][info] Resection of view 1475717019 failed.
+[19:30:16.508889][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 22
+[19:30:16.508898][info] [4/121] Robust Resection of view: 936359225
+[19:30:16.509320][info] Resection of view 936359225 failed.
+[19:30:16.509417][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 21
+[19:30:16.509426][info] [4/121] Robust Resection of view: 861506519
+[19:30:16.509870][info] Resection of view 861506519 failed.
+[19:30:16.509891][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 20
+[19:30:16.509900][info] [4/121] Robust Resection of view: 1227058409
+[19:30:16.513856][info] Resection of view 1227058409 failed.
+[19:30:16.514186][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 19
+[19:30:16.514198][info] [4/121] Robust Resection of view: 660184821
+[19:30:16.514748][info] Resection of view 660184821 failed.
+[19:30:16.514769][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 18
+[19:30:16.514777][info] [4/121] Robust Resection of view: 808808188
+[19:30:16.515163][info] Resection of view 808808188 failed.
+[19:30:16.515184][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 17
+[19:30:16.515193][info] [4/121] Robust Resection of view: 1130832282
+[19:30:16.515630][info] Resection of view 1130832282 failed.
+[19:30:16.515648][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 16
+[19:30:16.515656][info] [4/121] Robust Resection of view: 1136337697
+[19:30:16.516124][info] Resection of view 1136337697 failed.
+[19:30:16.516141][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 15
+[19:30:16.516149][info] [4/121] Robust Resection of view: 1948286188
+[19:30:16.516517][info] Resection of view 1948286188 failed.
+[19:30:16.516535][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 14
+[19:30:16.516542][info] [4/121] Robust Resection of view: 1107718596
+[19:30:16.520563][info] Resection of view 1107718596 failed.
+[19:30:16.520584][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 13
+[19:30:16.520593][info] [4/121] Robust Resection of view: 1757332998
+[19:30:16.521095][info] Resection of view 1757332998 failed.
+[19:30:16.521112][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 12
+[19:30:16.521120][info] [4/121] Robust Resection of view: 298216865
+[19:30:16.521125][info] Resection of view 298216865 failed.
+[19:30:16.521140][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 11
+[19:30:16.521148][info] [4/121] Robust Resection of view: 146190649
+[19:30:16.521539][info] Resection of view 146190649 failed.
+[19:30:16.522737][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 10
+[19:30:16.525893][info] [4/121] Robust Resection of view: 784385111
+[19:30:16.526408][info] Resection of view 784385111 failed.
+[19:30:16.527292][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 9
+[19:30:16.527302][info] [4/121] Robust Resection of view: 19682727
+[19:30:16.527761][info] Resection of view 19682727 failed.
+[19:30:16.527778][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 8
+[19:30:16.527786][info] [4/121] Robust Resection of view: 940462438
+[19:30:16.531290][info] Resection of view 940462438 failed.
+[19:30:16.531306][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 7
+[19:30:16.531314][info] [4/121] Robust Resection of view: 497253516
+[19:30:16.531684][info] Resection of view 497253516 failed.
+[19:30:16.531700][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 6
+[19:30:16.531707][info] [4/121] Robust Resection of view: 961955224
+[19:30:16.532126][info] Resection of view 961955224 failed.
+[19:30:16.534044][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 5
+[19:30:16.534059][info] [4/121] Robust Resection of view: 857558232
+[19:30:16.534469][info] Resection of view 857558232 failed.
+[19:30:16.534484][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 4
+[19:30:16.534491][info] [4/121] Robust Resection of view: 536038513
+[19:30:16.534856][info] Resection of view 536038513 failed.
+[19:30:16.534872][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 3
+[19:30:16.534880][info] [4/121] Robust Resection of view: 1203940946
+[19:30:16.535246][info] Resection of view 1203940946 failed.
+[19:30:16.535260][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 2
+[19:30:16.535267][info] [4/121] Robust Resection of view: 1434572590
+[19:30:16.535272][info] Resection of view 1434572590 failed.
+[19:30:16.535282][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 1
+[19:30:16.535288][info] [4/121] Robust Resection of view: 713618978
+[19:30:16.535293][info] Resection of view 713618978 failed.
+[19:30:16.535296][info] Incremental Reconstruction start iteration 1:
+	- # number of resection groups: 2
+	- # number of poses: 3
+	- # number of landmarks: 49
+[19:30:16.535469][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 118
+[19:30:16.535494][info] [4/121] Robust Resection of view: 1762235166
+[19:30:16.537330][info] Resection of view 1762235166 failed.
+[19:30:16.537691][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 117
+[19:30:16.537709][info] [4/121] Robust Resection of view: 968024911
+[19:30:16.539598][info] Resection of view 968024911 failed.
+[19:30:16.540045][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 116
+[19:30:16.540143][info] [4/121] Robust Resection of view: 2077387696
+[19:30:16.541868][info] Resection of view 2077387696 failed.
+[19:30:16.542331][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 115
+[19:30:16.543222][info] [4/121] Robust Resection of view: 1321651417
+[19:30:16.546314][info] Resection of view 1321651417 failed.
+[19:30:16.546786][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 114
+[19:30:16.546805][info] [4/121] Robust Resection of view: 1359714848
+[19:30:16.548561][info] Resection of view 1359714848 failed.
+[19:30:16.548638][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 113
+[19:30:16.548654][info] [4/121] Robust Resection of view: 1902805005
+[19:30:16.550212][info] Resection of view 1902805005 failed.
+[19:30:16.550277][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 112
+[19:30:16.550294][info] [4/121] Robust Resection of view: 1890186707
+[19:30:16.552037][info] Resection of view 1890186707 failed.
+[19:30:16.553752][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 111
+[19:30:16.553772][info] [4/121] Robust Resection of view: 743620604
+[19:30:16.554689][info] Resection of view 743620604 failed.
+[19:30:16.554771][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 110
+[19:30:16.554785][info] [4/121] Robust Resection of view: 982301782
+[19:30:16.555653][info] Resection of view 982301782 failed.
+[19:30:16.556824][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 109
+[19:30:16.556963][info] [4/121] Robust Resection of view: 1333294495
+[19:30:16.558799][info] Resection of view 1333294495 failed.
+[19:30:16.558861][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 108
+[19:30:16.558881][info] [4/121] Robust Resection of view: 885049285
+[19:30:16.560842][info] Resection of view 885049285 failed.
+[19:30:16.560903][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 107
+[19:30:16.560921][info] [4/121] Robust Resection of view: 1637390768
+[19:30:16.562891][info] Resection of view 1637390768 failed.
+[19:30:16.567145][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 106
+[19:30:16.567478][info] [4/121] Robust Resection of view: 551617519
+[19:30:16.568617][info] Resection of view 551617519 failed.
+[19:30:16.568703][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 105
+[19:30:16.568722][info] [4/121] Robust Resection of view: 980938774
+[19:30:16.570224][info] Resection of view 980938774 failed.
+[19:30:16.570551][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 104
+[19:30:16.570568][info] [4/121] Robust Resection of view: 441206332
+[19:30:16.572351][info] Resection of view 441206332 failed.
+[19:30:16.572415][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 103
+[19:30:16.572431][info] [4/121] Robust Resection of view: 1234638732
+[19:30:16.574034][info] Resection of view 1234638732 failed.
+[19:30:16.574398][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 102
+[19:30:16.574416][info] [4/121] Robust Resection of view: 593086164
+[19:30:16.575978][info] Resection of view 593086164 failed.
+[19:30:16.577041][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 101
+[19:30:16.577063][info] [4/121] Robust Resection of view: 2132626009
+[19:30:16.578774][info] Resection of view 2132626009 failed.
+[19:30:16.578836][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 100
+[19:30:16.578853][info] [4/121] Robust Resection of view: 1100953126
+[19:30:16.580477][info] Resection of view 1100953126 failed.
+[19:30:16.580534][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 99
+[19:30:16.580552][info] [4/121] Robust Resection of view: 201883735
+[19:30:16.582230][info] Resection of view 201883735 failed.
+[19:30:16.582296][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 98
+[19:30:16.582313][info] [4/121] Robust Resection of view: 1560615097
+[19:30:16.583776][info] Resection of view 1560615097 failed.
+[19:30:16.583837][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 97
+[19:30:16.583848][info] [4/121] Robust Resection of view: 734010976
+[19:30:16.584413][info] Resection of view 734010976 failed.
+[19:30:16.584480][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 96
+[19:30:16.584495][info] [4/121] Robust Resection of view: 644363836
+[19:30:16.585973][info] Resection of view 644363836 failed.
+[19:30:16.587098][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 95
+[19:30:16.587307][info] [4/121] Robust Resection of view: 1468758867
+[19:30:16.589075][info] Resection of view 1468758867 failed.
+[19:30:16.590799][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 94
+[19:30:16.590814][info] [4/121] Robust Resection of view: 2071607410
+[19:30:16.591509][info] Resection of view 2071607410 failed.
+[19:30:16.591564][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 93
+[19:30:16.591582][info] [4/121] Robust Resection of view: 702688470
+[19:30:16.593175][info] Resection of view 702688470 failed.
+[19:30:16.593235][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 92
+[19:30:16.593252][info] [4/121] Robust Resection of view: 123215478
+[19:30:16.594825][info] Resection of view 123215478 failed.
+[19:30:16.595910][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 91
+[19:30:16.595927][info] [4/121] Robust Resection of view: 1611320355
+[19:30:16.597524][info] Resection of view 1611320355 failed.
+[19:30:16.597588][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 90
+[19:30:16.597598][info] [4/121] Robust Resection of view: 2133613474
+[19:30:16.598196][info] Resection of view 2133613474 failed.
+[19:30:16.598335][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 89
+[19:30:16.598346][info] [4/121] Robust Resection of view: 407285790
+[19:30:16.598982][info] Resection of view 407285790 failed.
+[19:30:16.599044][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 88
+[19:30:16.599057][info] [4/121] Robust Resection of view: 1001479923
+[19:30:16.599649][info] Resection of view 1001479923 failed.
+[19:30:16.599711][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 87
+[19:30:16.599725][info] [4/121] Robust Resection of view: 1892204299
+[19:30:16.600989][info] Resection of view 1892204299 failed.
+[19:30:16.601042][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 86
+[19:30:16.601054][info] [4/121] Robust Resection of view: 1396338507
+[19:30:16.601837][info] Resection of view 1396338507 failed.
+[19:30:16.601892][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 85
+[19:30:16.601906][info] [4/121] Robust Resection of view: 293807204
+[19:30:16.603307][info] Resection of view 293807204 failed.
+[19:30:16.603750][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 84
+[19:30:16.603763][info] [4/121] Robust Resection of view: 1873566683
+[19:30:16.604395][info] Resection of view 1873566683 failed.
+[19:30:16.604453][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 83
+[19:30:16.604466][info] [4/121] Robust Resection of view: 581550557
+[19:30:16.605171][info] Resection of view 581550557 failed.
+[19:30:16.605223][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 82
+[19:30:16.605236][info] [4/121] Robust Resection of view: 1235440217
+[19:30:16.605767][info] Resection of view 1235440217 failed.
+[19:30:16.606747][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 81
+[19:30:16.606805][info] [4/121] Robust Resection of view: 1529395885
+[19:30:16.607506][info] Resection of view 1529395885 failed.
+[19:30:16.608764][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 80
+[19:30:16.608827][info] [4/121] Robust Resection of view: 1854944978
+[19:30:16.609758][info] Resection of view 1854944978 failed.
+[19:30:16.613025][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 79
+[19:30:16.613981][info] [4/121] Robust Resection of view: 92408672
+[19:30:16.614614][info] Resection of view 92408672 failed.
+[19:30:16.614687][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 78
+[19:30:16.614702][info] [4/121] Robust Resection of view: 874772749
+[19:30:16.615338][info] Resection of view 874772749 failed.
+[19:30:16.615391][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 77
+[19:30:16.615402][info] [4/121] Robust Resection of view: 311886120
+[19:30:16.616022][info] Resection of view 311886120 failed.
+[19:30:16.616206][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 76
+[19:30:16.616218][info] [4/121] Robust Resection of view: 1193213158
+[19:30:16.616786][info] Resection of view 1193213158 failed.
+[19:30:16.616837][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 75
+[19:30:16.616851][info] [4/121] Robust Resection of view: 921111724
+[19:30:16.617482][info] Resection of view 921111724 failed.
+[19:30:16.618008][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 74
+[19:30:16.618018][info] [4/121] Robust Resection of view: 1026342842
+[19:30:16.618552][info] Resection of view 1026342842 failed.
+[19:30:16.618600][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 73
+[19:30:16.618609][info] [4/121] Robust Resection of view: 1577131749
+[19:30:16.619200][info] Resection of view 1577131749 failed.
+[19:30:16.619440][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 72
+[19:30:16.619450][info] [4/121] Robust Resection of view: 540954467
+[19:30:16.620082][info] Resection of view 540954467 failed.
+[19:30:16.620130][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 71
+[19:30:16.620140][info] [4/121] Robust Resection of view: 1415303165
+[19:30:16.620651][info] Resection of view 1415303165 failed.
+[19:30:16.620694][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 70
+[19:30:16.620705][info] [4/121] Robust Resection of view: 635017622
+[19:30:16.621389][info] Resection of view 635017622 failed.
+[19:30:16.621435][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 69
+[19:30:16.621445][info] [4/121] Robust Resection of view: 40381463
+[19:30:16.622045][info] Resection of view 40381463 failed.
+[19:30:16.622096][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 68
+[19:30:16.622105][info] [4/121] Robust Resection of view: 691425136
+[19:30:16.622560][info] Resection of view 691425136 failed.
+[19:30:16.625410][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 67
+[19:30:16.625424][info] [4/121] Robust Resection of view: 1577133575
+[19:30:16.631158][info] Resection of view 1577133575 failed.
+[19:30:16.635225][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 66
+[19:30:16.638689][info] [4/121] Robust Resection of view: 102203726
+[19:30:16.639329][info] Resection of view 102203726 failed.
+[19:30:16.640817][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 65
+[19:30:16.640970][info] [4/121] Robust Resection of view: 117293799
+[19:30:16.646314][info] Resection of view 117293799 failed.
+[19:30:16.653067][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 64
+[19:30:16.656860][info] [4/121] Robust Resection of view: 1686752172
+[19:30:16.657636][info] Resection of view 1686752172 failed.
+[19:30:16.664606][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 63
+[19:30:16.664637][info] [4/121] Robust Resection of view: 1538771919
+[19:30:16.665307][info] Resection of view 1538771919 failed.
+[19:30:16.665357][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 62
+[19:30:16.665369][info] [4/121] Robust Resection of view: 1471139319
+[19:30:16.666156][info] Resection of view 1471139319 failed.
+[19:30:16.666199][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 61
+[19:30:16.666209][info] [4/121] Robust Resection of view: 29239695
+[19:30:16.666739][info] Resection of view 29239695 failed.
+[19:30:16.666780][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 60
+[19:30:16.666791][info] [4/121] Robust Resection of view: 134834552
+[19:30:16.667346][info] Resection of view 134834552 failed.
+[19:30:16.667388][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 59
+[19:30:16.667399][info] [4/121] Robust Resection of view: 821651159
+[19:30:16.668063][info] Resection of view 821651159 failed.
+[19:30:16.668979][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 58
+[19:30:16.668991][info] [4/121] Robust Resection of view: 180318746
+[19:30:16.669455][info] Resection of view 180318746 failed.
+[19:30:16.669499][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 57
+[19:30:16.669509][info] [4/121] Robust Resection of view: 1521466623
+[19:30:16.674761][info] Resection of view 1521466623 failed.
+[19:30:16.682988][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 56
+[19:30:16.686930][info] [4/121] Robust Resection of view: 300929576
+[19:30:16.687574][info] Resection of view 300929576 failed.
+[19:30:16.694216][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 55
+[19:30:16.697818][info] [4/121] Robust Resection of view: 353540953
+[19:30:16.698462][info] Resection of view 353540953 failed.
+[19:30:16.707740][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 54
+[19:30:16.711043][info] [4/121] Robust Resection of view: 1419197189
+[19:30:16.715935][info] Resection of view 1419197189 failed.
+[19:30:16.721838][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 53
+[19:30:16.725043][info] [4/121] Robust Resection of view: 1094765462
+[19:30:16.725653][info] Resection of view 1094765462 failed.
+[19:30:16.736039][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 52
+[19:30:16.739365][info] [4/121] Robust Resection of view: 135351169
+[19:30:16.741226][info] Resection of view 135351169 failed.
+[19:30:16.746044][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 51
+[19:30:16.747036][info] [4/121] Robust Resection of view: 447249642
+[19:30:16.751971][info] Resection of view 447249642 failed.
+[19:30:16.755784][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 50
+[19:30:16.757397][info] [4/121] Robust Resection of view: 689131578
+[19:30:16.757884][info] Resection of view 689131578 failed.
+[19:30:16.764871][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 49
+[19:30:16.768040][info] [4/121] Robust Resection of view: 137516027
+[19:30:16.768539][info] Resection of view 137516027 failed.
+[19:30:16.778056][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 48
+[19:30:16.781829][info] [4/121] Robust Resection of view: 792619510
+[19:30:16.782520][info] Resection of view 792619510 failed.
+[19:30:16.790547][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 47
+[19:30:16.790773][info] [4/121] Robust Resection of view: 1449829882
+[19:30:16.796406][info] Resection of view 1449829882 failed.
+[19:30:16.801045][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 46
+[19:30:16.804866][info] [4/121] Robust Resection of view: 420610010
+[19:30:16.805448][info] Resection of view 420610010 failed.
+[19:30:16.816188][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 45
+[19:30:16.820006][info] [4/121] Robust Resection of view: 814006776
+[19:30:16.820662][info] Resection of view 814006776 failed.
+[19:30:16.830838][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 44
+[19:30:16.833757][info] [4/121] Robust Resection of view: 1974783501
+[19:30:16.835625][info] Resection of view 1974783501 failed.
+[19:30:16.846046][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 43
+[19:30:16.849861][info] [4/121] Robust Resection of view: 1633222816
+[19:30:16.850448][info] Resection of view 1633222816 failed.
+[19:30:16.856556][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 42
+[19:30:16.858035][info] [4/121] Robust Resection of view: 1874069148
+[19:30:16.858589][info] Resection of view 1874069148 failed.
+[19:30:16.869061][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 41
+[19:30:16.870046][info] [4/121] Robust Resection of view: 24110342
+[19:30:16.870532][info] Resection of view 24110342 failed.
+[19:30:16.876664][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 40
+[19:30:16.880034][info] [4/121] Robust Resection of view: 1419688536
+[19:30:16.884215][info] Resection of view 1419688536 failed.
+[19:30:16.890361][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 39
+[19:30:16.893993][info] [4/121] Robust Resection of view: 801213057
+[19:30:16.894470][info] Resection of view 801213057 failed.
+[19:30:16.904860][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 38
+[19:30:16.905790][info] [4/121] Robust Resection of view: 647151971
+[19:30:16.906322][info] Resection of view 647151971 failed.
+[19:30:16.907174][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 37
+[19:30:16.907259][info] [4/121] Robust Resection of view: 1172574591
+[19:30:16.907768][info] Resection of view 1172574591 failed.
+[19:30:16.907800][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 36
+[19:30:16.907810][info] [4/121] Robust Resection of view: 2128919186
+[19:30:16.908265][info] Resection of view 2128919186 failed.
+[19:30:16.908297][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 35
+[19:30:16.908309][info] [4/121] Robust Resection of view: 37638227
+[19:30:16.908911][info] Resection of view 37638227 failed.
+[19:30:16.908942][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 34
+[19:30:16.908959][info] [4/121] Robust Resection of view: 924855226
+[19:30:16.910324][info] Resection of view 924855226 failed.
+[19:30:16.910356][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 33
+[19:30:16.910365][info] [4/121] Robust Resection of view: 333753752
+[19:30:16.915596][info] Resection of view 333753752 failed.
+[19:30:16.921865][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 32
+[19:30:16.925196][info] [4/121] Robust Resection of view: 1926402863
+[19:30:16.925673][info] Resection of view 1926402863 failed.
+[19:30:16.936047][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 31
+[19:30:16.937044][info] [4/121] Robust Resection of view: 956907076
+[19:30:16.941203][info] Resection of view 956907076 failed.
+[19:30:16.946043][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 30
+[19:30:16.949948][info] [4/121] Robust Resection of view: 585996099
+[19:30:16.950473][info] Resection of view 585996099 failed.
+[19:30:16.954237][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 29
+[19:30:16.954930][info] [4/121] Robust Resection of view: 1568933792
+[19:30:16.962039][info] Resection of view 1568933792 failed.
+[19:30:16.966483][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 28
+[19:30:16.969041][info] [4/121] Robust Resection of view: 818387885
+[19:30:16.969508][info] Resection of view 818387885 failed.
+[19:30:16.974303][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 27
+[19:30:16.978126][info] [4/121] Robust Resection of view: 2145322453
+[19:30:16.987032][info] Resection of view 2145322453 failed.
+[19:30:16.994769][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 26
+[19:30:16.998040][info] [4/121] Robust Resection of view: 854605543
+[19:30:17.002464][info] Resection of view 854605543 failed.
+[19:30:17.010246][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 25
+[19:30:17.012890][info] [4/121] Robust Resection of view: 2136248430
+[19:30:17.013351][info] Resection of view 2136248430 failed.
+[19:30:17.023049][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 24
+[19:30:17.028047][info] [4/121] Robust Resection of view: 936359225
+[19:30:17.028533][info] Resection of view 936359225 failed.
+[19:30:17.031151][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 23
+[19:30:17.031166][info] [4/121] Robust Resection of view: 1475717019
+[19:30:17.031636][info] Resection of view 1475717019 failed.
+[19:30:17.031663][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 22
+[19:30:17.031674][info] [4/121] Robust Resection of view: 1412184090
+[19:30:17.032112][info] Resection of view 1412184090 failed.
+[19:30:17.032469][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 21
+[19:30:17.032481][info] [4/121] Robust Resection of view: 861506519
+[19:30:17.032939][info] Resection of view 861506519 failed.
+[19:30:17.032961][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 20
+[19:30:17.032971][info] [4/121] Robust Resection of view: 1227058409
+[19:30:17.037263][info] Resection of view 1227058409 failed.
+[19:30:17.044976][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 19
+[19:30:17.048698][info] [4/121] Robust Resection of view: 660184821
+[19:30:17.049300][info] Resection of view 660184821 failed.
+[19:30:17.060298][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 18
+[19:30:17.060325][info] [4/121] Robust Resection of view: 808808188
+[19:30:17.060773][info] Resection of view 808808188 failed.
+[19:30:17.075415][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 17
+[19:30:17.075445][info] [4/121] Robust Resection of view: 1130832282
+[19:30:17.077459][info] Resection of view 1130832282 failed.
+[19:30:17.090819][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 16
+[19:30:17.090834][info] [4/121] Robust Resection of view: 1136337697
+[19:30:17.091374][info] Resection of view 1136337697 failed.
+[19:30:17.104852][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 15
+[19:30:17.104870][info] [4/121] Robust Resection of view: 1948286188
+[19:30:17.105307][info] Resection of view 1948286188 failed.
+[19:30:17.119028][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 14
+[19:30:17.119041][info] [4/121] Robust Resection of view: 1107718596
+[19:30:17.125312][info] Resection of view 1107718596 failed.
+[19:30:17.133044][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 13
+[19:30:17.137004][info] [4/121] Robust Resection of view: 1757332998
+[19:30:17.137649][info] Resection of view 1757332998 failed.
+[19:30:17.150835][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 12
+[19:30:17.150852][info] [4/121] Robust Resection of view: 298216865
+[19:30:17.150860][info] Resection of view 298216865 failed.
+[19:30:17.164829][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 11
+[19:30:17.164846][info] [4/121] Robust Resection of view: 784385111
+[19:30:17.165354][info] Resection of view 784385111 failed.
+[19:30:17.179031][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 10
+[19:30:17.179049][info] [4/121] Robust Resection of view: 146190649
+[19:30:17.179530][info] Resection of view 146190649 failed.
+[19:30:17.193029][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 9
+[19:30:17.193041][info] [4/121] Robust Resection of view: 19682727
+[19:30:17.193557][info] Resection of view 19682727 failed.
+[19:30:17.207813][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 8
+[19:30:17.207830][info] [4/121] Robust Resection of view: 940462438
+[19:30:17.215328][info] Resection of view 940462438 failed.
+[19:30:17.221803][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 7
+[19:30:17.229032][info] [4/121] Robust Resection of view: 497253516
+[19:30:17.229441][info] Resection of view 497253516 failed.
+[19:30:17.236968][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 6
+[19:30:17.243799][info] [4/121] Robust Resection of view: 961955224
+[19:30:17.244302][info] Resection of view 961955224 failed.
+[19:30:17.251901][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 5
+[19:30:17.259035][info] [4/121] Robust Resection of view: 857558232
+[19:30:17.259469][info] Resection of view 857558232 failed.
+[19:30:17.266830][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 4
+[19:30:17.273790][info] [4/121] Robust Resection of view: 536038513
+[19:30:17.274198][info] Resection of view 536038513 failed.
+[19:30:17.281039][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 3
+[19:30:17.288038][info] [4/121] Robust Resection of view: 1203940946
+[19:30:17.288472][info] Resection of view 1203940946 failed.
+[19:30:17.295031][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 2
+[19:30:17.301817][info] [4/121] Robust Resection of view: 1434572590
+[19:30:17.301825][info] Resection of view 1434572590 failed.
+[19:30:17.308819][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 1
+[19:30:17.316030][info] [4/121] Robust Resection of view: 713618978
+[19:30:17.316039][info] Resection of view 713618978 failed.
+[19:30:17.316044][info] Incremental Reconstruction completed with 2 iterations:
+	- # number of resection groups: 2
+	- # number of poses: 3
+	- # number of landmarks: 49
+[19:30:17.316100][info] Structure from Motion statistics:
+	- # input images: 121
+	- # cameras calibrated: 3
+	- # poses: 3
+	- # landmarks: 49
+	- elapsed time: 1.753
+	- residual RMSE: 1.45383
+[19:30:17.316116][info]  - # sift: 49
+[19:30:17.316138][info] Histogram of residuals:
+
+0	|	38
+0.5	|	26
+1	|	24
+1.5	|	12
+2	|	26
+2.5	|	5
+3	|	1
+3.5	|	2
+4	|	5
+4.5	|	3
+5	|	2
+5.5	|	1
+6	|	2
+6.5	|	0
+7
+[19:30:17.316162][info] # landmarks: 49
+[19:30:17.316164][info] # overall observations: 147
+[19:30:17.316166][info] Landmarks observations length min: 3, mean: 3, median: 3, max: 3
+[19:30:17.316168][info] Histogram of observations length:
+
+3	|	49
+4
+[19:30:17.316174][info] Landmarks per view min: 0, mean: 0, median: 0, max: 0
+[19:30:17.316177][info] Histogram of nb landmarks per view:
+
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+1
+[19:30:17.319178][info] X axis rotation:
+    0.998791    0.0491533 -1.92207e-05
+  -0.0491533     0.998791 -0.000781598
+-1.92207e-05  0.000781598            1
+[19:30:17.319552][info] Initial point cloud center:   0.290228 -0.0108236 -0.0155247
+[19:30:17.319557][info] Initial point cloud scale: 0.40059
+[19:30:17.319582][info] No GPS information available to use it.
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[19:30:17.372178][info] Structure from motion took (s): 32.422000
+[19:30:17.372221][info] Generating HTML report...
+[19:30:17.372631][info] Export SfMData to disk: /tmp/MeshroomCache/StructureFromMotion/a548f4d886cd30edf83a377a39c4f718c1c5ba69/sfm.abc
+[19:30:17.399135][info] Structure from Motion results:
+	- # input images: 121
+	- # cameras calibrated: 3
+	- # poses: 3
+	- # landmarks: 49

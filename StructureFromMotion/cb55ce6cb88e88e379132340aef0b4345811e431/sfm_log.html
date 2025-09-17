@@ -1,0 +1,326 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>[log] Sequential SfM reconstruction</title>
+</head>
+<h1>[log] Sequential SfM reconstruction</h1>
+<hr>Dataset info:Views count: 121<br><h3>Essential Matrix.</h3>
+
+<b>Robust Essential matrix:</b><br>-> View I:<br>id: 293807204<br>image path: /home/leroy/office_dataset_aruco/left/frame_0114.png<br>-> View J:<br>id: 1333294495<br>image path: /home/leroy/office_dataset_aruco/left/frame_0007.png<br><br>- Threshold: 304.063<br>- Resection status: OK<br>- # points used for robust Essential matrix estimation: 683<br>- # points validated by robust estimation: 243<br>- % points validated: 0.355783<br><h3>Initial triangulation - Residual of the robust estimation.<br>Thresholded at: 304.063</h3>
+<h3>Histogram of residuals</h3>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.55556,1.11111,1.66667,2.22222,2.77778,3.33333,3.88889,4.44444,5.00000,];
+var data1= [269.00000,134.00000,44.00000,17.00000,13.00000,6.00000,0.00000,1.00000,2.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+var p2 = board.create('point',[304.06344,0.00000], {fixed:true});
+var p3 = board.create('point',[304.06344,269.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-1.00000,322.80000,6.00000,-53.80000]);
+</script>
+<hr><h4>Robust resection of view 980938774: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0012.png<br>- Threshold (error max): 3.99187<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 142<br>- % points validated: 0.916129<br><h4>Robust resection of view 1234638732: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0005.png<br>- Threshold (error max): 1.70247<br>- Resection status: OK<br>- # points used for Resection: 230<br>- # points validated by robust estimation: 193<br>- % points validated: 0.83913<br><h4>Robust resection of view 644363836: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0004.png<br>- Threshold (error max): 2.15823<br>- Resection status: OK<br>- # points used for Resection: 299<br>- # points validated by robust estimation: 243<br>- % points validated: 0.812709<br><h4>Robust resection of view 201883735: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0120.png<br>- Threshold (error max): 2.26455<br>- Resection status: OK<br>- # points used for Resection: 329<br>- # points validated by robust estimation: 257<br>- % points validated: 0.781155<br><h4>Robust resection of view 1637390768: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0002.png<br>- Threshold (error max): 2.02665<br>- Resection status: OK<br>- # points used for Resection: 458<br>- # points validated by robust estimation: 367<br>- % points validated: 0.80131<br><h4>Robust resection of view 2077387696: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0006.png<br>- Threshold (error max): 3.20602<br>- Resection status: OK<br>- # points used for Resection: 491<br>- # points validated by robust estimation: 407<br>- % points validated: 0.828921<br><h4>Robust resection of view 551617519: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0003.png<br>- Threshold (error max): 2.00222<br>- Resection status: OK<br>- # points used for Resection: 542<br>- # points validated by robust estimation: 432<br>- % points validated: 0.797048<br><h4>Robust resection of view 1560615097: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0119.png<br>- Threshold (error max): 2.60812<br>- Resection status: OK<br>- # points used for Resection: 596<br>- # points validated by robust estimation: 469<br>- % points validated: 0.786913<br><h4>Robust resection of view 1706079343: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0001.png<br>- Threshold (error max): 2.32219<br>- Resection status: OK<br>- # points used for Resection: 667<br>- # points validated by robust estimation: 551<br>- % points validated: 0.826087<br><h4>Robust resection of view 1764505351: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0121.png<br>- Threshold (error max): 2.02884<br>- Resection status: OK<br>- # points used for Resection: 754<br>- # points validated by robust estimation: 644<br>- % points validated: 0.854111<br><h4>Robust resection of view 2132626009: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0117.png<br>- Threshold (error max): 3.12042<br>- Resection status: OK<br>- # points used for Resection: 659<br>- # points validated by robust estimation: 555<br>- % points validated: 0.842185<br><h4>Robust resection of view 702688470: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0118.png<br>- Threshold (error max): 2.7127<br>- Resection status: OK<br>- # points used for Resection: 694<br>- # points validated by robust estimation: 572<br>- % points validated: 0.824207<br><h4>Robust resection of view 1611320355: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0115.png<br>- Threshold (error max): 3.92758<br>- Resection status: OK<br>- # points used for Resection: 761<br>- # points validated by robust estimation: 619<br>- % points validated: 0.813403<br><h4>Robust resection of view 123215478: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0116.png<br>- Threshold (error max): 2.62992<br>- Resection status: OK<br>- # points used for Resection: 763<br>- # points validated by robust estimation: 606<br>- % points validated: 0.794233<br><h4>Robust resection of view 1892204299: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0113.png<br>- Threshold (error max): 4.71844<br>- Resection status: OK<br>- # points used for Resection: 786<br>- # points validated by robust estimation: 645<br>- % points validated: 0.820611<br><h4>Robust resection of view 924855226: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0112.png<br>- Threshold (error max): 3.95554<br>- Resection status: OK<br>- # points used for Resection: 752<br>- # points validated by robust estimation: 592<br>- % points validated: 0.787234<br><h4>Robust resection of view 1359714848: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0009.png<br>- Threshold (error max): 4.37855<br>- Resection status: OK<br>- # points used for Resection: 730<br>- # points validated by robust estimation: 598<br>- % points validated: 0.819178<br><h4>Robust resection of view 1902805005: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0008.png<br>- Threshold (error max): 4.43433<br>- Resection status: OK<br>- # points used for Resection: 777<br>- # points validated by robust estimation: 648<br>- % points validated: 0.833977<br><h4>Robust resection of view 885049285: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0011.png<br>- Threshold (error max): 3.35329<br>- Resection status: OK<br>- # points used for Resection: 768<br>- # points validated by robust estimation: 577<br>- % points validated: 0.751302<br><h4>Robust resection of view 1321651417: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0010.png<br>- Threshold (error max): 3.48748<br>- Resection status: OK<br>- # points used for Resection: 829<br>- # points validated by robust estimation: 641<br>- % points validated: 0.773221<br><h4>Robust resection of view 1762235166: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0013.png<br>- Threshold (error max): 3.80824<br>- Resection status: OK<br>- # points used for Resection: 730<br>- # points validated by robust estimation: 577<br>- % points validated: 0.790411<br><h4>Robust resection of view 593086164: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0014.png<br>- Threshold (error max): 4.28245<br>- Resection status: OK<br>- # points used for Resection: 669<br>- # points validated by robust estimation: 540<br>- % points validated: 0.807175<br><h4>Robust resection of view 1874069148: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0111.png<br>- Threshold (error max): 5.41245<br>- Resection status: OK<br>- # points used for Resection: 736<br>- # points validated by robust estimation: 608<br>- % points validated: 0.826087<br><h4>Robust resection of view 1873566683: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0063.png<br>- Threshold (error max): 240.008<br>- Resection status: OK<br>- # points used for Resection: 107<br>- # points validated by robust estimation: 62<br>- % points validated: 0.579439<br><h4>Robust resection of view 536038513: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0110.png<br>- Threshold (error max): 5.44059<br>- Resection status: OK<br>- # points used for Resection: 561<br>- # points validated by robust estimation: 463<br>- % points validated: 0.825312<br><h4>Robust resection of view 821651159: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0109.png<br>- Threshold (error max): 4.993<br>- Resection status: OK<br>- # points used for Resection: 542<br>- # points validated by robust estimation: 414<br>- % points validated: 0.763838<br><h4>Robust resection of view 1984110656: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0019.png<br>- Threshold (error max): 4.25035<br>- Resection status: OK<br>- # points used for Resection: 277<br>- # points validated by robust estimation: 178<br>- % points validated: 0.642599<br><h4>Robust resection of view 441206332: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0017.png<br>- Threshold (error max): 4.46942<br>- Resection status: OK<br>- # points used for Resection: 488<br>- # points validated by robust estimation: 362<br>- % points validated: 0.741803<br><h4>Robust resection of view 1890186707: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0015.png<br>- Threshold (error max): 4.31326<br>- Resection status: OK<br>- # points used for Resection: 738<br>- # points validated by robust estimation: 591<br>- % points validated: 0.800813<br><h4>Robust resection of view 407285790: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0025.png<br>- Threshold (error max): 2.46026e-11<br>- Resection status: FAILED<br>- # points used for Resection: 91<br>- # points validated by robust estimation: 4<br>- % points validated: 0.043956<br><h4>Robust resection of view 581550557: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0027.png<br>- Threshold (error max): 3.32082e-12<br>- Resection status: FAILED<br>- # points used for Resection: 84<br>- # points validated by robust estimation: 4<br>- % points validated: 0.047619<br><h4>Robust resection of view 1001479923: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0073.png<br>- Threshold (error max): 6.76038e-12<br>- Resection status: FAILED<br>- # points used for Resection: 79<br>- # points validated by robust estimation: 4<br>- % points validated: 0.0506329<br><h4>Robust resection of view 1475717019: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0056.png<br>- Threshold (error max): 264.595<br>- Resection status: OK<br>- # points used for Resection: 87<br>- # points validated by robust estimation: 55<br>- % points validated: 0.632184<br><h4>Robust resection of view 1415303165: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0070.png<br>- Threshold (error max): 655.85<br>- Resection status: OK<br>- # points used for Resection: 90<br>- # points validated by robust estimation: 90<br>- % points validated: 1<br><h4>Robust resection of view 134834552: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0030.png<br>- Threshold (error max): 34.037<br>- Resection status: FAILED<br>- # points used for Resection: 83<br>- # points validated by robust estimation: 10<br>- % points validated: 0.120482<br><h4>Robust resection of view 1577133575: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0029.png<br>- Threshold (error max): 75.7011<br>- Resection status: FAILED<br>- # points used for Resection: 86<br>- # points validated by robust estimation: 15<br>- % points validated: 0.174419<br><h4>Robust resection of view 691425136: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0054.png<br>- Threshold (error max): 465.734<br>- Resection status: OK<br>- # points used for Resection: 104<br>- # points validated by robust estimation: 94<br>- % points validated: 0.903846<br><h4>Robust resection of view 1471139319: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0057.png<br>- Threshold (error max): 274.044<br>- Resection status: OK<br>- # points used for Resection: 89<br>- # points validated by robust estimation: 57<br>- % points validated: 0.640449<br><h4>Robust resection of view 1538771919: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0061.png<br>- Threshold (error max): 305.641<br>- Resection status: OK<br>- # points used for Resection: 109<br>- # points validated by robust estimation: 74<br>- % points validated: 0.678899<br><h4>Robust resection of view 1521466623: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0024.png<br>- Threshold (error max): 404.962<br>- Resection status: OK<br>- # points used for Resection: 109<br>- # points validated by robust estimation: 77<br>- % points validated: 0.706422<br><h4>Robust resection of view 1686752172: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0065.png<br>- Threshold (error max): 529.357<br>- Resection status: OK<br>- # points used for Resection: 115<br>- # points validated by robust estimation: 103<br>- % points validated: 0.895652<br><h4>Robust resection of view 135351169: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0052.png<br>- Threshold (error max): 377.499<br>- Resection status: OK<br>- # points used for Resection: 98<br>- # points validated by robust estimation: 74<br>- % points validated: 0.755102<br><h4>Robust resection of view 743620604: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0021.png<br>- Threshold (error max): 3.64985<br>- Resection status: OK<br>- # points used for Resection: 161<br>- # points validated by robust estimation: 55<br>- % points validated: 0.341615<br><h4>Robust resection of view 1026342842: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0062.png<br>- Threshold (error max): 508.938<br>- Resection status: OK<br>- # points used for Resection: 102<br>- # points validated by robust estimation: 96<br>- % points validated: 0.941176<br><h4>Robust resection of view 1094765462: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0104.png<br>- Threshold (error max): 3.99863<br>- Resection status: OK<br>- # points used for Resection: 129<br>- # points validated by robust estimation: 45<br>- % points validated: 0.348837<br><h4>Robust resection of view 818387885: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0106.png<br>- Threshold (error max): 5.40449<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 74<br>- % points validated: 0.480519<br><h4>Robust resection of view 1107718596: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0107.png<br>- Threshold (error max): 5.60795<br>- Resection status: OK<br>- # points used for Resection: 288<br>- # points validated by robust estimation: 195<br>- % points validated: 0.677083<br><h4>Robust resection of view 1100953126: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0018.png<br>- Threshold (error max): 4.52993<br>- Resection status: OK<br>- # points used for Resection: 424<br>- # points validated by robust estimation: 289<br>- % points validated: 0.681604<br><h4>Robust resection of view 968024911: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0016.png<br>- Threshold (error max): 4.35851<br>- Resection status: OK<br>- # points used for Resection: 680<br>- # points validated by robust estimation: 536<br>- % points validated: 0.788235<br><h4>Robust resection of view 1235440217: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0067.png<br>- Threshold (error max): 3.87825e-12<br>- Resection status: FAILED<br>- # points used for Resection: 97<br>- # points validated by robust estimation: 4<br>- % points validated: 0.0412371<br><h4>Robust resection of view 921111724: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0064.png<br>- Threshold (error max): 428.751<br>- Resection status: OK<br>- # points used for Resection: 92<br>- # points validated by robust estimation: 78<br>- % points validated: 0.847826<br><h4>Robust resection of view 854605543: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0105.png<br>- Threshold (error max): 5.23242<br>- Resection status: OK<br>- # points used for Resection: 162<br>- # points validated by robust estimation: 80<br>- % points validated: 0.493827<br><h4>Robust resection of view 1193213158: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0058.png<br>- Threshold (error max): 403.794<br>- Resection status: OK<br>- # points used for Resection: 86<br>- # points validated by robust estimation: 69<br>- % points validated: 0.802326<br><h4>Robust resection of view 497253516: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0108.png<br>- Threshold (error max): 4.65311<br>- Resection status: OK<br>- # points used for Resection: 406<br>- # points validated by robust estimation: 285<br>- % points validated: 0.70197<br><h4>Robust resection of view 982301782: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0020.png<br>- Threshold (error max): 4.92759<br>- Resection status: OK<br>- # points used for Resection: 261<br>- # points validated by robust estimation: 130<br>- % points validated: 0.498084<br><h4>Robust resection of view 734010976: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0022.png<br>- Threshold (error max): 4.21459<br>- Resection status: OK<br>- # points used for Resection: 151<br>- # points validated by robust estimation: 36<br>- % points validated: 0.238411<br><h4>Robust resection of view 1854944978: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0069.png<br>- Threshold (error max): 534<br>- Resection status: OK<br>- # points used for Resection: 97<br>- # points validated by robust estimation: 90<br>- % points validated: 0.927835<br><h4>Robust resection of view 1468758867: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0071.png<br>- Threshold (error max): 471.539<br>- Resection status: OK<br>- # points used for Resection: 86<br>- # points validated by robust estimation: 76<br>- % points validated: 0.883721<br><h4>Robust resection of view 2071607410: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0023.png<br>- Threshold (error max): 2.99227<br>- Resection status: FAILED<br>- # points used for Resection: 127<br>- # points validated by robust estimation: 20<br>- % points validated: 0.15748<br><h4>Robust resection of view 117293799: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0036.png<br>- Threshold (error max): 4.61886e-13<br>- Resection status: FAILED<br>- # points used for Resection: 140<br>- # points validated by robust estimation: 4<br>- % points validated: 0.0285714<br><h4>Robust resection of view 1529395885: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0026.png<br>- Threshold (error max): 1.39624e-12<br>- Resection status: FAILED<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 4<br>- % points validated: 0.0245399<br><h4>Robust resection of view 689131578: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0037.png<br>- Threshold (error max): 0.00883169<br>- Resection status: FAILED<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 17<br>- % points validated: 0.10828<br><h4>Robust resection of view 1434572590: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0042.png<br>- Threshold (error max): 0.281286<br>- Resection status: OK<br>- # points used for Resection: 299<br>- # points validated by robust estimation: 155<br>- % points validated: 0.518395<br><h4>Robust resection of view 1172574591: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0046.png<br>- Threshold (error max): 3.39644<br>- Resection status: OK<br>- # points used for Resection: 475<br>- # points validated by robust estimation: 262<br>- % points validated: 0.551579<br><h4>Robust resection of view 146190649: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0079.png<br>- Threshold (error max): 0.333689<br>- Resection status: OK<br>- # points used for Resection: 591<br>- # points validated by robust estimation: 157<br>- % points validated: 0.265651<br><h4>Robust resection of view 180318746: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0092.png<br>- Threshold (error max): 3.51339<br>- Resection status: OK<br>- # points used for Resection: 620<br>- # points validated by robust estimation: 360<br>- % points validated: 0.580645<br><h4>Robust resection of view 784385111: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0097.png<br>- Threshold (error max): 0.47108<br>- Resection status: OK<br>- # points used for Resection: 541<br>- # points validated by robust estimation: 192<br>- % points validated: 0.354898<br><h4>Robust resection of view 540954467: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0075.png<br>- Threshold (error max): 4.04654<br>- Resection status: OK<br>- # points used for Resection: 566<br>- # points validated by robust estimation: 315<br>- % points validated: 0.556537<br><h4>Robust resection of view 29239695: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0059.png<br>- Threshold (error max): 2.82642<br>- Resection status: OK<br>- # points used for Resection: 573<br>- # points validated by robust estimation: 318<br>- % points validated: 0.554974<br><h4>Robust resection of view 1974783501: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0076.png<br>- Threshold (error max): 4.35126<br>- Resection status: OK<br>- # points used for Resection: 566<br>- # points validated by robust estimation: 315<br>- % points validated: 0.556537<br><h4>Robust resection of view 1757332998: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0087.png<br>- Threshold (error max): 2.80589<br>- Resection status: OK<br>- # points used for Resection: 634<br>- # points validated by robust estimation: 350<br>- % points validated: 0.55205<br><h4>Robust resection of view 298216865: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0050.png<br>- Threshold (error max): 3.92092<br>- Resection status: OK<br>- # points used for Resection: 594<br>- # points validated by robust estimation: 335<br>- % points validated: 0.563973<br><h4>Robust resection of view 660184821: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0083.png<br>- Threshold (error max): 2.85749<br>- Resection status: OK<br>- # points used for Resection: 630<br>- # points validated by robust estimation: 344<br>- % points validated: 0.546032<br><h4>Robust resection of view 857558232: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0085.png<br>- Threshold (error max): 2.90716<br>- Resection status: OK<br>- # points used for Resection: 649<br>- # points validated by robust estimation: 349<br>- % points validated: 0.53775<br><h4>Robust resection of view 300929576: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0081.png<br>- Threshold (error max): 3.98151<br>- Resection status: OK<br>- # points used for Resection: 620<br>- # points validated by robust estimation: 350<br>- % points validated: 0.564516<br><h4>Robust resection of view 311886120: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0066.png<br>- Threshold (error max): 3.47983<br>- Resection status: OK<br>- # points used for Resection: 612<br>- # points validated by robust estimation: 342<br>- % points validated: 0.558824<br><h4>Robust resection of view 137516027: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0060.png<br>- Threshold (error max): 3.93943<br>- Resection status: OK<br>- # points used for Resection: 617<br>- # points validated by robust estimation: 366<br>- % points validated: 0.593193<br><h4>Robust resection of view 2136248430: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0088.png<br>- Threshold (error max): 3.82966<br>- Resection status: OK<br>- # points used for Resection: 638<br>- # points validated by robust estimation: 366<br>- % points validated: 0.573668<br><h4>Robust resection of view 940462438: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0091.png<br>- Threshold (error max): 3.8498<br>- Resection status: OK<br>- # points used for Resection: 632<br>- # points validated by robust estimation: 368<br>- % points validated: 0.582278<br><h4>Robust resection of view 37638227: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0084.png<br>- Threshold (error max): 2.82161<br>- Resection status: OK<br>- # points used for Resection: 613<br>- # points validated by robust estimation: 337<br>- % points validated: 0.549755<br><h4>Robust resection of view 792619510: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0082.png<br>- Threshold (error max): 3.87618<br>- Resection status: OK<br>- # points used for Resection: 631<br>- # points validated by robust estimation: 357<br>- % points validated: 0.565769<br><h4>Robust resection of view 814006776: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0055.png<br>- Threshold (error max): 3.50302<br>- Resection status: OK<br>- # points used for Resection: 650<br>- # points validated by robust estimation: 363<br>- % points validated: 0.558462<br><h4>Robust resection of view 1419197189: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0089.png<br>- Threshold (error max): 2.95876<br>- Resection status: OK<br>- # points used for Resection: 637<br>- # points validated by robust estimation: 348<br>- % points validated: 0.546311<br><h4>Robust resection of view 24110342: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0086.png<br>- Threshold (error max): 3.97971<br>- Resection status: OK<br>- # points used for Resection: 520<br>- # points validated by robust estimation: 296<br>- % points validated: 0.569231<br><h4>Robust resection of view 647151971: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0078.png<br>- Threshold (error max): 2.86012<br>- Resection status: OK<br>- # points used for Resection: 614<br>- # points validated by robust estimation: 303<br>- % points validated: 0.493485<br><h4>Robust resection of view 1449829882: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0053.png<br>- Threshold (error max): 1.53367<br>- Resection status: OK<br>- # points used for Resection: 649<br>- # points validated by robust estimation: 203<br>- % points validated: 0.312789<br><h4>Robust resection of view 961955224: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0095.png<br>- Threshold (error max): 3.47634<br>- Resection status: OK<br>- # points used for Resection: 636<br>- # points validated by robust estimation: 356<br>- % points validated: 0.559748<br><h4>Robust resection of view 635017622: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0074.png<br>- Threshold (error max): 3.56019<br>- Resection status: OK<br>- # points used for Resection: 582<br>- # points validated by robust estimation: 307<br>- % points validated: 0.527491<br><h4>Robust resection of view 1577131749: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0077.png<br>- Threshold (error max): 3.59918<br>- Resection status: OK<br>- # points used for Resection: 600<br>- # points validated by robust estimation: 309<br>- % points validated: 0.515<br><h4>Robust resection of view 92408672: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0028.png<br>- Threshold (error max): 0.168171<br>- Resection status: OK<br>- # points used for Resection: 201<br>- # points validated by robust estimation: 48<br>- % points validated: 0.238806<br><h4>Robust resection of view 420610010: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0033.png<br>- Threshold (error max): 0.164452<br>- Resection status: OK<br>- # points used for Resection: 238<br>- # points validated by robust estimation: 66<br>- % points validated: 0.277311<br><h4>Robust resection of view 102203726: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0034.png<br>- Threshold (error max): 0.230343<br>- Resection status: OK<br>- # points used for Resection: 238<br>- # points validated by robust estimation: 54<br>- % points validated: 0.226891<br><h4>Robust resection of view 2145322453: <br></h4>
+<h4>Robust resection of view 2133613474: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0031.png<br>- Threshold (error max): 0.213819<br>- Resection status: OK<br>- # points used for Resection: 242<br>- # points validated by robust estimation: 68<br>- % points validated: 0.280992<br>
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0032.png<br>- Threshold (error max): 0.217807<br>- Resection status: OK<br>- # points used for Resection: 253<br>- # points validated by robust estimation: 78<br>- % points validated: 0.3083<br><h4>Robust resection of view 353540953: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0035.png<br>- Threshold (error max): 0.221325<br>- Resection status: OK<br>- # points used for Resection: 339<br>- # points validated by robust estimation: 175<br>- % points validated: 0.516224<br><h4>Robust resection of view 956907076: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0041.png<br>- Threshold (error max): 0.157947<br>- Resection status: OK<br>- # points used for Resection: 1139<br>- # points validated by robust estimation: 959<br>- % points validated: 0.841967<br><h4>Robust resection of view 1926402863: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0044.png<br>- Threshold (error max): 0.144627<br>- Resection status: OK<br>- # points used for Resection: 1465<br>- # points validated by robust estimation: 1282<br>- % points validated: 0.875085<br><h4>Robust resection of view 585996099: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0047.png<br>- Threshold (error max): 0.145687<br>- Resection status: OK<br>- # points used for Resection: 1821<br>- # points validated by robust estimation: 1643<br>- % points validated: 0.902251<br><h4>Robust resection of view 1227058409: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0103.png<br>- Threshold (error max): 0.0957306<br>- Resection status: OK<br>- # points used for Resection: 1647<br>- # points validated by robust estimation: 1407<br>- % points validated: 0.854281<br><h4>Robust resection of view 936359225: <br></h4>
+<h4>Robust resection of view 1130832282: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0049.png<br>- Threshold (error max): 0.134263<br>- Resection status: OK<br>- # points used for Resection: 1984<br>- # points validated by robust estimation: 1809<br>- % points validated: 0.911794<br>
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0102.png<br>- Threshold (error max): 0.0894369<br>- Resection status: OK<br>- # points used for Resection: 1773<br>- # points validated by robust estimation: 1488<br>- % points validated: 0.839256<br><h4>Robust resection of view 19682727: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0080.png<br>- Threshold (error max): 0.149502<br>- Resection status: OK<br>- # points used for Resection: 1809<br>- # points validated by robust estimation: 1648<br>- % points validated: 0.911001<br><h4>Robust resection of view 447249642: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0048.png<br>- Threshold (error max): 0.138307<br>- Resection status: OK<br>- # points used for Resection: 1897<br>- # points validated by robust estimation: 1724<br>- % points validated: 0.908803<br><h4>Robust resection of view 808808188: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0101.png<br>- Threshold (error max): 0.0979525<br>- Resection status: OK<br>- # points used for Resection: 1874<br>- # points validated by robust estimation: 1578<br>- % points validated: 0.842049<br><h4>Robust resection of view 1136337697: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0099.png<br>- Threshold (error max): 0.147037<br>- Resection status: OK<br>- # points used for Resection: 2119<br>- # points validated by robust estimation: 1905<br>- % points validated: 0.899009<br><h4>Robust resection of view 713618978: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0098.png<br>- Threshold (error max): 0.16694<br>- Resection status: OK<br>- # points used for Resection: 2228<br>- # points validated by robust estimation: 2052<br>- % points validated: 0.921005<br><h4>Robust resection of view 333753752: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0045.png<br>- Threshold (error max): 0.149631<br>- Resection status: OK<br>- # points used for Resection: 1568<br>- # points validated by robust estimation: 1392<br>- % points validated: 0.887755<br><h4>Robust resection of view 1568933792: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0051.png<br>- Threshold (error max): 0.151687<br>- Resection status: OK<br>- # points used for Resection: 2182<br>- # points validated by robust estimation: 2027<br>- % points validated: 0.928964<br><h4>Robust resection of view 801213057: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0038.png<br>- Threshold (error max): 0.150251<br>- Resection status: OK<br>- # points used for Resection: 738<br>- # points validated by robust estimation: 555<br>- % points validated: 0.752033<br><h4>Robust resection of view 1203940946: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0094.png<br>- Threshold (error max): 0.159092<br>- Resection status: OK<br>- # points used for Resection: 2864<br>- # points validated by robust estimation: 2651<br>- % points validated: 0.925628<br><h4>Robust resection of view 1396338507: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0068.png<br>- Threshold (error max): 0.151779<br>- Resection status: OK<br>- # points used for Resection: 2841<br>- # points validated by robust estimation: 2631<br>- % points validated: 0.926082<br><h4>Robust resection of view 1948286188: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0043.png<br>- Threshold (error max): 0.141361<br>- Resection status: OK<br>- # points used for Resection: 1368<br>- # points validated by robust estimation: 1181<br>- % points validated: 0.863304<br><h4>Robust resection of view 1633222816: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0039.png<br>- Threshold (error max): 0.153786<br>- Resection status: OK<br>- # points used for Resection: 910<br>- # points validated by robust estimation: 719<br>- % points validated: 0.79011<br><h4>Robust resection of view 1419688536: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0040.png<br>- Threshold (error max): 0.163042<br>- Resection status: OK<br>- # points used for Resection: 1033<br>- # points validated by robust estimation: 852<br>- % points validated: 0.824782<br><h4>Robust resection of view 1412184090: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0096.png<br>- Threshold (error max): 0.15828<br>- Resection status: OK<br>- # points used for Resection: 2562<br>- # points validated by robust estimation: 2366<br>- % points validated: 0.923497<br><h4>Robust resection of view 2128919186: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0100.png<br>- Threshold (error max): 0.0811936<br>- Resection status: OK<br>- # points used for Resection: 1981<br>- # points validated by robust estimation: 1618<br>- % points validated: 0.816759<br><h4>Robust resection of view 40381463: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0090.png<br>- Threshold (error max): 0.144037<br>- Resection status: OK<br>- # points used for Resection: 2798<br>- # points validated by robust estimation: 2605<br>- % points validated: 0.931022<br><h4>Robust resection of view 874772749: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0072.png<br>- Threshold (error max): 0.157854<br>- Resection status: OK<br>- # points used for Resection: 2856<br>- # points validated by robust estimation: 2639<br>- % points validated: 0.92402<br><h4>Robust resection of view 861506519: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0093.png<br>- Threshold (error max): 0.143865<br>- Resection status: OK<br>- # points used for Resection: 2930<br>- # points validated by robust estimation: 2708<br>- % points validated: 0.924232<br><h4>Robust resection of view 1529395885: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0026.png<br>- Threshold (error max): 2.27303e-11<br>- Resection status: FAILED<br>- # points used for Resection: 337<br>- # points validated by robust estimation: 4<br>- % points validated: 0.0118694<br><h4>Robust resection of view 407285790: <br></h4>
+<h4>Robust resection of view 134834552: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0025.png<br>- Threshold (error max): 0.245219<br>- Resection status: OK<br>- # points used for Resection: 322<br>- # points validated by robust estimation: 72<br>- % points validated: 0.223602<br>
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0030.png<br>- Threshold (error max): 0.197278<br>- Resection status: OK<br>- # points used for Resection: 323<br>- # points validated by robust estimation: 69<br>- % points validated: 0.213622<br><h4>Robust resection of view 1577133575: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0029.png<br>- Threshold (error max): 0.100316<br>- Resection status: OK<br>- # points used for Resection: 349<br>- # points validated by robust estimation: 75<br>- % points validated: 0.2149<br><h4>Robust resection of view 581550557: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0027.png<br>- Threshold (error max): 0.109568<br>- Resection status: OK<br>- # points used for Resection: 330<br>- # points validated by robust estimation: 58<br>- % points validated: 0.175758<br><h4>Robust resection of view 1521466623: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0024.png<br>- Threshold (error max): 0.191098<br>- Resection status: OK<br>- # points used for Resection: 350<br>- # points validated by robust estimation: 70<br>- % points validated: 0.2<br><h4>Robust resection of view 2071607410: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0023.png<br>- Threshold (error max): 0.189728<br>- Resection status: OK<br>- # points used for Resection: 377<br>- # points validated by robust estimation: 70<br>- % points validated: 0.185676<br><h4>Robust resection of view 117293799: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0036.png<br>- Threshold (error max): 0.114859<br>- Resection status: OK<br>- # points used for Resection: 657<br>- # points validated by robust estimation: 398<br>- % points validated: 0.605784<br><h4>Robust resection of view 689131578: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0037.png<br>- Threshold (error max): 0.102397<br>- Resection status: OK<br>- # points used for Resection: 834<br>- # points validated by robust estimation: 574<br>- % points validated: 0.688249<br><h4>Robust resection of view 1475717019: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0056.png<br>- Threshold (error max): 0.123576<br>- Resection status: OK<br>- # points used for Resection: 3329<br>- # points validated by robust estimation: 3039<br>- % points validated: 0.912887<br><h4>Robust resection of view 1471139319: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0057.png<br>- Threshold (error max): 0.119381<br>- Resection status: OK<br>- # points used for Resection: 3476<br>- # points validated by robust estimation: 3191<br>- % points validated: 0.918009<br><h4>Robust resection of view 1235440217: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0067.png<br>- Threshold (error max): 0.161462<br>- Resection status: OK<br>- # points used for Resection: 3744<br>- # points validated by robust estimation: 3472<br>- % points validated: 0.92735<br><h4>Robust resection of view 1873566683: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0063.png<br>- Threshold (error max): 0.173099<br>- Resection status: OK<br>- # points used for Resection: 3775<br>- # points validated by robust estimation: 3536<br>- % points validated: 0.936689<br><h4>Robust resection of view 1193213158: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0058.png<br>- Threshold (error max): 0.148072<br>- Resection status: OK<br>- # points used for Resection: 3666<br>- # points validated by robust estimation: 3414<br>- % points validated: 0.93126<br><h4>Robust resection of view 921111724: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0064.png<br>- Threshold (error max): 0.171429<br>- Resection status: OK<br>- # points used for Resection: 3718<br>- # points validated by robust estimation: 3475<br>- % points validated: 0.934642<br><h4>Robust resection of view 1001479923: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0073.png<br>- Threshold (error max): 0.164602<br>- Resection status: OK<br>- # points used for Resection: 3712<br>- # points validated by robust estimation: 3487<br>- % points validated: 0.939386<br><h4>Robust resection of view 1538771919: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0061.png<br>- Threshold (error max): 0.162637<br>- Resection status: OK<br>- # points used for Resection: 3774<br>- # points validated by robust estimation: 3518<br>- % points validated: 0.932167<br><h4>Robust resection of view 1415303165: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0070.png<br>- Threshold (error max): 0.157212<br>- Resection status: OK<br>- # points used for Resection: 3729<br>- # points validated by robust estimation: 3456<br>- % points validated: 0.92679<br><h4>Robust resection of view 1529395885: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0026.png<br>- Threshold (error max): 0.161423<br>- Resection status: OK<br>- # points used for Resection: 329<br>- # points validated by robust estimation: 51<br>- % points validated: 0.155015<br><hr><h3>Structure from Motion process finished.</h3>
+Structure from Motion statistics:<br>- # input images: 121<br>- # camera calibrated: 121<br>- # poses: 121
+<br>- # landmarks: 8773<br>- elapsed time: 47.05<br>- residual RMSE: 0.538873<h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.50685,1.01370,1.52055,2.02740,2.53425,3.04110,3.54795,4.05479,4.56164,5.06849,5.57534,6.08219,6.58904,7.09589,7.60274,8.10959,8.61644,9.12329,9.63014,10.13699,10.64384,11.15068,11.65753,12.16438,12.67123,13.17808,13.68493,14.19178,14.69863,15.20548,15.71233,16.21918,16.72603,17.23288,17.73973,18.24658,18.75342,19.26027,19.76712,20.27397,20.78082,21.28767,21.79452,22.30137,22.80822,23.31507,23.82192,24.32877,24.83562,25.34247,25.84932,26.35616,26.86301,27.36986,27.87671,28.38356,28.89041,29.39726,29.90411,30.41096,30.91781,31.42466,31.93151,32.43836,32.94521,33.45205,33.95890,34.46575,34.97260,35.47945,35.98630,36.49315,37.00000,];
+var data1= [166053.00000,9221.00000,5172.00000,3223.00000,2061.00000,1450.00000,921.00000,588.00000,389.00000,263.00000,226.00000,157.00000,85.00000,75.00000,60.00000,36.00000,12.00000,18.00000,8.00000,4.00000,2.00000,7.00000,1.00000,1.00000,2.00000,0.00000,1.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,1.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-7.40000,199263.60000,44.40000,-33210.60000]);
+</script>
+
+<div id="3DtoTracksSize" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoTracksSize', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [2.00000,3.01818,4.03636,5.05455,6.07273,7.09091,8.10909,9.12727,10.14545,11.16364,12.18182,13.20000,14.21818,15.23636,16.25455,17.27273,18.29091,19.30909,20.32727,21.34545,22.36364,23.38182,24.40000,25.41818,26.43636,27.45455,28.47273,29.49091,30.50909,31.52727,32.54545,33.56364,34.58182,35.60000,36.61818,37.63636,38.65455,39.67273,40.69091,41.70909,42.72727,43.74545,44.76364,45.78182,46.80000,47.81818,48.83636,49.85455,50.87273,51.89091,52.90909,53.92727,54.94545,55.96364,56.98182,58.00000,];
+var data1= [2071.00000,720.00000,431.00000,372.00000,231.00000,169.00000,185.00000,146.00000,113.00000,116.00000,99.00000,93.00000,86.00000,68.00000,62.00000,73.00000,56.00000,43.00000,44.00000,42.00000,33.00000,51.00000,48.00000,42.00000,30.00000,32.00000,34.00000,32.00000,25.00000,31.00000,39.00000,41.00000,38.00000,38.00000,43.00000,49.00000,50.00000,59.00000,68.00000,107.00000,114.00000,176.00000,177.00000,158.00000,169.00000,241.00000,105.00000,113.00000,126.00000,130.00000,148.00000,144.00000,250.00000,309.00000,235.00000,68.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-9.20000,2480.20000,69.20000,-384.20000]);
+</script>
+</html>

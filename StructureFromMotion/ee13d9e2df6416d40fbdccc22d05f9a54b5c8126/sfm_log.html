@@ -1,0 +1,104 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>[log] Sequential SfM reconstruction</title>
+</head>
+<h1>[log] Sequential SfM reconstruction</h1>
+<hr>Dataset info:Views count: 28<br><h3>Essential Matrix.</h3>
+
+<b>Robust Essential matrix:</b><br>-> View I:<br>id: 980938774<br>image path: /home/leroy/office_dataset_aruco/left/frame_0012.png<br>-> View J:<br>id: 1359714848<br>image path: /home/leroy/office_dataset_aruco/left/frame_0009.png<br><br>- Threshold: 2.83991<br>- Resection status: OK<br>- # points used for robust Essential matrix estimation: 1093<br>- # points validated by robust estimation: 973<br>- % points validated: 0.89021<br><h3>Initial triangulation - Residual of the robust estimation.<br>Thresholded at: 2.83991</h3>
+<h3>Histogram of residuals</h3>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.55556,1.11111,1.66667,2.22222,2.77778,3.33333,3.88889,4.44444,5.00000,];
+var data1= [1514.00000,303.00000,95.00000,25.00000,3.00000,1.00000,3.00000,1.00000,0.00000,1.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+var p2 = board.create('point',[2.83991,0.00000], {fixed:true});
+var p3 = board.create('point',[2.83991,1514.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-1.00000,1816.80000,6.00000,-302.80000]);
+</script>
+<hr><h4>Robust resection of view 885049285: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0011.png<br>- Threshold (error max): 27.7493<br>- Resection status: OK<br>- # points used for Resection: 621<br>- # points validated by robust estimation: 493<br>- % points validated: 0.793881<br><h4>Robust resection of view 1321651417: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0010.png<br>- Threshold (error max): 22.6573<br>- Resection status: OK<br>- # points used for Resection: 767<br>- # points validated by robust estimation: 637<br>- % points validated: 0.830508<br><h4>Robust resection of view 1762235166: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0013.png<br>- Threshold (error max): 28.9631<br>- Resection status: OK<br>- # points used for Resection: 928<br>- # points validated by robust estimation: 677<br>- % points validated: 0.729526<br><h4>Robust resection of view 593086164: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0014.png<br>- Threshold (error max): 28.5188<br>- Resection status: OK<br>- # points used for Resection: 1123<br>- # points validated by robust estimation: 786<br>- % points validated: 0.699911<br><h4>Robust resection of view 1890186707: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0015.png<br>- Threshold (error max): 35.8799<br>- Resection status: OK<br>- # points used for Resection: 1143<br>- # points validated by robust estimation: 771<br>- % points validated: 0.674541<br><h4>Robust resection of view 968024911: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0016.png<br>- Threshold (error max): 332.424<br>- Resection status: OK<br>- # points used for Resection: 1092<br>- # points validated by robust estimation: 1005<br>- % points validated: 0.92033<br><h4>Robust resection of view 1902805005: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0008.png<br>- Threshold (error max): 341.482<br>- Resection status: OK<br>- # points used for Resection: 1206<br>- # points validated by robust estimation: 1129<br>- % points validated: 0.936153<br><h4>Robust resection of view 1333294495: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0007.png<br>- Threshold (error max): 344.252<br>- Resection status: OK<br>- # points used for Resection: 1212<br>- # points validated by robust estimation: 1143<br>- % points validated: 0.943069<br><h4>Robust resection of view 441206332: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0017.png<br>- Threshold (error max): 333.437<br>- Resection status: OK<br>- # points used for Resection: 955<br>- # points validated by robust estimation: 871<br>- % points validated: 0.912042<br><h4>Robust resection of view 1100953126: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0018.png<br>- Threshold (error max): 522.827<br>- Resection status: OK<br>- # points used for Resection: 872<br>- # points validated by robust estimation: 839<br>- % points validated: 0.962156<br><h4>Robust resection of view 1984110656: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0019.png<br>- Threshold (error max): 524.376<br>- Resection status: OK<br>- # points used for Resection: 933<br>- # points validated by robust estimation: 905<br>- % points validated: 0.969989<br><h4>Robust resection of view 982301782: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0020.png<br>- Threshold (error max): 503.333<br>- Resection status: OK<br>- # points used for Resection: 1114<br>- # points validated by robust estimation: 1074<br>- % points validated: 0.964093<br><h4>Robust resection of view 743620604: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0021.png<br>- Threshold (error max): 512.201<br>- Resection status: OK<br>- # points used for Resection: 978<br>- # points validated by robust estimation: 932<br>- % points validated: 0.952965<br><h4>Robust resection of view 734010976: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0022.png<br>- Threshold (error max): 645.735<br>- Resection status: OK<br>- # points used for Resection: 810<br>- # points validated by robust estimation: 807<br>- % points validated: 0.996296<br><h4>Robust resection of view 2071607410: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0023.png<br>- Threshold (error max): 541.153<br>- Resection status: OK<br>- # points used for Resection: 794<br>- # points validated by robust estimation: 764<br>- % points validated: 0.962217<br><h4>Robust resection of view 2077387696: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0006.png<br>- Threshold (error max): 371.257<br>- Resection status: OK<br>- # points used for Resection: 1151<br>- # points validated by robust estimation: 1050<br>- % points validated: 0.91225<br><h4>Robust resection of view 1234638732: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0005.png<br>- Threshold (error max): 121.497<br>- Resection status: OK<br>- # points used for Resection: 1105<br>- # points validated by robust estimation: 841<br>- % points validated: 0.761086<br><h4>Robust resection of view 1521466623: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0024.png<br>- Threshold (error max): 576.301<br>- Resection status: OK<br>- # points used for Resection: 651<br>- # points validated by robust estimation: 635<br>- % points validated: 0.975422<br><h4>Robust resection of view 407285790: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0025.png<br>- Threshold (error max): 545.455<br>- Resection status: OK<br>- # points used for Resection: 633<br>- # points validated by robust estimation: 610<br>- % points validated: 0.963665<br><h4>Robust resection of view 1529395885: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0026.png<br>- Threshold (error max): 534.018<br>- Resection status: OK<br>- # points used for Resection: 637<br>- # points validated by robust estimation: 622<br>- % points validated: 0.976452<br><h4>Robust resection of view 581550557: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0027.png<br>- Threshold (error max): 545.466<br>- Resection status: OK<br>- # points used for Resection: 605<br>- # points validated by robust estimation: 589<br>- % points validated: 0.973554<br><h4>Robust resection of view 644363836: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0004.png<br>- Threshold (error max): 400.875<br>- Resection status: OK<br>- # points used for Resection: 1033<br>- # points validated by robust estimation: 976<br>- % points validated: 0.944821<br><h4>Robust resection of view 551617519: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0003.png<br>- Threshold (error max): 399.27<br>- Resection status: OK<br>- # points used for Resection: 1066<br>- # points validated by robust estimation: 1004<br>- % points validated: 0.941839<br><h4>Robust resection of view 92408672: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0028.png<br>- Threshold (error max): 570.922<br>- Resection status: OK<br>- # points used for Resection: 511<br>- # points validated by robust estimation: 498<br>- % points validated: 0.97456<br><h4>Robust resection of view 1637390768: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0002.png<br>- Threshold (error max): 418.127<br>- Resection status: OK<br>- # points used for Resection: 942<br>- # points validated by robust estimation: 889<br>- % points validated: 0.943737<br><h4>Robust resection of view 1706079343: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0001.png<br>- Threshold (error max): 449.697<br>- Resection status: OK<br>- # points used for Resection: 889<br>- # points validated by robust estimation: 851<br>- % points validated: 0.957255<br><h4>Robust resection of view 92408672: <br></h4>
+
+- Image path: /home/leroy/office_dataset_aruco/left/frame_0028.png<br>- Threshold (error max): 451.803<br>- Resection status: OK<br>- # points used for Resection: 526<br>- # points validated by robust estimation: 496<br>- % points validated: 0.942966<br><hr><h3>Structure from Motion process finished.</h3>
+Structure from Motion statistics:<br>- # input images: 28<br>- # camera calibrated: 28<br>- # poses: 28
+<br>- # landmarks: 5454<br>- elapsed time: 45.203<br>- residual RMSE: 2.18755<h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.50400,1.00800,1.51200,2.01600,2.52000,3.02400,3.52800,4.03200,4.53600,5.04000,5.54400,6.04800,6.55200,7.05600,7.56000,8.06400,8.56800,9.07200,9.57600,10.08000,10.58400,11.08800,11.59200,12.09600,12.60000,13.10400,13.60800,14.11200,14.61600,15.12000,15.62400,16.12800,16.63200,17.13600,17.64000,18.14400,18.64800,19.15200,19.65600,20.16000,20.66400,21.16800,21.67200,22.17600,22.68000,23.18400,23.68800,24.19200,24.69600,25.20000,25.70400,26.20800,26.71200,27.21600,27.72000,28.22400,28.72800,29.23200,29.73600,30.24000,30.74400,31.24800,31.75200,32.25600,32.76000,33.26400,33.76800,34.27200,34.77600,35.28000,35.78400,36.28800,36.79200,37.29600,37.80000,38.30400,38.80800,39.31200,39.81600,40.32000,40.82400,41.32800,41.83200,42.33600,42.84000,43.34400,43.84800,44.35200,44.85600,45.36000,45.86400,46.36800,46.87200,47.37600,47.88000,48.38400,48.88800,49.39200,49.89600,50.40000,50.90400,51.40800,51.91200,52.41600,52.92000,53.42400,53.92800,54.43200,54.93600,55.44000,55.94400,56.44800,56.95200,57.45600,57.96000,58.46400,58.96800,59.47200,59.97600,60.48000,60.98400,61.48800,61.99200,62.49600,63.00000,];
+var data1= [2389.00000,2918.00000,2689.00000,2166.00000,1727.00000,1382.00000,1035.00000,728.00000,508.00000,349.00000,246.00000,222.00000,153.00000,111.00000,75.00000,70.00000,49.00000,32.00000,29.00000,21.00000,20.00000,12.00000,9.00000,9.00000,14.00000,8.00000,4.00000,8.00000,7.00000,1.00000,6.00000,3.00000,4.00000,2.00000,1.00000,1.00000,2.00000,1.00000,4.00000,2.00000,2.00000,2.00000,3.00000,2.00000,1.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,1.00000,2.00000,0.00000,0.00000,0.00000,0.00000,1.00000,1.00000,2.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,2.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,1.00000,0.00000,0.00000,1.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-12.60000,3501.60000,75.60000,-583.60000]);
+</script>
+
+<div id="3DtoTracksSize" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoTracksSize', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [2.00000,3.06667,4.13333,5.20000,6.26667,7.33333,8.40000,9.46667,10.53333,11.60000,12.66667,13.73333,14.80000,15.86667,16.93333,18.00000,];
+var data1= [3051.00000,1124.00000,507.00000,259.00000,141.00000,124.00000,59.00000,68.00000,38.00000,23.00000,12.00000,20.00000,13.00000,10.00000,3.00000,2.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-1.20000,3660.80000,21.20000,-607.80000]);
+</script>
+</html>

@@ -1,0 +1,1393 @@
+{
+    "version": [
+        "1",
+        "2",
+        "6"
+    ],
+    "featuresFolders": [
+        "..\/..\/FeatureExtraction\/aaadb7147abe91c36736f1153decf972bba66b1b"
+    ],
+    "matchesFolders": [
+        "..\/..\/FeatureMatching\/a5d8cb4bc816c117b7b16464e33d76081644811b"
+    ],
+    "views": [
+        {
+            "viewId": "92408672",
+            "poseId": "92408672",
+            "frameId": "28",
+            "intrinsicId": "1468366493",
+            "resectionId": "25",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0028.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:59:19",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "028",
+                "RenderTime": "01:05.09",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:01:04",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "407285790",
+            "poseId": "407285790",
+            "frameId": "25",
+            "intrinsicId": "1468366493",
+            "resectionId": "22",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0025.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:52:43",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "025",
+                "RenderTime": "01:06.44",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:01:01",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "441206332",
+            "poseId": "441206332",
+            "frameId": "17",
+            "intrinsicId": "1468366493",
+            "resectionId": "0",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0017.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:34:31",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "017",
+                "RenderTime": "01:09.09",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:17",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "551617519",
+            "poseId": "551617519",
+            "frameId": "3",
+            "intrinsicId": "1468366493",
+            "resectionId": "0",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0003.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:01:35",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "003",
+                "RenderTime": "01:09.99",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:03",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "581550557",
+            "poseId": "581550557",
+            "frameId": "27",
+            "intrinsicId": "1468366493",
+            "resectionId": "24",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0027.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:57:08",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "027",
+                "RenderTime": "01:05.53",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:01:03",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "593086164",
+            "poseId": "593086164",
+            "frameId": "14",
+            "intrinsicId": "1468366493",
+            "resectionId": "6",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0014.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:27:30",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "014",
+                "RenderTime": "01:10.48",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:14",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "644363836",
+            "poseId": "644363836",
+            "frameId": "4",
+            "intrinsicId": "1468366493",
+            "resectionId": "18",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0004.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:03:56",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "004",
+                "RenderTime": "01:10.40",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:04",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "734010976",
+            "poseId": "734010976",
+            "frameId": "22",
+            "intrinsicId": "1468366493",
+            "resectionId": "15",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0022.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:45:58",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "022",
+                "RenderTime": "01:07.59",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:22",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "743620604",
+            "poseId": "743620604",
+            "frameId": "21",
+            "intrinsicId": "1468366493",
+            "resectionId": "14",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0021.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:43:42",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "021",
+                "RenderTime": "01:07.91",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:21",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "885049285",
+            "poseId": "885049285",
+            "frameId": "11",
+            "intrinsicId": "1468366493",
+            "resectionId": "3",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0011.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:20:25",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "011",
+                "RenderTime": "01:10.59",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:11",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "968024911",
+            "poseId": "968024911",
+            "frameId": "16",
+            "intrinsicId": "1468366493",
+            "resectionId": "8",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0016.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:32:12",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "016",
+                "RenderTime": "01:09.64",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:16",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "980938774",
+            "poseId": "980938774",
+            "frameId": "12",
+            "intrinsicId": "1468366493",
+            "resectionId": "1",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0012.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:22:47",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "012",
+                "RenderTime": "01:10.77",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:12",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "982301782",
+            "poseId": "982301782",
+            "frameId": "20",
+            "intrinsicId": "1468366493",
+            "resectionId": "12",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0020.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:41:25",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "020",
+                "RenderTime": "01:08.22",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:20",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1100953126",
+            "poseId": "1100953126",
+            "frameId": "18",
+            "intrinsicId": "1468366493",
+            "resectionId": "9",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0018.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:36:50",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "018",
+                "RenderTime": "01:08.98",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:18",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1234638732",
+            "poseId": "1234638732",
+            "frameId": "5",
+            "intrinsicId": "1468366493",
+            "resectionId": "17",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0005.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:06:17",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "005",
+                "RenderTime": "01:10.84",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:05",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1321651417",
+            "poseId": "1321651417",
+            "frameId": "10",
+            "intrinsicId": "1468366493",
+            "resectionId": "4",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0010.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:18:03",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "010",
+                "RenderTime": "01:10.51",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:10",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1333294495",
+            "poseId": "1333294495",
+            "frameId": "7",
+            "intrinsicId": "1468366493",
+            "resectionId": "13",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0007.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:11:01",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "007",
+                "RenderTime": "01:10.50",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:07",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1359714848",
+            "poseId": "1359714848",
+            "frameId": "9",
+            "intrinsicId": "1468366493",
+            "resectionId": "5",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0009.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:15:42",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "009",
+                "RenderTime": "01:10.58",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:09",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1521466623",
+            "poseId": "1521466623",
+            "frameId": "24",
+            "intrinsicId": "1468366493",
+            "resectionId": "20",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0024.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:50:28",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "024",
+                "RenderTime": "01:06.82",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:01:00",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1529395885",
+            "poseId": "1529395885",
+            "frameId": "26",
+            "intrinsicId": "1468366493",
+            "resectionId": "23",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0026.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:54:56",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "026",
+                "RenderTime": "01:05.93",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:01:02",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1637390768",
+            "poseId": "1637390768",
+            "frameId": "2",
+            "intrinsicId": "1468366493",
+            "resectionId": "21",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0002.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 12:59:15",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "002",
+                "RenderTime": "01:09.42",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:02",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1706079343",
+            "poseId": "1706079343",
+            "frameId": "1",
+            "intrinsicId": "1468366493",
+            "resectionId": "26",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0001.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 12:57:00",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "001",
+                "RenderTime": "00:57.08",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:01",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1762235166",
+            "poseId": "1762235166",
+            "frameId": "13",
+            "intrinsicId": "1468366493",
+            "resectionId": "2",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0013.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:25:08",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "013",
+                "RenderTime": "01:10.59",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:13",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1890186707",
+            "poseId": "1890186707",
+            "frameId": "15",
+            "intrinsicId": "1468366493",
+            "resectionId": "7",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0015.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:29:51",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "015",
+                "RenderTime": "01:10.26",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:15",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1902805005",
+            "poseId": "1902805005",
+            "frameId": "8",
+            "intrinsicId": "1468366493",
+            "resectionId": "11",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0008.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:13:21",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "008",
+                "RenderTime": "01:10.16",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:08",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "1984110656",
+            "poseId": "1984110656",
+            "frameId": "19",
+            "intrinsicId": "1468366493",
+            "resectionId": "10",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0019.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:39:08",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "019",
+                "RenderTime": "01:08.41",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:19",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "2071607410",
+            "poseId": "2071607410",
+            "frameId": "23",
+            "intrinsicId": "1468366493",
+            "resectionId": "19",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0023.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:48:14",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "023",
+                "RenderTime": "01:07.35",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:23",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        },
+        {
+            "viewId": "2077387696",
+            "poseId": "2077387696",
+            "frameId": "6",
+            "intrinsicId": "1468366493",
+            "resectionId": "16",
+            "path": "\/home\/leroy\/office_dataset_aruco\/left\/frame_0006.png",
+            "width": "1280",
+            "height": "960",
+            "metadata": {
+                "Camera": "Camera_Left",
+                "Date": "2025\/08\/25 13:08:40",
+                "File": "\/home\/leroy\/Blender\/office_aruco.blend",
+                "Frame": "006",
+                "RenderTime": "01:10.94",
+                "ResolutionUnit": "inch",
+                "Scene": "Scene",
+                "Time": "00:00:00:06",
+                "XResolution": "71.9836",
+                "YResolution": "71.9836",
+                "cycles": "",
+                "oiio:ColorSpace": "sRGB"
+            }
+        }
+    ],
+    "intrinsics": [
+        {
+            "intrinsicId": "1468366493",
+            "width": "1280",
+            "height": "960",
+            "sensorWidth": "36",
+            "sensorHeight": "24",
+            "serialNumber": "\/home\/leroy\/office_dataset_aruco\/left",
+            "type": "radial3",
+            "initializationMode": "unknown",
+            "initialFocalLength": "-1",
+            "focalLength": "37.270034218092299",
+            "pixelRatio": "1",
+            "pixelRatioLocked": "true",
+            "principalPoint": [
+                "9.5451820322247158",
+                "48"
+            ],
+            "distortionInitializationMode": "none",
+            "distortionParams": [
+                "-0.052472778690820635",
+                "0.11845879489241801",
+                "-0.14256075837259213"
+            ],
+            "undistortionOffset": [
+                "0",
+                "0"
+            ],
+            "undistortionParams": "",
+            "locked": "false"
+        }
+    ],
+    "poses": [
+        {
+            "poseId": "92408672",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.85053944720725982",
+                        "0.20104293992124964",
+                        "-0.4859674732450619",
+                        "0.028198257843632724",
+                        "0.90528587487563406",
+                        "0.42386594933450578",
+                        "0.52515474576447763",
+                        "-0.37421814635113387",
+                        "0.76431228692372111"
+                    ],
+                    "center": [
+                        "0.98565875576634032",
+                        "-1.8843529997959958",
+                        "-0.0073848126196046637"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "407285790",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.92064829826950789",
+                        "0.1396483625061192",
+                        "-0.36456144302822086",
+                        "0.031398474787797004",
+                        "0.90431957490789983",
+                        "0.42569970897264581",
+                        "0.38912831646445273",
+                        "-0.40336638591701568",
+                        "0.82817553214145734"
+                    ],
+                    "center": [
+                        "0.52817540734337809",
+                        "-1.8792469815771806",
+                        "-0.21956579609875382"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "441206332",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.99901533625864025",
+                        "-0.040427776616314026",
+                        "0.018274375444790176",
+                        "0.028253569972789827",
+                        "0.89730080599764195",
+                        "0.44051447120358572",
+                        "-0.034206632453785989",
+                        "-0.43956439623090893",
+                        "0.89755949544435676"
+                    ],
+                    "center": [
+                        "0.67814963822433372",
+                        "-1.8834590070147932",
+                        "-0.27690936360963725"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "551617519",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.73709367277048676",
+                        "-0.32987284752569301",
+                        "0.58981083579992455",
+                        "0.02930024852066837",
+                        "0.88755059038044681",
+                        "0.45977760379551702",
+                        "-0.67515510291957492",
+                        "-0.32161755857013041",
+                        "0.66387328084586072"
+                    ],
+                    "center": [
+                        "-1.4314207352553128",
+                        "-1.9544333244403627",
+                        "0.6119469170740427"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "581550557",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.87620348022234606",
+                        "0.18115293830327084",
+                        "-0.44659945610170659",
+                        "0.029323752132497966",
+                        "0.90491149115812253",
+                        "0.42458840155008359",
+                        "0.48104841628168848",
+                        "-0.38512180685346098",
+                        "0.78757451398506084"
+                    ],
+                    "center": [
+                        "0.8365441341101022",
+                        "-1.8835276821614939",
+                        "-0.086732575549467561"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "593086164",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.9822885193556542",
+                        "-0.10838917463664689",
+                        "0.15284322544248735",
+                        "0.02972842388047911",
+                        "0.89552903523860161",
+                        "0.44400897272262635",
+                        "-0.18500131230793776",
+                        "-0.43160112820311974",
+                        "0.88289012939217693"
+                    ],
+                    "center": [
+                        "0.18033588087232433",
+                        "-1.8933098593444992",
+                        "-0.21254203960651996"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "644363836",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.77025674099803199",
+                        "-0.31261816156952521",
+                        "0.55585469144730726",
+                        "0.029742027121909126",
+                        "0.88826997360421023",
+                        "0.45835779235860635",
+                        "-0.63704000248788961",
+                        "-0.33652093404432648",
+                        "0.693493832834989"
+                    ],
+                    "center": [
+                        "-1.3060612718174762",
+                        "-1.9487003986231444",
+                        "0.50118319859775107"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "734010976",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.96888200063793284",
+                        "0.074546323211670137",
+                        "-0.23603074913124794",
+                        "0.034874462483509686",
+                        "0.90294613813431623",
+                        "0.42833636723352175",
+                        "0.24505395468411273",
+                        "-0.42323884193673128",
+                        "0.87224849783174263"
+                    ],
+                    "center": [
+                        "0.054013871812617298",
+                        "-1.8759885582145164",
+                        "-0.35519839029120526"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "743620604",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.98502691925088437",
+                        "0.049555929519880131",
+                        "-0.16512473527770649",
+                        "0.028126569993300453",
+                        "0.89877029864500801",
+                        "0.43751668120652853",
+                        "0.17009075345686475",
+                        "-0.43561010103415171",
+                        "0.88391910006826546"
+                    ],
+                    "center": [
+                        "1.3677989452394661",
+                        "-1.8893312801734483",
+                        "-0.25764146485237793"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "885049285",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.94312031087995385",
+                        "-0.17429533540957051",
+                        "0.28309930282528906",
+                        "0.030625969254055474",
+                        "0.89347911804541014",
+                        "0.44805927690881014",
+                        "-0.33103795735980041",
+                        "-0.41390361398671249",
+                        "0.84799626715911303"
+                    ],
+                    "center": [
+                        "-0.2998178892655527",
+                        "-1.9075151874363649",
+                        "-0.077289983090536252"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "968024911",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.99598052874575138",
+                        "-0.06337053567886633",
+                        "0.063300565298478662",
+                        "0.028985666185923145",
+                        "0.89672056706254466",
+                        "0.44164698092796528",
+                        "-0.084750324572190672",
+                        "-0.43803698452847772",
+                        "0.89495306171335409"
+                    ],
+                    "center": [
+                        "0.51121822693896779",
+                        "-1.8868649209518631",
+                        "-0.26409022177874497"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "980938774",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.95863122888926033",
+                        "-0.152611214798092",
+                        "0.24028313323268716",
+                        "0.030390845523149607",
+                        "0.89418028029605068",
+                        "0.44667440360744237",
+                        "-0.28302396277816244",
+                        "-0.42089362485968695",
+                        "0.86182712480277535"
+                    ],
+                    "center": [
+                        "-0.14216539170670237",
+                        "-1.9024755188691578",
+                        "-0.13026830242922349"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "982301782",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.99250458255424445",
+                        "0.027431112781351252",
+                        "-0.11908899050878741",
+                        "0.027750616012960215",
+                        "0.89843697491582242",
+                        "0.43822472022354825",
+                        "0.11901494410252231",
+                        "-0.43824483585740365",
+                        "0.89094158446252292"
+                    ],
+                    "center": [
+                        "1.1928638603742421",
+                        "-1.8868664844334664",
+                        "-0.27492109983411939"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1100953126",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.99949921793181673",
+                        "-0.017108023226353717",
+                        "-0.026620084428367968",
+                        "0.027071553043547938",
+                        "0.89788029562475424",
+                        "0.43940653812228864",
+                        "0.016384272016091155",
+                        "-0.43990713823498079",
+                        "0.89789379403157277"
+                    ],
+                    "center": [
+                        "0.84500593329147999",
+                        "-1.8791792667888869",
+                        "-0.28036585749328113"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1234638732",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.80138512379473847",
+                        "-0.29459959921593043",
+                        "0.52056984113786786",
+                        "0.030097555061987497",
+                        "0.88905957052117413",
+                        "0.45680106966161549",
+                        "-0.59739101143202888",
+                        "-0.3504057023030856",
+                        "0.72134584164164894"
+                    ],
+                    "center": [
+                        "-1.1753991352836395",
+                        "-1.9421040127052944",
+                        "0.39761022669450174"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1321651417",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.92520472798684195",
+                        "-0.19551752836339853",
+                        "0.32522162814527211",
+                        "0.030682935671414752",
+                        "0.89278437212122463",
+                        "0.44943811849318521",
+                        "-0.378225817164003",
+                        "-0.40584351787207129",
+                        "0.83200737390472923"
+                    ],
+                    "center": [
+                        "-0.45497804949703008",
+                        "-1.91257097295643",
+                        "-0.016469815594121973"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1333294495",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.85753123374891815",
+                        "-0.25663293194950176",
+                        "0.44584719510619408",
+                        "0.030504092487146778",
+                        "0.89052047885390972",
+                        "0.45391935085798962",
+                        "-0.51352671156094098",
+                        "-0.37564985688910552",
+                        "0.77147747960170587"
+                    ],
+                    "center": [
+                        "-0.89965104607669177",
+                        "-1.9301512020924954",
+                        "0.21041700596815061"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1359714848",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.90493449562840234",
+                        "-0.21645295506545154",
+                        "0.36639006108954797",
+                        "0.030793842883143074",
+                        "0.89202858694070231",
+                        "0.45092875193434068",
+                        "-0.42443526934299103",
+                        "-0.39677842472091085",
+                        "0.81389285769917841"
+                    ],
+                    "center": [
+                        "-0.60685683089953679",
+                        "-1.9184807865700542",
+                        "0.051495696659034418"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1521466623",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.93918477352713037",
+                        "0.11843889857880907",
+                        "-0.32234172624441843",
+                        "0.032431568297089444",
+                        "0.90385838561905685",
+                        "0.42660076432644084",
+                        "0.34187739696064173",
+                        "-0.41111098994012657",
+                        "0.84504887396994088"
+                    ],
+                    "center": [
+                        "0.37137036494787068",
+                        "-1.8779679347883744",
+                        "-0.2729703851474129"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1529395885",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.89964216390165785",
+                        "0.16065908769269788",
+                        "-0.40599585524004145",
+                        "0.030266705300012853",
+                        "0.90466067097254754",
+                        "0.42505646324433438",
+                        "0.43557766641624873",
+                        "-0.3946868732770954",
+                        "0.80900826236950463"
+                    ],
+                    "center": [
+                        "0.68358925837499396",
+                        "-1.8813660227813214",
+                        "-0.15775740661541804"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1637390768",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.70207971183201057",
+                        "-0.34641104129775013",
+                        "0.62216032395266851",
+                        "0.028851019573098491",
+                        "0.88682014628089922",
+                        "0.46121323356980676",
+                        "-0.71151366599909638",
+                        "-0.305858494433836",
+                        "0.63261274448053406"
+                    ],
+                    "center": [
+                        "-1.5509062021788416",
+                        "-1.9601525159596114",
+                        "0.7287260616287502"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1706079343",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.66525181919611676",
+                        "-0.3620424476985587",
+                        "0.65296652526809795",
+                        "0.028092694853557143",
+                        "0.88608302242850201",
+                        "0.46267448369219133",
+                        "-0.74609035481778085",
+                        "-0.28945145262791011",
+                        "0.59963909063658494"
+                    ],
+                    "center": [
+                        "-1.6650928640863896",
+                        "-1.966458561654711",
+                        "0.85138890735454675"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1762235166",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.97168818054539974",
+                        "-0.13062743879127109",
+                        "0.19687191781258093",
+                        "0.030047241440057756",
+                        "0.89481651716512056",
+                        "0.44542178201152932",
+                        "-0.23434855039068145",
+                        "-0.42689562289079069",
+                        "0.87340762767820501"
+                    ],
+                    "center": [
+                        "0.017906460023557308",
+                        "-1.8981503232160397",
+                        "-0.17535063868403533"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1890186707",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.9904027995032838",
+                        "-0.08598870231790913",
+                        "0.10820461085249641",
+                        "0.029427781672717375",
+                        "0.89613955713178384",
+                        "0.44279555080135274",
+                        "-0.13504184685452528",
+                        "-0.43536173145710971",
+                        "0.89006958288708327"
+                    ],
+                    "center": [
+                        "0.34508034052999342",
+                        "-1.8898861576396671",
+                        "-0.24247782836577125"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1902805005",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.88236555054433774",
+                        "-0.23685232722570898",
+                        "0.40661039128427773",
+                        "0.030771605139573888",
+                        "0.8912837460762999",
+                        "0.45240069882498163",
+                        "-0.46955739109263511",
+                        "-0.38667073727910062",
+                        "0.79372639958761293"
+                    ],
+                    "center": [
+                        "-0.75505259857092377",
+                        "-1.9243251442118467",
+                        "0.12705072712406618"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "1984110656",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.99733813763509094",
+                        "0.0053196941780459242",
+                        "-0.072720974088776494",
+                        "0.027204504661396657",
+                        "0.8981720007418591",
+                        "0.4388017456773548",
+                        "0.0676502338850095",
+                        "-0.43961205390345931",
+                        "0.89563647085080533"
+                    ],
+                    "center": [
+                        "1.0176568045878283",
+                        "-1.8826072704900514",
+                        "-0.28175287501995816"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "2071607410",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.96225087776800988",
+                        "0.094152299199937839",
+                        "-0.25535973212325347",
+                        "0.027717708588456846",
+                        "0.89947721006319648",
+                        "0.43608769440048833",
+                        "0.27074891849331506",
+                        "-0.42670375336091626",
+                        "0.86291304892347442"
+                    ],
+                    "center": [
+                        "1.7113977271317404",
+                        "-1.8893033633908818",
+                        "-0.19080077683134844"
+                    ]
+                },
+                "locked": "0"
+            }
+        },
+        {
+            "poseId": "2077387696",
+            "pose": {
+                "transform": {
+                    "rotation": [
+                        "0.83053186486630781",
+                        "-0.27596527582369379",
+                        "0.48379746586897854",
+                        "0.030499607327481748",
+                        "0.88985293861014114",
+                        "0.45522689024239954",
+                        "-0.5561354110237563",
+                        "-0.36332480535527556",
+                        "0.74746805310928766"
+                    ],
+                    "center": [
+                        "-1.0393635949311351",
+                        "-1.9352961223139808",
+                        "0.30067089241069878"
+                    ]
+                },
+                "locked": "0"
+            }
+        }
+    ]
+}

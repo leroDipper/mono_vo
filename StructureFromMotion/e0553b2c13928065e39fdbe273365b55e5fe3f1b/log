@@ -1,0 +1,2253 @@
+[2025-09-17 18:09:45.179380] [0x00007006248fd000] [trace]   Embedded OCIO configuration file: '/home/leroy/Meshroom-2023.3.0/aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * bundleAdjustmentMaxOutliers = 50
+ * computeStructureColor = 1
+ * describerTypes = "sift"
+ * extraInfoFolder = "/tmp/MeshroomCache/StructureFromMotion/e0553b2c13928065e39fdbe273365b55e5fe3f1b"
+ * featuresFolders =  = [/tmp/MeshroomCache/FeatureExtraction/572f77c413a5adbd96dcad9f4d6cbcf3daa005f6]
+ * filterTrackForks = 0
+ * initialPairA = ""
+ * initialPairB = ""
+ * input = "/tmp/MeshroomCache/CameraInit/942a9c96022f71f372f243ec5ea76bea4be3327b/cameraInit.sfm"
+ * interFileExtension = ".abc"
+ * localBAGraphDistance = 1
+ * localizerEstimator =  Unknown Type "N11aliceVision16robustEstimation16ERobustEstimatorE"
+ * localizerEstimatorError = 0
+ * localizerEstimatorMaxIterations = 4096
+ * lockAllIntrinsics = 0
+ * lockScenePreviouslyReconstructed = 0
+ * logIntermediateSteps = 0
+ * matchesFolders =  = [/tmp/MeshroomCache/FeatureMatching/1688f5cebaa2c260fb22cb18edd02c662a61eed2]
+ * maxAngleInitialPair = 40
+ * maxCoresAvailable =  Unknown Type "j" (default)
+ * maxImagesPerGroup = 30
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNumberOfMatches = 0
+ * maxReprojectionError = 4
+ * minAngleForLandmark = 2
+ * minAngleForTriangulation = 3
+ * minAngleInitialPair = 5
+ * minInputTrackLength = 2
+ * minNbCamerasToRefinePrincipalPoint = 3
+ * minNumberOfMatches = 0
+ * minNumberOfObservationsForTriangulation = 2
+ * nbFirstUnstableCameras = 30
+ * observationConstraint =  Unknown Type "N11aliceVision3sfm18EFeatureConstraintE"
+ * output = "/tmp/MeshroomCache/StructureFromMotion/e0553b2c13928065e39fdbe273365b55e5fe3f1b/sfm.abc"
+ * outputViewsAndPoses = "/tmp/MeshroomCache/StructureFromMotion/e0553b2c13928065e39fdbe273365b55e5fe3f1b/cameras.sfm"
+ * randomSeed = 5489 (default)
+ * rigMinNbCamerasForCalibration = 20
+ * useAutoTransform = 1
+ * useLocalBA = 1
+ * useOnlyMatchesFromInputFolder = 0
+ * useRigConstraint = 1
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 19365 Mo
+
+Loading features
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+[18:09:45.182777][error] cudaGetDeviceCount failed: CUDA driver version is insufficient for CUDA runtime version
+[18:09:45.182816][info] Can't find CUDA-Enabled GPU.
+***************************************************
+[18:09:45.342793][info] Fuse matches into tracks: 
+	- # tracks: 19074
+	- # images in tracks: 28
+[18:09:45.343611][info] TrackLength, Occurrence
+[18:09:45.343644][info] 	2	9404
+[18:09:45.343652][info] 	3	3413
+[18:09:45.343654][info] 	4	1645
+[18:09:45.343656][info] 	5	1101
+[18:09:45.343659][info] 	6	722
+[18:09:45.343661][info] 	7	534
+[18:09:45.343663][info] 	8	413
+[18:09:45.343665][info] 	9	319
+[18:09:45.343668][info] 	10	259
+[18:09:45.343670][info] 	11	212
+[18:09:45.343672][info] 	12	181
+[18:09:45.343675][info] 	13	155
+[18:09:45.343677][info] 	14	104
+[18:09:45.343679][info] 	15	107
+[18:09:45.343681][info] 	16	77
+[18:09:45.343684][info] 	17	79
+[18:09:45.343686][info] 	18	58
+[18:09:45.343689][info] 	19	47
+[18:09:45.343691][info] 	20	38
+[18:09:45.343693][info] 	21	34
+[18:09:45.343696][info] 	22	37
+[18:09:45.343699][info] 	23	21
+[18:09:45.343701][info] 	24	24
+[18:09:45.343703][info] 	25	13
+[18:09:45.343706][info] 	26	27
+[18:09:45.343708][info] 	27	27
+[18:09:45.343710][info] 	28	23
+Automatic selection of an initial pair:
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[18:09:46.278264][info] Initial pair is:
+	- [A] view id: 980938774, filepath: /home/leroy/office_dataset_aruco/left/frame_0012.png
+	- [B] view id: 1359714848, filepath: /home/leroy/office_dataset_aruco/left/frame_0009.png
+[18:09:46.279053][info] 1085 matches in the image pair for the initial pose estimation.
+[18:09:46.540795][info] Bundle adjustment start.
+[18:09:46.541027][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 278208 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:46.787879][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.242143 s
+	- poses:
+	    - # refined:  2
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  1932
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 3864
+	- # successful iterations: 20
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.16859
+	- final   RMSE: 0.157248
+[18:09:46.794114][info] Remove outliers: 
+	- # outliers residual error: 0
+	- # outliers angular error: 0
+[18:09:46.794160][info] Bundle adjustment iteration: 0 took 253 msec.
+[18:09:46.794167][info] Bundle adjustment with 1 iterations took 253 msec.
+[18:09:46.794557][info] Initial pair is: 980938774, 1359714848
+[18:09:46.794569][info] Begin Incremental Reconstruction:
+	- mode: SfM augmentation
+	- # images in input: 28
+	- # landmarks in input: 966
+	- # cameras already calibrated: 2
+[18:09:46.794573][info] Incremental Reconstruction start iteration 0:
+	- # number of resection groups: 1
+	- # number of poses: 2
+	- # number of landmarks: 966
+[18:09:46.798594][info] Update Reconstruction:
+	- resection id: 1
+	- # images in the resection group: 1
+	- # images remaining: 26
+[18:09:46.800362][info] [3/28] Robust Resection of view: 885049285
+[18:09:46.937140][info] Bundle adjustment start.
+[18:09:46.937359][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 425808 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:47.490532][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.549154 s
+	- poses:
+	    - # refined:  3
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  2957
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 5914
+	- # successful iterations: 39
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.765118
+	- final   RMSE: 0.619024
+[18:09:47.497504][info] Remove outliers: 
+	- # outliers residual error: 47
+	- # outliers angular error: 0
+[18:09:47.497609][info] Bundle adjustment iteration: 0 took 560 msec.
+[18:09:47.497613][info] Bundle adjustment with 1 iterations took 560 msec.
+[18:09:47.506273][info] Update Reconstruction:
+	- resection id: 2
+	- # images in the resection group: 1
+	- # images remaining: 25
+[18:09:47.508485][info] [4/28] Robust Resection of view: 1321651417
+[18:09:47.617650][info] Bundle adjustment start.
+[18:09:47.618035][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 746784 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:48.364787][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.741305 s
+	- poses:
+	    - # refined:  4
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  5186
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 10372
+	- # successful iterations: 50
+	- # unsuccessful iterations: 1
+	- initial RMSE: 1.0717
+	- final   RMSE: 0.779508
+[18:09:48.373313][info] Remove outliers: 
+	- # outliers residual error: 112
+	- # outliers angular error: 0
+[18:09:48.373538][info] Bundle adjustment iteration: 0 took 755 msec.
+[18:09:48.373545][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 728496 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:48.950850][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.569364 s
+	- poses:
+	    - # refined:  4
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  5059
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 10118
+	- # successful iterations: 33
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.654192
+	- final   RMSE: 0.615381
+[18:09:48.956249][info] Remove outliers: 
+	- # outliers residual error: 14
+	- # outliers angular error: 0
+[18:09:48.956477][info] Bundle adjustment iteration: 1 took 582 msec.
+[18:09:48.956485][info] Bundle adjustment with 2 iterations took 1338 msec.
+[18:09:48.962051][info] Update Reconstruction:
+	- resection id: 3
+	- # images in the resection group: 1
+	- # images remaining: 24
+[18:09:48.962711][info] [5/28] Robust Resection of view: 1762235166
+[18:09:49.134628][info] Bundle adjustment start.
+[18:09:49.135017][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 998784 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:49.939083][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.797307 s
+	- poses:
+	    - # refined:  5
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  6936
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 13872
+	- # successful iterations: 45
+	- # unsuccessful iterations: 1
+	- initial RMSE: 1.15128
+	- final   RMSE: 0.986131
+[18:09:49.945474][info] Remove outliers: 
+	- # outliers residual error: 295
+	- # outliers angular error: 0
+[18:09:49.945645][info] Bundle adjustment iteration: 0 took 810 msec.
+[18:09:49.945650][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 949392 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:50.405588][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.453823 s
+	- poses:
+	    - # refined:  5
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  6593
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 13186
+	- # successful iterations: 26
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.733684
+	- final   RMSE: 0.706134
+[18:09:50.413027][info] Remove outliers: 
+	- # outliers residual error: 20
+	- # outliers angular error: 0
+[18:09:50.413148][info] Bundle adjustment iteration: 1 took 467 msec.
+[18:09:50.413152][info] Bundle adjustment with 2 iterations took 1278 msec.
+[18:09:50.418637][info] Update Reconstruction:
+	- resection id: 4
+	- # images in the resection group: 1
+	- # images remaining: 23
+[18:09:50.427652][info] [6/28] Robust Resection of view: 593086164
+[18:09:50.621302][info] Bundle adjustment start.
+[18:09:50.621834][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1184112 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:51.263644][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.630941 s
+	- poses:
+	    - # refined:  6
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  8223
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 16446
+	- # successful iterations: 33
+	- # unsuccessful iterations: 0
+	- initial RMSE: 1.12143
+	- final   RMSE: 0.996045
+[18:09:51.269136][info] Remove outliers: 
+	- # outliers residual error: 383
+	- # outliers angular error: 0
+[18:09:51.269521][info] Bundle adjustment iteration: 0 took 647 msec.
+[18:09:51.269529][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1122336 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:51.679599][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.400959 s
+	- poses:
+	    - # refined:  6
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  7794
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 15588
+	- # successful iterations: 21
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.761793
+	- final   RMSE: 0.734478
+[18:09:51.685232][info] Remove outliers: 
+	- # outliers residual error: 29
+	- # outliers angular error: 0
+[18:09:51.685500][info] Bundle adjustment iteration: 1 took 415 msec.
+[18:09:51.685504][info] Bundle adjustment with 2 iterations took 1064 msec.
+[18:09:51.692581][info] Update Reconstruction:
+	- resection id: 5
+	- # images in the resection group: 1
+	- # images remaining: 22
+[18:09:51.696965][info] [7/28] Robust Resection of view: 1902805005
+[18:09:51.852491][info] Bundle adjustment start.
+[18:09:51.853027][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1443744 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:52.843871][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.981938 s
+	- poses:
+	    - # refined:  7
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  10026
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 20052
+	- # successful iterations: 50
+	- # unsuccessful iterations: 1
+	- initial RMSE: 1.29128
+	- final   RMSE: 1.15135
+[18:09:52.850179][info] Remove outliers: 
+	- # outliers residual error: 614
+	- # outliers angular error: 26
+[18:09:52.850436][info] Bundle adjustment iteration: 0 took 997 msec.
+[18:09:52.850441][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1341216 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:53.402614][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.540931 s
+	- poses:
+	    - # refined:  7
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  9314
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 18628
+	- # successful iterations: 26
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.802425
+	- final   RMSE: 0.767736
+[18:09:53.412176][info] Remove outliers: 
+	- # outliers residual error: 55
+	- # outliers angular error: 0
+[18:09:53.412452][info] Bundle adjustment iteration: 1 took 562 msec.
+[18:09:53.412457][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 1331136 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:53.667100][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.246088 s
+	- poses:
+	    - # refined:  7
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  9244
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 18488
+	- # successful iterations: 13
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.749004
+	- final   RMSE: 0.743212
+[18:09:53.672925][info] Remove outliers: 
+	- # outliers residual error: 15
+	- # outliers angular error: 0
+[18:09:53.673283][info] Bundle adjustment iteration: 2 took 260 msec.
+[18:09:53.673288][info] Bundle adjustment with 3 iterations took 1820 msec.
+[18:09:53.679182][info] Update Reconstruction:
+	- resection id: 6
+	- # images in the resection group: 1
+	- # images remaining: 21
+[18:09:53.679871][info] [8/28] Robust Resection of view: 1890186707
+[18:09:53.867795][info] Bundle adjustment start.
+[18:09:53.868372][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1624752 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:54.572730][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.693827 s
+	- poses:
+	    - # refined:  8
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  11283
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 22566
+	- # successful iterations: 33
+	- # unsuccessful iterations: 2
+	- initial RMSE: 1.17149
+	- final   RMSE: 1.06805
+[18:09:54.577116][info] Remove outliers: 
+	- # outliers residual error: 622
+	- # outliers angular error: 25
+[18:09:54.577339][info] Bundle adjustment iteration: 0 took 708 msec.
+[18:09:54.577343][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1516896 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:55.038138][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.451001 s
+	- poses:
+	    - # refined:  8
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  10534
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 21068
+	- # successful iterations: 22
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.79866
+	- final   RMSE: 0.767466
+[18:09:55.047034][info] Remove outliers: 
+	- # outliers residual error: 49
+	- # outliers angular error: 2
+[18:09:55.047292][info] Bundle adjustment iteration: 1 took 469 msec.
+[18:09:55.047296][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 1508256 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:55.337675][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.280524 s
+	- poses:
+	    - # refined:  8
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  10474
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 20948
+	- # successful iterations: 14
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.753479
+	- final   RMSE: 0.749671
+[18:09:55.347032][info] Remove outliers: 
+	- # outliers residual error: 12
+	- # outliers angular error: 0
+[18:09:55.347362][info] Bundle adjustment iteration: 2 took 300 msec.
+[18:09:55.347367][info] Bundle adjustment with 3 iterations took 1479 msec.
+[18:09:55.356831][info] Update Reconstruction:
+	- resection id: 7
+	- # images in the resection group: 1
+	- # images remaining: 20
+[18:09:55.362376][info] [9/28] Robust Resection of view: 968024911
+[18:09:55.733470][info] Bundle adjustment start.
+[18:09:55.734132][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1700208 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:56.117647][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.374037 s
+	- poses:
+	    - # refined:  9
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  11807
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 23614
+	- # successful iterations: 18
+	- # unsuccessful iterations: 1
+	- initial RMSE: 1.19287
+	- final   RMSE: 1.03343
+[18:09:56.125517][info] Remove outliers: 
+	- # outliers residual error: 576
+	- # outliers angular error: 8
+[18:09:56.125854][info] Bundle adjustment iteration: 0 took 391 msec.
+[18:09:56.125859][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1604736 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:56.588020][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.451706 s
+	- poses:
+	    - # refined:  9
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  11144
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 22288
+	- # successful iterations: 21
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.793283
+	- final   RMSE: 0.76892
+[18:09:56.596030][info] Remove outliers: 
+	- # outliers residual error: 29
+	- # outliers angular error: 0
+[18:09:56.596280][info] Bundle adjustment iteration: 1 took 470 msec.
+[18:09:56.596285][info] Bundle adjustment with 2 iterations took 862 msec.
+[18:09:56.607144][info] Update Reconstruction:
+	- resection id: 8
+	- # images in the resection group: 1
+	- # images remaining: 19
+[18:09:56.607822][info] [10/28] Robust Resection of view: 1333294495
+[18:09:56.825833][info] Bundle adjustment start.
+[18:09:56.826606][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 1857168 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:57.885495][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.04717 s
+	- poses:
+	    - # refined:  10
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  12897
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 25794
+	- # successful iterations: 51
+	- # unsuccessful iterations: 0
+	- initial RMSE: 1.2431
+	- final   RMSE: 1.13687
+[18:09:57.893242][info] Remove outliers: 
+	- # outliers residual error: 791
+	- # outliers angular error: 0
+[18:09:57.893941][info] Bundle adjustment iteration: 0 took 1067 msec.
+[18:09:57.893949][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1732608 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:09:58.746622][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.838259 s
+	- poses:
+	    - # refined:  10
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  12032
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 24064
+	- # successful iterations: 43
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.798605
+	- final   RMSE: 0.765116
+[18:09:58.755116][info] Remove outliers: 
+	- # outliers residual error: 38
+	- # outliers angular error: 2
+[18:09:58.755471][info] Bundle adjustment iteration: 1 took 861 msec.
+[18:09:58.755475][info] Bundle adjustment with 2 iterations took 1929 msec.
+[18:09:58.767491][info] Update Reconstruction:
+	- resection id: 9
+	- # images in the resection group: 1
+	- # images remaining: 18
+[18:09:58.772005][info] [11/28] Robust Resection of view: 2077387696
+[18:09:59.010416][info] Bundle adjustment start.
+[18:09:59.011296][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2033568 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:00.032513][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.00359 s
+	- poses:
+	    - # refined:  11
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14122
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 28244
+	- # successful iterations: 48
+	- # unsuccessful iterations: 3
+	- initial RMSE: 1.6735
+	- final   RMSE: 1.38782
+[18:10:00.042034][info] Remove outliers: 
+	- # outliers residual error: 886
+	- # outliers angular error: 22
+[18:10:00.042339][info] Bundle adjustment iteration: 0 took 1031 msec.
+[18:10:00.042343][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1889568 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:00.608113][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.552479 s
+	- poses:
+	    - # refined:  11
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  13122
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 26244
+	- # successful iterations: 26
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.785347
+	- final   RMSE: 0.744133
+[18:10:00.614038][info] Remove outliers: 
+	- # outliers residual error: 37
+	- # outliers angular error: 1
+[18:10:00.614426][info] Bundle adjustment iteration: 1 took 572 msec.
+[18:10:00.614431][info] Bundle adjustment with 2 iterations took 1603 msec.
+[18:10:00.621652][info] Update Reconstruction:
+	- resection id: 10
+	- # images in the resection group: 1
+	- # images remaining: 17
+[18:10:00.628243][info] [12/28] Robust Resection of view: 441206332
+[18:10:00.991920][info] Bundle adjustment start.
+[18:10:00.992680][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2070432 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:01.990812][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.981643 s
+	- poses:
+	    - # refined:  12
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14378
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 28756
+	- # successful iterations: 46
+	- # unsuccessful iterations: 0
+	- initial RMSE: 1.19977
+	- final   RMSE: 1.04537
+[18:10:01.999348][info] Remove outliers: 
+	- # outliers residual error: 668
+	- # outliers angular error: 80
+[18:10:01.999648][info] Bundle adjustment iteration: 0 took 1006 msec.
+[18:10:01.999652][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 1937952 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:02.884626][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.869129 s
+	- poses:
+	    - # refined:  12
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  13458
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 26916
+	- # successful iterations: 41
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.783833
+	- final   RMSE: 0.751259
+[18:10:02.891943][info] Remove outliers: 
+	- # outliers residual error: 57
+	- # outliers angular error: 2
+[18:10:02.892454][info] Bundle adjustment iteration: 1 took 892 msec.
+[18:10:02.892459][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 1928448 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:03.221218][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.311582 s
+	- poses:
+	    - # refined:  12
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  13392
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 26784
+	- # successful iterations: 15
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.736629
+	- final   RMSE: 0.732933
+[18:10:03.228047][info] Remove outliers: 
+	- # outliers residual error: 21
+	- # outliers angular error: 0
+[18:10:03.228449][info] Bundle adjustment iteration: 2 took 335 msec.
+[18:10:03.228455][info] Bundle adjustment with 3 iterations took 2236 msec.
+[18:10:03.238510][info] Update Reconstruction:
+	- resection id: 11
+	- # images in the resection group: 1
+	- # images remaining: 16
+[18:10:03.241979][info] [13/28] Robust Resection of view: 1234638732
+[18:10:03.598314][info] Bundle adjustment start.
+[18:10:03.599240][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2230704 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:04.721320][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.10298 s
+	- poses:
+	    - # refined:  13
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15491
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 30982
+	- # successful iterations: 46
+	- # unsuccessful iterations: 5
+	- initial RMSE: 1.53431
+	- final   RMSE: 1.26173
+[18:10:04.730044][info] Remove outliers: 
+	- # outliers residual error: 805
+	- # outliers angular error: 38
+[18:10:04.730401][info] Bundle adjustment iteration: 0 took 1131 msec.
+[18:10:04.730405][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2094192 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:05.788722][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.04012 s
+	- poses:
+	    - # refined:  13
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14543
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 29086
+	- # successful iterations: 47
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.791817
+	- final   RMSE: 0.73443
+[18:10:05.797045][info] Remove outliers: 
+	- # outliers residual error: 40
+	- # outliers angular error: 0
+[18:10:05.797456][info] Bundle adjustment iteration: 1 took 1067 msec.
+[18:10:05.797461][info] Bundle adjustment with 2 iterations took 2199 msec.
+[18:10:05.809476][info] Update Reconstruction:
+	- resection id: 12
+	- # images in the resection group: 1
+	- # images remaining: 15
+[18:10:05.812571][info] [14/28] Robust Resection of view: 1100953126
+[18:10:06.114642][info] Bundle adjustment start.
+[18:10:06.115458][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2293488 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:06.914289][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.782067 s
+	- poses:
+	    - # refined:  14
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15927
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31854
+	- # successful iterations: 33
+	- # unsuccessful iterations: 1
+	- initial RMSE: 2.75945
+	- final   RMSE: 1.58177
+[18:10:06.922876][info] Remove outliers: 
+	- # outliers residual error: 1161
+	- # outliers angular error: 119
+[18:10:06.923331][info] Bundle adjustment iteration: 0 took 807 msec.
+[18:10:06.923336][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2073456 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:08.063328][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.12168 s
+	- poses:
+	    - # refined:  14
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14399
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 28798
+	- # successful iterations: 51
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.803177
+	- final   RMSE: 0.707649
+[18:10:08.071780][info] Remove outliers: 
+	- # outliers residual error: 47
+	- # outliers angular error: 2
+[18:10:08.072115][info] Bundle adjustment iteration: 1 took 1148 msec.
+[18:10:08.072120][info] Bundle adjustment with 2 iterations took 1957 msec.
+[18:10:08.079376][info] Update Reconstruction:
+	- resection id: 13
+	- # images in the resection group: 1
+	- # images remaining: 14
+[18:10:08.082640][info] [15/28] Robust Resection of view: 1984110656
+[18:10:08.378504][info] Bundle adjustment start.
+[18:10:08.379270][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2263104 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:09.340659][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.943024 s
+	- poses:
+	    - # refined:  15
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15716
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31432
+	- # successful iterations: 37
+	- # unsuccessful iterations: 14
+	- initial RMSE: 2.11124
+	- final   RMSE: 2.00297
+[18:10:09.349031][info] Remove outliers: 
+	- # outliers residual error: 751
+	- # outliers angular error: 11
+[18:10:09.349388][info] Bundle adjustment iteration: 0 took 970 msec.
+[18:10:09.349392][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2142432 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:09.722905][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.353082 s
+	- poses:
+	    - # refined:  15
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  14878
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 29756
+	- # successful iterations: 15
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.744714
+	- final   RMSE: 0.709139
+[18:10:09.729013][info] Remove outliers: 
+	- # outliers residual error: 34
+	- # outliers angular error: 0
+[18:10:09.729480][info] Bundle adjustment iteration: 1 took 380 msec.
+[18:10:09.729485][info] Bundle adjustment with 2 iterations took 1350 msec.
+[18:10:09.738565][info] Update Reconstruction:
+	- resection id: 14
+	- # images in the resection group: 1
+	- # images remaining: 13
+[18:10:09.744033][info] [16/28] Robust Resection of view: 644363836
+[18:10:09.964546][info] Bundle adjustment start.
+[18:10:09.965458][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2488608 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:11.138734][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.15589 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17282
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 34564
+	- # successful iterations: 49
+	- # unsuccessful iterations: 2
+	- initial RMSE: 1.49212
+	- final   RMSE: 1.29479
+[18:10:11.147457][info] Remove outliers: 
+	- # outliers residual error: 1302
+	- # outliers angular error: 14
+[18:10:11.148367][info] Bundle adjustment iteration: 0 took 1182 msec.
+[18:10:11.148377][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2283552 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:12.330886][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.16003 s
+	- poses:
+	    - # refined:  16
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15858
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31716
+	- # successful iterations: 51
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.785678
+	- final   RMSE: 0.73122
+[18:10:12.339097][info] Remove outliers: 
+	- # outliers residual error: 45
+	- # outliers angular error: 5
+[18:10:12.339563][info] Bundle adjustment iteration: 1 took 1191 msec.
+[18:10:12.339569][info] Bundle adjustment with 2 iterations took 2374 msec.
+[18:10:12.354824][info] Update Reconstruction:
+	- resection id: 15
+	- # images in the resection group: 1
+	- # images remaining: 12
+[18:10:12.362153][info] [17/28] Robust Resection of view: 551617519
+[18:10:12.595385][info] Bundle adjustment start.
+[18:10:12.596389][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2573136 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:13.755918][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.1371 s
+	- poses:
+	    - # refined:  17
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17869
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 35738
+	- # successful iterations: 44
+	- # unsuccessful iterations: 7
+	- initial RMSE: 2.43451
+	- final   RMSE: 1.8656
+[18:10:13.763247][info] Remove outliers: 
+	- # outliers residual error: 1605
+	- # outliers angular error: 32
+[18:10:13.763846][info] Bundle adjustment iteration: 0 took 1167 msec.
+[18:10:13.763853][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2311488 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:14.901787][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.12086 s
+	- poses:
+	    - # refined:  17
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  16052
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 32104
+	- # successful iterations: 51
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.796218
+	- final   RMSE: 0.72475
+[18:10:14.907823][info] Remove outliers: 
+	- # outliers residual error: 48
+	- # outliers angular error: 7
+[18:10:14.908407][info] Bundle adjustment iteration: 1 took 1144 msec.
+[18:10:14.908416][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 2301264 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:15.268037][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.338932 s
+	- poses:
+	    - # refined:  17
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  15981
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 31962
+	- # successful iterations: 15
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.714735
+	- final   RMSE: 0.711897
+[18:10:15.274105][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[18:10:15.274993][info] Bundle adjustment iteration: 2 took 366 msec.
+[18:10:15.275003][info] Bundle adjustment with 3 iterations took 2679 msec.
+[18:10:15.289186][info] Update Reconstruction:
+	- resection id: 16
+	- # images in the resection group: 1
+	- # images remaining: 11
+[18:10:15.290913][info] [18/28] Robust Resection of view: 982301782
+[18:10:15.560946][info] Bundle adjustment start.
+[18:10:15.561845][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2464848 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:16.611934][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.02841 s
+	- poses:
+	    - # refined:  18
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17117
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 34234
+	- # successful iterations: 37
+	- # unsuccessful iterations: 14
+	- initial RMSE: 2.27882
+	- final   RMSE: 1.66537
+[18:10:16.621154][info] Remove outliers: 
+	- # outliers residual error: 811
+	- # outliers angular error: 20
+[18:10:16.621745][info] Bundle adjustment iteration: 0 took 1059 msec.
+[18:10:16.621756][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2328624 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:17.384648][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.743023 s
+	- poses:
+	    - # refined:  18
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  16171
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 32342
+	- # successful iterations: 32
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.77129
+	- final   RMSE: 0.715095
+[18:10:17.394207][info] Remove outliers: 
+	- # outliers residual error: 36
+	- # outliers angular error: 11
+[18:10:17.394687][info] Bundle adjustment iteration: 1 took 772 msec.
+[18:10:17.394694][info] Bundle adjustment with 2 iterations took 1833 msec.
+[18:10:17.407197][info] Update Reconstruction:
+	- resection id: 17
+	- # images in the resection group: 1
+	- # images remaining: 10
+[18:10:17.408060][info] [19/28] Robust Resection of view: 743620604
+[18:10:17.650588][info] Bundle adjustment start.
+[18:10:17.651439][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2450448 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:18.673292][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.0026 s
+	- poses:
+	    - # refined:  19
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17017
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 34034
+	- # successful iterations: 39
+	- # unsuccessful iterations: 12
+	- initial RMSE: 1.67819
+	- final   RMSE: 1.14704
+[18:10:18.682135][info] Remove outliers: 
+	- # outliers residual error: 465
+	- # outliers angular error: 86
+[18:10:18.683572][info] Bundle adjustment iteration: 0 took 1032 msec.
+[18:10:18.683581][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2349936 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:19.194182][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.489108 s
+	- poses:
+	    - # refined:  19
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  16319
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 32638
+	- # successful iterations: 22
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.734665
+	- final   RMSE: 0.713931
+[18:10:19.199508][info] Remove outliers: 
+	- # outliers residual error: 15
+	- # outliers angular error: 0
+[18:10:19.199908][info] Bundle adjustment iteration: 1 took 516 msec.
+[18:10:19.199912][info] Bundle adjustment with 2 iterations took 1549 msec.
+[18:10:19.209102][info] Update Reconstruction:
+	- resection id: 18
+	- # images in the resection group: 1
+	- # images remaining: 9
+[18:10:19.214393][info] [20/28] Robust Resection of view: 734010976
+[18:10:19.426125][info] Bundle adjustment start.
+[18:10:19.426983][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2621664 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:20.479818][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.02374 s
+	- poses:
+	    - # refined:  20
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18206
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 36412
+	- # successful iterations: 40
+	- # unsuccessful iterations: 11
+	- initial RMSE: 3.0006
+	- final   RMSE: 1.80072
+[18:10:20.493008][info] Remove outliers: 
+	- # outliers residual error: 1033
+	- # outliers angular error: 11
+[18:10:20.493658][info] Bundle adjustment iteration: 0 took 1066 msec.
+[18:10:20.493663][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2455200 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:21.311780][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.796656 s
+	- poses:
+	    - # refined:  20
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17050
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 34100
+	- # successful iterations: 33
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.739115
+	- final   RMSE: 0.699851
+[18:10:21.317105][info] Remove outliers: 
+	- # outliers residual error: 37
+	- # outliers angular error: 0
+[18:10:21.317518][info] Bundle adjustment iteration: 1 took 823 msec.
+[18:10:21.317522][info] Bundle adjustment with 2 iterations took 1891 msec.
+[18:10:21.325522][info] Update Reconstruction:
+	- resection id: 19
+	- # images in the resection group: 1
+	- # images remaining: 8
+[18:10:21.329921][info] [21/28] Robust Resection of view: 2071607410
+[18:10:21.566680][info] Bundle adjustment start.
+[18:10:21.567712][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2675088 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:22.512748][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.924829 s
+	- poses:
+	    - # refined:  21
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18577
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 37154
+	- # successful iterations: 37
+	- # unsuccessful iterations: 14
+	- initial RMSE: 1.83488
+	- final   RMSE: 1.62748
+[18:10:22.522034][info] Remove outliers: 
+	- # outliers residual error: 772
+	- # outliers angular error: 20
+[18:10:22.522486][info] Bundle adjustment iteration: 0 took 954 msec.
+[18:10:22.522490][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2547792 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:22.757837][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.210692 s
+	- poses:
+	    - # refined:  21
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  17693
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 35386
+	- # successful iterations: 8
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.729264
+	- final   RMSE: 0.702853
+[18:10:22.763730][info] Remove outliers: 
+	- # outliers residual error: 40
+	- # outliers angular error: 0
+[18:10:22.764182][info] Bundle adjustment iteration: 1 took 241 msec.
+[18:10:22.764188][info] Bundle adjustment with 2 iterations took 1197 msec.
+[18:10:22.771794][info] Update Reconstruction:
+	- resection id: 20
+	- # images in the resection group: 1
+	- # images remaining: 7
+[18:10:22.774108][info] [22/28] Robust Resection of view: 1521466623
+[18:10:22.926138][info] Bundle adjustment start.
+[18:10:22.927113][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2740608 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:23.645270][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.689234 s
+	- poses:
+	    - # refined:  22
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19032
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 38064
+	- # successful iterations: 30
+	- # unsuccessful iterations: 3
+	- initial RMSE: 1.75037
+	- final   RMSE: 1.55854
+[18:10:23.654873][info] Remove outliers: 
+	- # outliers residual error: 759
+	- # outliers angular error: 7
+[18:10:23.655332][info] Bundle adjustment iteration: 0 took 728 msec.
+[18:10:23.655337][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2619504 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:24.224708][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.547301 s
+	- poses:
+	    - # refined:  22
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18191
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 36382
+	- # successful iterations: 23
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.740609
+	- final   RMSE: 0.713378
+[18:10:24.230324][info] Remove outliers: 
+	- # outliers residual error: 58
+	- # outliers angular error: 0
+[18:10:24.230792][info] Bundle adjustment iteration: 1 took 575 msec.
+[18:10:24.230796][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 2609280 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:24.568583][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.320752 s
+	- poses:
+	    - # refined:  22
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  18120
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 36240
+	- # successful iterations: 14
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.700277
+	- final   RMSE: 0.696909
+[18:10:24.577052][info] Remove outliers: 
+	- # outliers residual error: 11
+	- # outliers angular error: 0
+[18:10:24.578408][info] Bundle adjustment iteration: 2 took 347 msec.
+[18:10:24.578422][info] Bundle adjustment with 3 iterations took 1652 msec.
+[18:10:24.585197][info] Update Reconstruction:
+	- resection id: 21
+	- # images in the resection group: 1
+	- # images remaining: 6
+[18:10:24.591908][info] [23/28] Robust Resection of view: 407285790
+[18:10:24.776644][info] Bundle adjustment start.
+[18:10:24.777698][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 2894112 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:25.783248][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.984116 s
+	- poses:
+	    - # refined:  23
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  20098
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 40196
+	- # successful iterations: 37
+	- # unsuccessful iterations: 14
+	- initial RMSE: 1.64656
+	- final   RMSE: 1.47902
+[18:10:25.790749][info] Remove outliers: 
+	- # outliers residual error: 892
+	- # outliers angular error: 11
+[18:10:25.791277][info] Bundle adjustment iteration: 0 took 1013 msec.
+[18:10:25.791283][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2749248 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:26.622778][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.806429 s
+	- poses:
+	    - # refined:  23
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19092
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 38184
+	- # successful iterations: 33
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.740499
+	- final   RMSE: 0.7094
+[18:10:26.628111][info] Remove outliers: 
+	- # outliers residual error: 47
+	- # outliers angular error: 0
+[18:10:26.628573][info] Bundle adjustment iteration: 1 took 837 msec.
+[18:10:26.628577][info] Bundle adjustment with 2 iterations took 1851 msec.
+[18:10:26.639697][info] Update Reconstruction:
+	- resection id: 22
+	- # images in the resection group: 1
+	- # images remaining: 5
+[18:10:26.644017][info] [24/28] Robust Resection of view: 1529395885
+[18:10:26.853673][info] Bundle adjustment start.
+[18:10:26.854830][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3047616 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:27.951556][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.06929 s
+	- poses:
+	    - # refined:  24
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21164
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 42328
+	- # successful iterations: 40
+	- # unsuccessful iterations: 11
+	- initial RMSE: 1.55722
+	- final   RMSE: 1.29242
+[18:10:27.962831][info] Remove outliers: 
+	- # outliers residual error: 1041
+	- # outliers angular error: 21
+[18:10:27.963537][info] Bundle adjustment iteration: 0 took 1108 msec.
+[18:10:27.963543][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 2876400 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:28.599989][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.61268 s
+	- poses:
+	    - # refined:  24
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19975
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 39950
+	- # successful iterations: 24
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.744351
+	- final   RMSE: 0.709844
+[18:10:28.605103][info] Remove outliers: 
+	- # outliers residual error: 51
+	- # outliers angular error: 1
+[18:10:28.605672][info] Bundle adjustment iteration: 1 took 642 msec.
+[18:10:28.605677][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 2866320 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:29.015327][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.386634 s
+	- poses:
+	    - # refined:  24
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  19905
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 39810
+	- # successful iterations: 14
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.699373
+	- final   RMSE: 0.695815
+[18:10:29.021097][info] Remove outliers: 
+	- # outliers residual error: 21
+	- # outliers angular error: 0
+[18:10:29.021595][info] Bundle adjustment iteration: 2 took 415 msec.
+[18:10:29.021599][info] Bundle adjustment with 3 iterations took 2167 msec.
+[18:10:29.027785][info] Update Reconstruction:
+	- resection id: 23
+	- # images in the resection group: 1
+	- # images remaining: 4
+[18:10:29.028976][info] [25/28] Robust Resection of view: 581550557
+[18:10:29.236573][info] Bundle adjustment start.
+[18:10:29.237896][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3166992 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:29.744595][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.480351 s
+	- poses:
+	    - # refined:  25
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21993
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 43986
+	- # successful iterations: 19
+	- # unsuccessful iterations: 0
+	- initial RMSE: 1.38925
+	- final   RMSE: 1.19932
+[18:10:29.753128][info] Remove outliers: 
+	- # outliers residual error: 817
+	- # outliers angular error: 16
+[18:10:29.753809][info] Bundle adjustment iteration: 0 took 515 msec.
+[18:10:29.753815][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3032208 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:30.202011][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.423396 s
+	- poses:
+	    - # refined:  25
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21057
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 42114
+	- # successful iterations: 15
+	- # unsuccessful iterations: 1
+	- initial RMSE: 0.731027
+	- final   RMSE: 0.704486
+[18:10:30.207150][info] Remove outliers: 
+	- # outliers residual error: 39
+	- # outliers angular error: 0
+[18:10:30.207680][info] Bundle adjustment iteration: 1 took 453 msec.
+[18:10:30.207685][info] Bundle adjustment with 2 iterations took 971 msec.
+[18:10:30.218189][info] Update Reconstruction:
+	- resection id: 24
+	- # images in the resection group: 1
+	- # images remaining: 3
+[18:10:30.220811][info] [26/28] Robust Resection of view: 92408672
+[18:10:30.626597][info] Bundle adjustment start.
+[18:10:30.627710][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3233232 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+levenberg_marquardt_strategy.cc:123 Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[18:10:31.651602][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.997865 s
+	- poses:
+	    - # refined:  26
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  22453
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 44906
+	- # successful iterations: 37
+	- # unsuccessful iterations: 13
+	- initial RMSE: 1.63948
+	- final   RMSE: 1.45445
+[18:10:31.660194][info] Remove outliers: 
+	- # outliers residual error: 1016
+	- # outliers angular error: 22
+[18:10:31.660855][info] Bundle adjustment iteration: 0 took 1033 msec.
+[18:10:31.660860][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3065328 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:31.956875][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.266434 s
+	- poses:
+	    - # refined:  26
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21287
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 42574
+	- # successful iterations: 10
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.73939
+	- final   RMSE: 0.708127
+[18:10:31.964892][info] Remove outliers: 
+	- # outliers residual error: 46
+	- # outliers angular error: 0
+[18:10:31.965456][info] Bundle adjustment iteration: 1 took 304 msec.
+[18:10:31.965462][info] Bundle adjustment with 2 iterations took 1338 msec.
+[18:10:31.971494][info] Update Reconstruction:
+	- resection id: 25
+	- # images in the resection group: 1
+	- # images remaining: 2
+[18:10:31.973980][info] [27/28] Robust Resection of view: 1637390768
+[18:10:32.240273][info] Bundle adjustment start.
+[18:10:32.241455][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3356352 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:33.433566][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.16061 s
+	- poses:
+	    - # refined:  27
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23308
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 46616
+	- # successful iterations: 41
+	- # unsuccessful iterations: 10
+	- initial RMSE: 2.39525
+	- final   RMSE: 1.59799
+[18:10:33.443972][info] Remove outliers: 
+	- # outliers residual error: 1557
+	- # outliers angular error: 57
+[18:10:33.444739][info] Bundle adjustment iteration: 0 took 1203 msec.
+[18:10:33.444745][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3092832 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:34.220100][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.753075 s
+	- poses:
+	    - # refined:  27
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21478
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 42956
+	- # successful iterations: 29
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.770619
+	- final   RMSE: 0.715796
+[18:10:34.228031][info] Remove outliers: 
+	- # outliers residual error: 74
+	- # outliers angular error: 3
+[18:10:34.228637][info] Bundle adjustment iteration: 1 took 783 msec.
+[18:10:34.228643][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 3078432 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:34.583949][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.324918 s
+	- poses:
+	    - # refined:  27
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  21378
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 42756
+	- # successful iterations: 13
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.703248
+	- final   RMSE: 0.693698
+[18:10:34.593028][info] Remove outliers: 
+	- # outliers residual error: 10
+	- # outliers angular error: 0
+[18:10:34.593538][info] Bundle adjustment iteration: 2 took 364 msec.
+[18:10:34.593543][info] Bundle adjustment with 3 iterations took 2353 msec.
+[18:10:34.601108][info] Update Reconstruction:
+	- resection id: 26
+	- # images in the resection group: 1
+	- # images remaining: 1
+[18:10:34.602265][info] [28/28] Robust Resection of view: 1706079343
+[18:10:34.824393][info] Bundle adjustment start.
+[18:10:34.825547][info] Start bundle adjustment iteration: 0
+block_sparse_matrix.cc:92 Allocating values array with 3396096 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:36.053894][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.20256 s
+	- poses:
+	    - # refined:  28
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  23584
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 47168
+	- # successful iterations: 47
+	- # unsuccessful iterations: 4
+	- initial RMSE: 1.63562
+	- final   RMSE: 1.24897
+[18:10:36.059980][info] Remove outliers: 
+	- # outliers residual error: 1164
+	- # outliers angular error: 63
+[18:10:36.060529][info] Bundle adjustment iteration: 0 took 1234 msec.
+[18:10:36.060534][info] Start bundle adjustment iteration: 1
+block_sparse_matrix.cc:92 Allocating values array with 3197952 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:37.182479][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 1.09698 s
+	- poses:
+	    - # refined:  28
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  22208
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 44416
+	- # successful iterations: 43
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.76778
+	- final   RMSE: 0.718148
+[18:10:37.190226][info] Remove outliers: 
+	- # outliers residual error: 72
+	- # outliers angular error: 2
+[18:10:37.191059][info] Bundle adjustment iteration: 1 took 1130 msec.
+[18:10:37.191066][info] Start bundle adjustment iteration: 2
+block_sparse_matrix.cc:92 Allocating values array with 3185856 bytes.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+detect_structure.cc:114 Schur complement static structure <2,3,6>.
+[18:10:37.672993][info] Bundle Adjustment Statistics:
+	- local strategy enabled: no
+	- adjustment duration: 0.448951 s
+	- poses:
+	    - # refined:  28
+	    - # constant: 0
+	    - # ignored:  0
+	- landmarks:
+	    - # refined:  22124
+	    - # constant: 0
+	    - # ignored:  0
+	- intrinsics:
+	    - # refined:  0
+	    - # constant: 1
+	    - # ignored:  0
+	- # residual blocks: 44248
+	- # successful iterations: 17
+	- # unsuccessful iterations: 0
+	- initial RMSE: 0.70598
+	- final   RMSE: 0.698791
+[18:10:37.681401][info] Remove outliers: 
+	- # outliers residual error: 20
+	- # outliers angular error: 0
+[18:10:37.682801][info] Bundle adjustment iteration: 2 took 491 msec.
+[18:10:37.682814][info] Bundle adjustment with 3 iterations took 2858 msec.
+[18:10:37.686682][info] Incremental Reconstruction start iteration 1:
+	- # number of resection groups: 27
+	- # number of poses: 28
+	- # number of landmarks: 7112
+[18:10:37.686728][info] Incremental Reconstruction completed with 2 iterations:
+	- # number of resection groups: 27
+	- # number of poses: 28
+	- # number of landmarks: 7112
+[18:10:37.688312][info] Structure from Motion statistics:
+	- # input images: 28
+	- # cameras calibrated: 28
+	- # poses: 28
+	- # landmarks: 7112
+	- elapsed time: 50.892
+	- residual RMSE: 2.14979
+[18:10:37.688644][info]  - # sift: 7112
+[18:10:37.690937][info] Histogram of residuals:
+
+0	|	3.6e+03
+0.5	|	3.9e+03
+1	|	3.4e+03
+1.5	|	2.7e+03
+2	|	2e+03
+2.5	|	1.7e+03
+3	|	1.2e+03
+3.5	|	8.9e+02
+4	|	6.2e+02
+4.5	|	4.6e+02
+5	|	3.7e+02
+5.5	|	2.8e+02
+6	|	2.3e+02
+6.5	|	1.6e+02
+7	|	1.5e+02
+7.5	|	1e+02
+8	|	82
+8.5	|	61
+9	|	53
+9.5	|	35
+10	|	26
+10	|	20
+11	|	13
+12	|	11
+12	|	10
+12	|	13
+13	|	11
+14	|	8
+14	|	9
+14	|	4
+15	|	5
+16	|	1
+16	|	3
+16	|	2
+17	|	4
+18	|	3
+18	|	3
+18	|	0
+19	|	2
+20	|	1
+20	|	1
+20	|	3
+21	|	1
+22	|	1
+22	|	0
+22	|	2
+23	|	2
+24	|	0
+24	|	0
+24	|	5
+25	|	0
+26	|	1
+26	|	1
+26	|	1
+27	|	0
+28	|	0
+28	|	1
+28	|	0
+29	|	0
+30	|	2
+30	|	2
+30	|	0
+31	|	0
+32	|	0
+32	|	1
+32	|	0
+33	|	0
+34	|	0
+34	|	1
+34	|	0
+35	|	0
+36	|	0
+36	|	0
+36	|	0
+37	|	0
+38	|	0
+38	|	0
+38	|	1
+39	|	0
+40	|	0
+40	|	0
+40	|	0
+41	|	1
+42	|	0
+42	|	0
+42	|	0
+43	|	0
+44	|	0
+44	|	0
+44	|	0
+45	|	0
+46	|	0
+46	|	0
+46	|	0
+47	|	1
+48	|	0
+48	|	0
+48	|	0
+49	|	0
+50	|	0
+50	|	0
+50	|	0
+51	|	0
+52	|	0
+52	|	0
+52	|	0
+53	|	0
+54	|	0
+54	|	0
+54	|	0
+55	|	0
+56	|	0
+56	|	0
+56	|	0
+57	|	0
+58	|	0
+58	|	0
+58	|	0
+59	|	0
+60	|	0
+60	|	0
+60	|	0
+61	|	0
+62	|	0
+62	|	0
+62	|	0
+63	|	0
+64	|	0
+64	|	0
+64	|	0
+65	|	0
+66	|	0
+66	|	0
+66	|	0
+67	|	0
+68	|	0
+68	|	0
+68	|	0
+69	|	0
+70	|	1
+70
+[18:10:37.691297][info] # landmarks: 7112
+[18:10:37.691301][info] # overall observations: 22095
+[18:10:37.691303][info] Landmarks observations length min: 2, mean: 3.10672, median: 2, max: 19
+[18:10:37.691306][info] Histogram of observations length:
+
+2	|	3832
+3	|	1551
+4	|	772
+5	|	371
+6	|	190
+7	|	119
+8	|	79
+9	|	58
+10	|	42
+11	|	26
+12	|	19
+13	|	16
+14	|	11
+15	|	12
+16	|	9
+17	|	3
+18	|	1
+19	|	1
+20
+[18:10:37.691409][info] Landmarks per view min: 0, mean: 0, median: 0, max: 0
+[18:10:37.691412][info] Histogram of nb landmarks per view:
+
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+0	|	0
+1
+[18:10:37.692188][info] X axis rotation:
+   0.996676  -0.0814475 -0.00159811
+  0.0814475    0.995908   0.0391624
+-0.00159811  -0.0391624    0.999232
+[18:10:37.692215][info] Initial point cloud center: -0.0757245  0.0047717   -0.19766
+[18:10:37.692220][info] Initial point cloud scale: 0.718478
+[18:10:37.692264][info] No GPS information available to use it.
+
+Compute scene structure color
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[18:10:37.863838][info] Structure from motion took (s): 52.642000
+[18:10:37.863907][info] Generating HTML report...
+[18:10:37.867514][info] Export SfMData to disk: /tmp/MeshroomCache/StructureFromMotion/e0553b2c13928065e39fdbe273365b55e5fe3f1b/sfm.abc
+[18:10:37.878323][info] Structure from Motion results:
+	- # input images: 28
+	- # cameras calibrated: 28
+	- # poses: 28
+	- # landmarks: 7112

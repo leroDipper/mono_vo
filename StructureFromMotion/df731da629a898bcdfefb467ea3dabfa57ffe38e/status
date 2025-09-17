@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "StructureFromMotion_1",
+    "nodeType": "StructureFromMotion",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_incrementalSfM  --input \"/tmp/MeshroomCache/CameraInit/19979cfe351d9fcdbff26a42afbc43fadfb8100d/cameraInit.sfm\" --featuresFolders \"/tmp/MeshroomCache/FeatureExtraction/7e801c156ebd2fb19d0d9c380fdb293b62eb155b\" --matchesFolders \"/tmp/MeshroomCache/FeatureMatching/8be050912dc95f6856eda470eba390337f8fa7e0\" --describerTypes sift --localizerEstimator acransac --observationConstraint Scale --localizerEstimatorMaxIterations 4096 --localizerEstimatorError 0.0 --lockScenePreviouslyReconstructed False --useLocalBA True --localBAGraphDistance 1 --nbFirstUnstableCameras 30 --maxImagesPerGroup 30 --bundleAdjustmentMaxOutliers 50 --maxNumberOfMatches 0 --minNumberOfMatches 0 --minInputTrackLength 2 --minNumberOfObservationsForTriangulation 2 --minAngleForTriangulation 3.0 --minAngleForLandmark 2.0 --maxReprojectionError 4.0 --minAngleInitialPair 5.0 --maxAngleInitialPair 40.0 --useOnlyMatchesFromInputFolder False --useRigConstraint True --rigMinNbCamerasForCalibration 20 --lockAllIntrinsics False --minNbCamerasToRefinePrincipalPoint 3 --filterTrackForks False --computeStructureColor True --useAutoTransform True --initialPairA \"\" --initialPairB \"\" --interFileExtension .abc --logIntermediateSteps False --verboseLevel info --output \"/tmp/MeshroomCache/StructureFromMotion/df731da629a898bcdfefb467ea3dabfa57ffe38e/sfm.abc\" --outputViewsAndPoses \"/tmp/MeshroomCache/StructureFromMotion/df731da629a898bcdfefb467ea3dabfa57ffe38e/cameras.sfm\" --extraInfoFolder \"/tmp/MeshroomCache/StructureFromMotion/df731da629a898bcdfefb467ea3dabfa57ffe38e\"",
+    "env": null,
+    "startDateTime": "2025-09-17 18:15:01.652290",
+    "endDateTime": "2025-09-17 18:15:13.073784",
+    "elapsedTime": 11.421539783477783,
+    "hostname": "leroy-Dell-Pro-Tower-Plus-QBT1250",
+    "sessionUid": "63dc40ca-93de-11f0-94bb-79f0cbf4b849",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:11.421540"
+}
