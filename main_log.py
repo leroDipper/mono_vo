@@ -22,6 +22,10 @@ image_files = sorted([f for f in os.listdir(images_path)
 # --- Initialize feature extractor ---
 extractor = SIFT(n_features=2000)
 
+from modules.diagnostics import VODiagnostics
+
+diagnostics = VODiagnostics(K)
+
 # --- ArUco setup ---
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 parameters = cv2.aruco.DetectorParameters()
@@ -88,6 +92,8 @@ for idx, filename in enumerate(image_files[:122]):
         print(f"Frame {idx}: Essential matrix - {inliers}/{len(matches)} inliers ({inliers/len(matches)*100:.1f}%)")
 
     _, R, t, mask_pose = cv2.recoverPose(E, pts1, pts2, K)
+    diagnostics.analyze_matches(idx, prev_kp, kp, matches, mask_pose, R, t)
+
 
     # # DEBUG: Print translation vectors
     # if idx < 25:
@@ -174,15 +180,18 @@ if len(traj) > 10:
     print(f"Final position: [{traj[-1, 0]:.2f}, {traj[-1, 1]:.2f}, {traj[-1, 2]:.2f}]")
 
 
-# Create dataframe
-pure_vo = {
-    "Frame number":list(range(len(traj))),
-    "x": traj[:, 0],
-    "y": traj[:, 1],
-    "z": traj[:, 2],
-}
+# # Create dataframe
+# pure_vo = {
+#     "Frame number":list(range(len(traj))),
+#     "x": traj[:, 0],
+#     "y": traj[:, 1],
+#     "z": traj[:, 2],
+# }
 
-df = pd.DataFrame(pure_vo)
+# df = pd.DataFrame(pure_vo)
 
-df.to_csv('results/pure_vo_2.csv')
+# df.to_csv('results/pure_vo_2.csv')
+
+diag_df = pd.DataFrame(diagnostics.get_logs())
+diag_df.to_csv("results/vo_diagnostics.csv", index=False)
 
