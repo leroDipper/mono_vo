@@ -1,0 +1,151 @@
+K = np.array(K)
+
+print("Intrinsic Matrix K:")
+print(K)
+
+E = K.T @ best_F @ K
+print("Essential Matrix E:")
+print(E)
+
+
+
+
+def decomposeE(E):
+    U, S, V = np.linalg.svd(E)
+    if np.linalg.det(U) > 0 and np.linalg.det(V) < 0:
+        E = -E
+        V = -V
+    elif np.linalg.det(U) < 0 and np.linalg.det(V) > 0: 
+        E = -E
+        U = -U
+    return U, S, V
+
+
+U, S, V = decomposeE(E)
+print("Three singular values that make up E: ")
+print("U: ")
+print(U)
+print("S: ")
+print(S)
+print("V: ")
+print(V)
+
+def triangulate_point(P1, P2, x1, x2):
+
+    A = np.array([
+        x1[0]*P1[2,:] - P1[0,:],
+        x1[1]*P1[2,:] - P1[1,:],
+        x2[0]*P2[2,:] - P2[0,:],
+        x2[1]*P2[2,:] - P2[1,:]
+    ])
+    _, _, Vt = np.linalg.svd(A)
+    X = Vt[-1]
+    return X / X[3]  
+
+
+def choose_best_camera(P0, P_candidates, pts1, pts2):
+    best_count = -1
+    best_P = None
+
+    for P in P_candidates:
+        count = 0
+        for x1, x2 in zip(pts1, pts2):
+            X = triangulate_point(P0, P, x1, x2)
+
+        
+            X1 = (P0 @ X)  
+            if X1[2] <= 0:
+                continue
+
+            
+            X2 = (P @ X)
+            if X2[2] <= 0:
+                continue
+
+            count += 1
+
+        if count > best_count:
+            best_count = count
+            best_P = P
+
+    return best_P, best_count
+
+Intrinsic Matrix K:
+[[1.28e+03 0.00e+00 6.40e+02]
+ [0.00e+00 1.28e+03 4.80e+02]
+ [0.00e+00 0.00e+00 1.00e+00]]
+Essential Matrix E:
+[[  1.73605299  13.78735763   3.45545423]
+ [-16.41835235   3.53373205   4.49330698]
+ [ -4.80818873  -5.56611174  -0.51630184]]
+Three singular values that make up E: 
+U: 
+[[ 0.19532752 -0.88974309  0.41255835]
+ [ 0.96993108  0.11297556 -0.21556953]
+ [ 0.14519249  0.44225983  0.88505671]]
+S: 
+[1.78315224e+01 1.56105187e+01 1.29509015e-15]
+V: 
+[[ 0.91319652 -0.29792012 -0.27805704]
+ [ 0.35399095  0.91794826  0.17905697]
+ [ 0.2018973  -0.26194388  0.94372818]]
+ 
+I = np.eye(3)
+t = np.zeros((3,1))
+extrinsic = np.hstack((I, t))   
+
+
+P = K @ extrinsic
+
+print("\n camera matrix 1 (P):\n", P)
+
+W = np.array([[0, -1, 0],
+                  [1,  0, 0],
+                  [0,  0, 1]])
+
+
+u_3 = U[:, 2]
+
+
+P1 = K @ np.hstack((U @ W @ V,  u_3.reshape(3,1)))
+P2 = K @ np.hstack((U @ W @ V, -u_3.reshape(3,1)))
+P3 = K @ np.hstack((U @ W.T @ V,  u_3.reshape(3,1)))
+P4 = K @ np.hstack((U @ W.T @ V, -u_3.reshape(3,1)))
+
+P_candidates = [P1, P2, P3, P4]
+
+# Extract points from best_inliers (list of tuples)
+best_pts1 = np.array([p1 for p1, p2, idx in best_inliers])
+best_pts2 = np.array([p2 for p1, p2, idx in best_inliers])
+
+best_P, inliers = choose_best_camera(P, P_candidates, best_pts1, best_pts2)
+
+print("\n camera matrix 2 (P'):\n", best_P)
+
+ 
+camera matrix 1 (P):
+ [[1.28e+03 0.00e+00 6.40e+02 0.00e+00]
+ [0.00e+00 1.28e+03 4.80e+02 0.00e+00]
+ [0.00e+00 0.00e+00 1.00e+00 0.00e+00]]
+
+ camera matrix 2 (P'):
+ [[ 1.12391361e+03 -2.26864502e+02  8.56358971e+02 -1.09451098e+03]
+ [ 1.68302724e+02  1.27094035e+03  4.74536427e+02 -1.48898219e+02]
+ [-1.73782751e-01  3.32021083e-02  9.84224149e-01 -8.85056712e-01]]
+ 
+ 
+clean_pts1 = np.array([p1[:2] for p1, p2, idx in best_inliers])  # Remove homogeneous coordinate
+clean_pts8 = np.array([p2[:2] for p1, p2, idx in best_inliers])
+
+points_4d = cv2.triangulatePoints(P, best_P, clean_pts1.T, clean_pts8.T)
+points_3d = points_4d[:3] / points_4d[3]
+points_3d = points_3d.T
+
+print(f"Triangulated {len(points_3d)} 3D map points")
+print("Sample 3D points:", points_3d[:3])
+
+
+Triangulated 38 3D map points
+Sample 3D points: [[ 0.7010802  -0.04979253 -2.06248044]
+ [-1.34369749 -0.66943007  5.68020811]
+ [-1.31000104 -0.67821883  5.63038206]]
