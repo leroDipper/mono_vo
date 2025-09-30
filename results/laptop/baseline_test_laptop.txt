@@ -1,0 +1,30 @@
+Initialised VO from ArUco at frame 0, pos=[ 4.10690805 -0.0566959   1.76934873]
+
+Processing frames...
+Scale computed from first two markers: 0.213
+
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+
+Timing (average per frame):
+  Feature extraction: 205.9 ms (80.2%)
+  Feature matching:   10.3 ms (4.0%)
+  Essential matrix:   38.6 ms (15.0%)
+  Pose recovery:      2.0 ms (0.8%)
+  TOTAL:              256.8 ms
+
+Throughput: 3.89 fps
+
+Feature statistics:
+  Avg keypoints:   1293
+  Avg matches:     263
+  Avg inliers:     156
+  Avg inlier ratio: 58.23%
+
+Trajectory:
+  Total frames:    121
+  Path length:     25.57 m
+  Final position:  [4.00, -2.26, 2.12]
+  Scale factor:    0.213
+============================================================
