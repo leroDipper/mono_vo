@@ -1,17 +1,15 @@
-
-
 ============================================================
-PERFORMANCE SUMMARY: Laptop
+PERFORMANCE SUMMARY: Pi
 ============================================================
 
 Timing (average per frame):
-  Feature extraction: 205.9 ms (80.2%)
-  Feature matching:   10.3 ms (4.0%)
-  Essential matrix:   38.6 ms (15.0%)
-  Pose recovery:      2.0 ms (0.8%)
-  TOTAL:              256.8 ms
+  Feature extraction: 322.9 ms (87.2%)
+  Feature matching:   14.0 ms (3.8%)
+  Essential matrix:   31.3 ms (8.4%)
+  Pose recovery:      2.2 ms (0.6%)
+  TOTAL:              370.3 ms
 
-Throughput: 3.89 fps
+Throughput: 2.70 fps
 
 Feature statistics:
   Avg keypoints:   1293
@@ -25,3 +23,5 @@ Trajectory:
   Final position:  [4.00, -2.26, 2.12]
   Scale factor:    0.213
 ============================================================
+
+
